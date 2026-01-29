@@ -60,7 +60,6 @@ module:
   views: 10
   paragraphs: 11
 theme:
-  olivero: 0
   claro: 0
   gin: 0
   stable9: 0
