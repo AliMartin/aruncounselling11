@@ -1,0 +1,22 @@
+uuid: cd2d0faf-0053-4f9d-a72a-2e20f71691d1
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - arun11
+_core:
+  default_config_hash: 7rFfWQUpmGiQdt3EaPwxuc0fp4Pa7K5TeNGuqTbUASQ
+id: arun11_local_tasks
+theme: arun11
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

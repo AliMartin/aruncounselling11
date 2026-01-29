@@ -1,0 +1,20 @@
+uuid: 2952b9a6-0913-4e69-91d7-d8ed0fdf7dd3
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - arun11
+_core:
+  default_config_hash: A1V_SrXR8OLCeeRZ6ZQbSrR9QzvxqjzK5SpjTn4tSqo
+id: arun11_page_title
+theme: arun11
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

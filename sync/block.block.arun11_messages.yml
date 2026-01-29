@@ -1,0 +1,22 @@
+uuid: 27c50b98-1170-44c7-b50a-79d94c98b70b
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - arun11
+_core:
+  default_config_hash: YTXT1k9bFWfV8ZRdc_xLl7skOPOfBsJWNy89a9JZob4
+id: arun11_messages
+theme: arun11
+region: content
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

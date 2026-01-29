@@ -1,0 +1,22 @@
+uuid: 0527b5da-7a2c-4d6c-bfb6-ace5b5f5f078
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - arun11
+_core:
+  default_config_hash: aO7FsfwJFa4Z82ww-9iWY1_kOLWsm-_hNJakAy4ur48
+id: arun11_help
+theme: arun11
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

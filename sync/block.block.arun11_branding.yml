@@ -1,0 +1,25 @@
+uuid: 345a4bff-ae7a-4ae5-8bab-38fd92f737d6
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - arun11
+_core:
+  default_config_hash: rlUoR5cpKvDNybJFER38kabI8NcbLaVIk5G8YeYH5Do
+id: arun11_branding
+theme: arun11
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }
