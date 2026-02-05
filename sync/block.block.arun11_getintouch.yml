@@ -1,0 +1,23 @@
+uuid: 8cf01aaf-616e-4b8b-9a0f-bb5348208196
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:29c2c719-7706-430f-a259-4610665e6930'
+  module:
+    - block_content
+  theme:
+    - arun11
+id: arun11_getintouch
+theme: arun11
+region: footer_region_4
+weight: -6
+provider: null
+plugin: 'block_content:29c2c719-7706-430f-a259-4610665e6930'
+settings:
+  id: 'block_content:29c2c719-7706-430f-a259-4610665e6930'
+  label: 'Get in touch'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }

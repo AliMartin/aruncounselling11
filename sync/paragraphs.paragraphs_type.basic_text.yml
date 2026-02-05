@@ -1,0 +1,10 @@
+uuid: 4c6de50c-7acf-4a51-ad2a-6edc925df786
+langcode: en-gb
+status: true
+dependencies: {  }
+id: basic_text
+label: 'Basic text'
+icon_uuid: null
+icon_default: null
+description: 'Simple text block.'
+behavior_plugins: {  }

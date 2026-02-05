@@ -1,0 +1,44 @@
+footer {
+  background-color: $dark-green;
+  color: $white;
+  padding: 100px 0 60px 0;
+
+  h2 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: $white;
+  }
+
+  #block-arun11-aruncounselling {
+    h2 {
+      font-size: 32px;
+      font-weight: 500;
+    }
+  }
+
+  /* Default text based footer menus */
+  ul.navbar-nav {
+    .nav-link {
+      padding: 0;
+      margin: 0 0 5px 0;
+      font-weight: $font-weight-bold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  /* Social media icons */
+  #block-arun11-follow {
+    ul.navbar-nav {
+      flex-direction: row;
+      gap: 15px;
+      .nav-link {
+        margin: 0;
+      }
+    }
+  }
+}

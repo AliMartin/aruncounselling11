@@ -1,0 +1,36 @@
+/*
+ * Fix positioning of admin toolbar with sticky navbar
+ */
+
+/* Push the fixed navbar down when the admin toolbar is present */
+body.toolbar-fixed .fixed-top {
+  top: 39px; /* Default height for a single-row toolbar */
+  z-index: 2000;
+}
+
+/* Adjust for the double-row (tray) when expanded */
+body.toolbar-fixed.toolbar-tray-open .fixed-top {
+  top: 79px;
+  z-index: 2000;
+}
+
+.fixed-top {
+  z-index: 500 !important; /* Sit behind Drupal's menus */
+}
+
+#toolbar-administration,
+#toolbar-administration * {
+  z-index: 2000;
+}
+
+
+
+/*
+ * Adjust positioning of main content if logged in so that the editing
+ * navbar can be seen
+ */
+body.user-logged-in {
+  main[role="main"] {
+    margin-top: 80px;
+  }
+}

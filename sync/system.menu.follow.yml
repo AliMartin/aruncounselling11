@@ -1,0 +1,8 @@
+uuid: d84c670c-3345-4d19-a0d0-3c0d553fccb6
+langcode: en-gb
+status: true
+dependencies: {  }
+id: follow
+label: Follow
+description: 'Social media links'
+locked: false

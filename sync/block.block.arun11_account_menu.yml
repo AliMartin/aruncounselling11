@@ -1,6 +1,6 @@
 uuid: 771ad143-0ba7-47aa-8d2c-2008c556183f
 langcode: en-gb
-status: true
+status: false
 dependencies:
   config:
     - system.menu.account
@@ -12,7 +12,7 @@ _core:
   default_config_hash: MzKNLi6oJlvli7fCzcVzEvGxZdGtcHgSVqmakuQ-PoA
 id: arun11_account_menu
 theme: arun11
-region: nav_additional
+region: header
 weight: -7
 provider: null
 plugin: 'system_menu_block:account'

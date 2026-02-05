@@ -1,0 +1,61 @@
+header {
+  nav.navbar {
+    background-color: #fffff8;
+    padding: 20px 0;
+
+    .mobile-menu {
+      width: 110px;
+      @media (min-width: 992px) {
+        display: none;
+      }
+    }
+
+    .branding {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 110px;
+
+      @media (min-width: 992px) and (max-width: 1199px) {
+        width: 95px;
+      }
+
+      .navbar-brand {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        width: 110px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+          width: 95px;
+        }
+      }
+    }
+
+    .main-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media (max-width: 991px) {
+        display: none;
+      } 
+    }
+
+    .right-container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 110px;
+      height: 5px;
+
+      @media (min-width: 992px) and (max-width: 1199px) {
+        width: 95px;
+      }
+    }
+  }
+}

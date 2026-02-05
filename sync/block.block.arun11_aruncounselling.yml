@@ -1,0 +1,23 @@
+uuid: 868f9f5b-8690-4290-ad15-c2084cf2d0a2
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:11150923-b728-4768-ad6f-84150b866324'
+  module:
+    - block_content
+  theme:
+    - arun11
+id: arun11_aruncounselling
+theme: arun11
+region: footer_region_1
+weight: -6
+provider: null
+plugin: 'block_content:11150923-b728-4768-ad6f-84150b866324'
+settings:
+  id: 'block_content:11150923-b728-4768-ad6f-84150b866324'
+  label: 'Arun Counselling'
+  label_display: visible
+  provider: block_content
+  view_mode: full
+visibility: {  }

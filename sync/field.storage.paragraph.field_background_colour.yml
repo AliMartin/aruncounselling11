@@ -1,0 +1,33 @@
+uuid: 4298b676-0943-47ef-945f-c75c42c3ce5a
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_background_colour
+field_name: field_background_colour
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: white
+      label: White
+    -
+      value: pastel_blue
+      label: 'Pastel blue'
+    -
+      value: pastel_green
+      label: 'Pastel green'
+    -
+      value: pastel_yellow
+      label: 'Pastel yellow'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

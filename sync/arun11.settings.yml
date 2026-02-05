@@ -6,7 +6,7 @@ b5_navbar_schema: none
 b5_navbar_bg_schema: none
 b5_footer_schema: none
 b5_footer_bg_schema: none
-b5_top_container: container
+b5_top_container: 'container-fluid m-0 p-0'
 b5_top_container_config: ''
 b5_theme_mode: light
 features:
@@ -15,7 +15,8 @@ features:
   comment_user_verification: true
   favicon: 1
 logo:
-  use_default: 1
+  use_default: 0
+  path: themes/custom/arun11/logo.png
 favicon:
   use_default: 1
 subtheme_folder: themes/custom

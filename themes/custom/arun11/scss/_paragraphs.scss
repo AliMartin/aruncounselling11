@@ -1,0 +1,19 @@
+.paragraph-wrapper {
+  margin-bottom: 60px;
+
+  .paragraph {
+    padding: 45px 0;
+
+    .content-wrapper {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 30px;
+
+      p:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
+

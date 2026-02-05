@@ -12,16 +12,16 @@ _core:
   default_config_hash: yc2NUKFJrOxpCXvLtg5K5Q7sEc2YT-2PA7TT685dABo
 id: arun11_footer
 theme: arun11
-region: footer
+region: footer_region_2
 weight: -6
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
-  label: Footer
-  label_display: '0'
+  label: 'Quick links'
+  label_display: visible
   provider: system
   level: 1
-  depth: 0
+  depth: null
   expand_all_items: false
 visibility: {  }

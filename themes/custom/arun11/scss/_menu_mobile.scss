@@ -1,0 +1,123 @@
+#block-arun11-responsivemenumobileicon {
+  display: flex;
+  justify-content: flex-start;
+
+  span.label {
+    display: none;
+  }
+
+  .responsive-menu-toggle-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+  }
+
+  .responsive-menu-toggle-icon::before,
+  .responsive-menu-toggle-icon::after,
+  .responsive-menu-toggle-icon span.icon {
+    width: 22px;
+    height: 3px;
+    background-color: $dark-green;
+    left: inherit;
+  }
+
+  .responsive-menu-toggle-icon::before    {top: 8px;}
+  .responsive-menu-toggle-icon span.icon  {top: 16px;}
+  .responsive-menu-toggle-icon::after     {top: 24px;}
+}
+
+body.mm-wrapper_opening {
+  #block-arun11-responsivemenumobileicon {  
+    .responsive-menu-toggle-icon::before    {top: 16px;}
+    .responsive-menu-toggle-icon::after     {top: 16px;}
+  }
+}
+
+
+
+.mm-menu_theme-light {
+  background-color: $white;
+  --mm-color-background: $white;
+  color: $dark-green;
+
+  .mm-panels {
+    .mm-navbar:before {
+      content: '';
+      background: url("/themes/custom/arun11/logo.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      display: block;
+      position: relative;
+      left: 35%;
+      width: 30%;
+      height: 100px;
+    } 
+
+    .mm-navbar {
+      border-bottom: none;
+    }
+
+    .mm-navbar a {
+      display: none;
+    }
+  }
+
+  ul.mm-listview {
+    li.mm-listitem {
+      font-family: $headings-font-family;
+      line-height: 1;
+      font-weight: 500;
+      color: $dark-green;
+      --mm-color-text: $dark-green;
+      text-align: left;
+    }
+    li.mm-listitem::after {
+      display: none;
+    }
+    li.mm-listitem a:hover {
+      color: $dark-green;
+      background: inherit;
+      text-decoration: underline;
+      text-underline-offset: 8px;
+    }
+
+    .mm-listitem__text {
+      padding: 15px 20px 15px 20px;
+    }
+    .mm-listitem_selected > .mm-listitem__text {
+      color: $dark-green;
+      background: inherit;
+      text-decoration: underline;
+      text-underline-offset: 8px;
+    }
+  }
+
+  // This is the chevron icon to a submenu
+  a.mm-btn_next::after {
+    width: 12px;
+    height: 12px;
+    border-color: $dark-green;
+  }
+
+
+  // This is the back icon on a second menu
+  a.mm-btn.mm-btn_prev {
+    display: block;
+    position: relative;
+    left: -90px;
+    top: 10px;
+
+    &::before {
+      width: 12px;
+      height: 12px;
+      border-color: $dark-green;
+    }
+  }
+}
+
+

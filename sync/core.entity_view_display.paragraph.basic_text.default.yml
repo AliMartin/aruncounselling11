@@ -1,0 +1,48 @@
+uuid: ac98e7aa-55f4-4485-b482-b2b7d5f339ef
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.basic_text.field_background_colour
+    - field.field.paragraph.basic_text.field_button
+    - field.field.paragraph.basic_text.field_text
+    - field.field.paragraph.basic_text.field_title
+    - paragraphs.paragraphs_type.basic_text
+  module:
+    - heading
+    - link
+    - text
+id: paragraph.basic_text.default
+targetEntityType: paragraph
+bundle: basic_text
+mode: default
+content:
+  field_button:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: heading_text
+    label: hidden
+    settings:
+      size: h2
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_background_colour: true

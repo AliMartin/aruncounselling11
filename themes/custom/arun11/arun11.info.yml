@@ -11,14 +11,17 @@ ckeditor5-stylesheets:
   - css/ck5style.css
 regions:
   header: Header
+  nav_mobile: 'Mobile navigation region'
   nav_branding: 'Navigation branding region'
   nav_main: 'Main navigation region'
-  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
   breadcrumb: Breadcrumbs
   content: 'Main content'
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
-  footer: Footer
+  footer_region_1: 'Footer region first'
+  footer_region_2: 'Footer region second'
+  footer_region_3: 'Footer region third'
+  footer_region_4: 'Footer region fourth'
 libraries-override:
   bootstrap5/global-styling: false
   bootstrap5/ckeditor5-stylesheets: false

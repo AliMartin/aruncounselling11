@@ -1,6 +1,6 @@
 uuid: 2952b9a6-0913-4e69-91d7-d8ed0fdf7dd3
 langcode: en-gb
-status: true
+status: false
 dependencies:
   theme:
     - arun11
@@ -9,7 +9,7 @@ _core:
 id: arun11_page_title
 theme: arun11
 region: content
-weight: -6
+weight: -2
 provider: null
 plugin: page_title_block
 settings:

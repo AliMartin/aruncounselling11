@@ -1,0 +1,25 @@
+uuid: ea032979-91e3-43d9-8728-efb530a9b417
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - system.menu.follow
+  module:
+    - system
+  theme:
+    - arun11
+id: arun11_follow
+theme: arun11
+region: footer_region_3
+weight: -6
+provider: null
+plugin: 'system_menu_block:follow'
+settings:
+  id: 'system_menu_block:follow'
+  label: Follow
+  label_display: visible
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }
