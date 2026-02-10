@@ -14968,6 +14968,9 @@ main[role=main] {
 main[role=main] .region-content {
   padding: 0;
 }
+main[role=main] .region-content .field--name-field-media-image img {
+  border-radius: 10px;
+}
 
 .page-title-wrapper {
   margin-bottom: 60px;
@@ -14988,6 +14991,7 @@ main[role=main] .region-content {
   margin: 0 0 30px 0;
 }
 
+/* Wavy lines */
 .shape-top,
 .shape-bottom {
   position: relative;
@@ -15006,6 +15010,42 @@ main[role=main] .region-content {
   top: -2px;
 }
 
+/* Author information */
+#author-wrapper {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333333;
+}
+#author-wrapper .author-image {
+  margin-bottom: 15px;
+}
+#author-wrapper .author-image img {
+  border-radius: 50%;
+}
+#author-wrapper .author-name {
+  font-weight: 600;
+}
+
+/* News content type */
+.page-node-type-news #body-wrapper {
+  max-width: 800px;
+  margin: 90px auto 90px auto;
+}
+.page-node-type-news #body-wrapper h2, .page-node-type-news #body-wrapper .h2 {
+  font-size: 1.54rem;
+}
+.page-node-type-news #body-wrapper h3, .page-node-type-news #body-wrapper .h3 {
+  font-size: 1.32rem;
+}
+.page-node-type-news #body-wrapper h4, .page-node-type-news #body-wrapper .h4 {
+  font-size: 1.1rem;
+}
+
 .paragraph-wrapper {
   margin-bottom: 60px;
 }
@@ -15022,121 +15062,260 @@ main[role=main] .region-content {
 }
 
 /*
- * Navy blue
+ * Basic text paragraph type
+ * Fire this rule only if an IMAGE has been UPLOADED
  */
-.background-blue .elementor-shape-fill {
-  fill: #294366;
+.paragraph-wrapper.image-defined-true .paragraph--type--basic-text .content-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: self-start;
 }
-.background-blue .page-title,
-.background-blue .paragraph {
-  background-color: #294366;
-  color: #FFFFF8;
+.paragraph-wrapper.image-defined-true .paragraph--type--basic-text .content-wrapper .text-wrapper {
+  flex: 3;
 }
-.background-blue h1, .background-blue .h1,
-.background-blue h2,
-.background-blue .h2,
-.background-blue h3,
-.background-blue .h3 {
-  color: #FFFFF8;
+.paragraph-wrapper.image-defined-true .paragraph--type--basic-text .content-wrapper .image-wrapper {
+  flex: 2;
 }
-.background-blue .field--name-field-button .field__item:nth-child(3n+1) a {
-  background-color: #198754;
-  color: #FFFFF8;
+.paragraph-wrapper.image-defined-true.image-position-right .content-wrapper {
+  flex-direction: row;
 }
-.background-blue .field--name-field-button .field__item:nth-child(3n+2) a {
-  background-color: #294366;
-  color: #FFFFF8;
+.paragraph-wrapper.image-defined-true.image-position-left .content-wrapper {
+  flex-direction: row-reverse;
 }
-.background-blue .field--name-field-button .field__item:nth-child(3n) a {
-  background-color: #FF7A1A;
-  color: #FFFFF8;
+
+/*
+ * Basic text paragraph type
+ * Fire this rule only if there is NO IMAGE
+ */
+.paragraph-wrapper.image-defined-false .paragraph--type--basic-text .text-wrapper {
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.background-blue .field--name-field-button .field__item:nth-child(3n+1) a:hover {
-  background-color: #115c39;
-}
-.background-blue .field--name-field-button .field__item:nth-child(3n+2) a:hover {
-  background-color: #1a2b42;
-}
-.background-blue .field--name-field-button .field__item:nth-child(3n) a:hover {
-  background-color: #e66000;
+.paragraph-wrapper.image-defined-false .paragraph--type--basic-text .field--name-field-button {
+  justify-content: center;
 }
 
 /*
  * Light green
+ * INDIVIDUALS
  */
+.background-counselling .elementor-shape-fill,
 .background-light-green .elementor-shape-fill {
   fill: #1C7678;
 }
+.background-counselling .page-title,
+.background-counselling .paragraph,
 .background-light-green .page-title,
 .background-light-green .paragraph {
   background-color: #1C7678;
   color: #FFFFF8;
 }
-.background-light-green h1, .background-light-green .h1,
+.background-counselling h1, .background-counselling .h1,
+.background-counselling h2,
+.background-counselling .h2,
+.background-counselling h3,
+.background-counselling .h3,
+.background-light-green h1,
+.background-light-green .h1,
 .background-light-green h2,
 .background-light-green .h2,
 .background-light-green h3,
 .background-light-green .h3 {
   color: #FFFFF8;
 }
+.background-counselling .field--name-field-button .field__item:nth-child(3n+1) a,
 .background-light-green .field--name-field-button .field__item:nth-child(3n+1) a {
   background-color: #198754;
   color: #FFFFF8;
 }
+.background-counselling .field--name-field-button .field__item:nth-child(3n+2) a,
 .background-light-green .field--name-field-button .field__item:nth-child(3n+2) a {
   background-color: #294366;
   color: #FFFFF8;
 }
+.background-counselling .field--name-field-button .field__item:nth-child(3n) a,
 .background-light-green .field--name-field-button .field__item:nth-child(3n) a {
   background-color: #FF7A1A;
   color: #FFFFF8;
 }
+.background-counselling .field--name-field-button .field__item:nth-child(3n+1) a:hover,
 .background-light-green .field--name-field-button .field__item:nth-child(3n+1) a:hover {
   background-color: #115c39;
 }
+.background-counselling .field--name-field-button .field__item:nth-child(3n+2) a:hover,
 .background-light-green .field--name-field-button .field__item:nth-child(3n+2) a:hover {
   background-color: #1a2b42;
 }
+.background-counselling .field--name-field-button .field__item:nth-child(3n) a:hover,
 .background-light-green .field--name-field-button .field__item:nth-child(3n) a:hover {
+  background-color: #e66000;
+}
+
+/*
+ * Navy blue
+ * EMPLOYERS
+ */
+.background-employers .elementor-shape-fill,
+.background-blue .elementor-shape-fill {
+  fill: #294366;
+}
+.background-employers .page-title,
+.background-employers .paragraph,
+.background-blue .page-title,
+.background-blue .paragraph {
+  background-color: #294366;
+  color: #FFFFF8;
+}
+.background-employers h1, .background-employers .h1,
+.background-employers h2,
+.background-employers .h2,
+.background-employers h3,
+.background-employers .h3,
+.background-blue h1,
+.background-blue .h1,
+.background-blue h2,
+.background-blue .h2,
+.background-blue h3,
+.background-blue .h3 {
+  color: #FFFFF8;
+}
+.background-employers .field--name-field-button .field__item:nth-child(3n+1) a,
+.background-blue .field--name-field-button .field__item:nth-child(3n+1) a {
+  background-color: #198754;
+  color: #FFFFF8;
+}
+.background-employers .field--name-field-button .field__item:nth-child(3n+2) a,
+.background-blue .field--name-field-button .field__item:nth-child(3n+2) a {
+  background-color: #294366;
+  color: #FFFFF8;
+}
+.background-employers .field--name-field-button .field__item:nth-child(3n) a,
+.background-blue .field--name-field-button .field__item:nth-child(3n) a {
+  background-color: #FF7A1A;
+  color: #FFFFF8;
+}
+.background-employers .field--name-field-button .field__item:nth-child(3n+1) a:hover,
+.background-blue .field--name-field-button .field__item:nth-child(3n+1) a:hover {
+  background-color: #115c39;
+}
+.background-employers .field--name-field-button .field__item:nth-child(3n+2) a:hover,
+.background-blue .field--name-field-button .field__item:nth-child(3n+2) a:hover {
+  background-color: #1a2b42;
+}
+.background-employers .field--name-field-button .field__item:nth-child(3n) a:hover,
+.background-blue .field--name-field-button .field__item:nth-child(3n) a:hover {
+  background-color: #e66000;
+}
+
+/*
+ * Yellow
+ * TRAINING
+ */
+.background-training .elementor-shape-fill,
+.background-yellow .elementor-shape-fill {
+  fill: #ffd44a;
+}
+.background-training .page-title,
+.background-training .paragraph,
+.background-yellow .page-title,
+.background-yellow .paragraph {
+  background-color: #ffd44a;
+  color: #333333;
+}
+.background-training h1, .background-training .h1,
+.background-training h2,
+.background-training .h2,
+.background-training h3,
+.background-training .h3,
+.background-yellow h1,
+.background-yellow .h1,
+.background-yellow h2,
+.background-yellow .h2,
+.background-yellow h3,
+.background-yellow .h3 {
+  color: #333333;
+}
+.background-training .field--name-field-button .field__item:nth-child(3n+1) a,
+.background-yellow .field--name-field-button .field__item:nth-child(3n+1) a {
+  background-color: #198754;
+  color: #FFFFF8;
+}
+.background-training .field--name-field-button .field__item:nth-child(3n+2) a,
+.background-yellow .field--name-field-button .field__item:nth-child(3n+2) a {
+  background-color: #294366;
+  color: #FFFFF8;
+}
+.background-training .field--name-field-button .field__item:nth-child(3n) a,
+.background-yellow .field--name-field-button .field__item:nth-child(3n) a {
+  background-color: #FF7A1A;
+  color: #FFFFF8;
+}
+.background-training .field--name-field-button .field__item:nth-child(3n+1) a:hover,
+.background-yellow .field--name-field-button .field__item:nth-child(3n+1) a:hover {
+  background-color: #115c39;
+}
+.background-training .field--name-field-button .field__item:nth-child(3n+2) a:hover,
+.background-yellow .field--name-field-button .field__item:nth-child(3n+2) a:hover {
+  background-color: #1a2b42;
+}
+.background-training .field--name-field-button .field__item:nth-child(3n) a:hover,
+.background-yellow .field--name-field-button .field__item:nth-child(3n) a:hover {
   background-color: #e66000;
 }
 
 /*
  * Dark green
  */
+.background-other .elementor-shape-fill,
 .background-dark-green .elementor-shape-fill {
   fill: #224957;
 }
+.background-other .page-title,
+.background-other .paragraph,
 .background-dark-green .page-title,
 .background-dark-green .paragraph {
   background-color: #224957;
   color: #FFFFF8;
 }
-.background-dark-green h1, .background-dark-green .h1,
+.background-other h1, .background-other .h1,
+.background-other h2,
+.background-other .h2,
+.background-other h3,
+.background-other .h3,
+.background-dark-green h1,
+.background-dark-green .h1,
 .background-dark-green h2,
 .background-dark-green .h2,
 .background-dark-green h3,
 .background-dark-green .h3 {
   color: #FFFFF8;
 }
+.background-other .field--name-field-button .field__item:nth-child(3n+1) a,
 .background-dark-green .field--name-field-button .field__item:nth-child(3n+1) a {
   background-color: #198754;
   color: #FFFFF8;
 }
+.background-other .field--name-field-button .field__item:nth-child(3n+2) a,
 .background-dark-green .field--name-field-button .field__item:nth-child(3n+2) a {
   background-color: #294366;
   color: #FFFFF8;
 }
+.background-other .field--name-field-button .field__item:nth-child(3n) a,
 .background-dark-green .field--name-field-button .field__item:nth-child(3n) a {
   background-color: #FF7A1A;
   color: #FFFFF8;
 }
+.background-other .field--name-field-button .field__item:nth-child(3n+1) a:hover,
 .background-dark-green .field--name-field-button .field__item:nth-child(3n+1) a:hover {
   background-color: #115c39;
 }
+.background-other .field--name-field-button .field__item:nth-child(3n+2) a:hover,
 .background-dark-green .field--name-field-button .field__item:nth-child(3n+2) a:hover {
   background-color: #1a2b42;
 }
+.background-other .field--name-field-button .field__item:nth-child(3n) a:hover,
 .background-dark-green .field--name-field-button .field__item:nth-child(3n) a:hover {
   background-color: #e66000;
 }
@@ -15298,46 +15477,6 @@ main[role=main] .region-content {
   background-color: #1a2b42;
 }
 .background-white .field--name-field-button .field__item:nth-child(3n) a:hover {
-  background-color: #e66000;
-}
-
-/*
- * Yellow
- */
-.background-yellow .elementor-shape-fill {
-  fill: #ffd44a;
-}
-.background-yellow .page-title,
-.background-yellow .paragraph {
-  background-color: #ffd44a;
-  color: #333333;
-}
-.background-yellow h1, .background-yellow .h1,
-.background-yellow h2,
-.background-yellow .h2,
-.background-yellow h3,
-.background-yellow .h3 {
-  color: #333333;
-}
-.background-yellow .field--name-field-button .field__item:nth-child(3n+1) a {
-  background-color: #198754;
-  color: #FFFFF8;
-}
-.background-yellow .field--name-field-button .field__item:nth-child(3n+2) a {
-  background-color: #294366;
-  color: #FFFFF8;
-}
-.background-yellow .field--name-field-button .field__item:nth-child(3n) a {
-  background-color: #FF7A1A;
-  color: #FFFFF8;
-}
-.background-yellow .field--name-field-button .field__item:nth-child(3n+1) a:hover {
-  background-color: #115c39;
-}
-.background-yellow .field--name-field-button .field__item:nth-child(3n+2) a:hover {
-  background-color: #1a2b42;
-}
-.background-yellow .field--name-field-button .field__item:nth-child(3n) a:hover {
   background-color: #e66000;
 }
 

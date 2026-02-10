@@ -165,11 +165,28 @@
    * Adjust positioning of main content if logged in so that the editing
    * navbar can be seen
    */
+  /* Wavy lines */
+  /* Author information */
+  /* News content type */
   /*
-   * Navy blue
+   * Basic text paragraph type
+   * Fire this rule only if an IMAGE has been UPLOADED
+   */
+  /*
+   * Basic text paragraph type
+   * Fire this rule only if there is NO IMAGE
    */
   /*
    * Light green
+   * INDIVIDUALS
+   */
+  /*
+   * Navy blue
+   * EMPLOYERS
+   */
+  /*
+   * Yellow
+   * TRAINING
    */
   /*
    * Dark green
@@ -185,9 +202,6 @@
    */
   /*
    * White
-   */
-  /*
-   * Yellow
    */
 }
 .ck-content .text-orange {
@@ -13676,6 +13690,9 @@ a > .ck-content code {
 .ck-content main[role=main] .region-content {
   padding: 0;
 }
+.ck-content main[role=main] .region-content .field--name-field-media-image img {
+  border-radius: 10px;
+}
 .ck-content .page-title-wrapper {
   margin-bottom: 60px;
 }
@@ -13709,6 +13726,38 @@ a > .ck-content code {
 .ck-content .shape-bottom {
   top: -2px;
 }
+.ck-content #author-wrapper {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333333;
+}
+.ck-content #author-wrapper .author-image {
+  margin-bottom: 15px;
+}
+.ck-content #author-wrapper .author-image img {
+  border-radius: 50%;
+}
+.ck-content #author-wrapper .author-name {
+  font-weight: 600;
+}
+.ck-content .page-node-type-news #body-wrapper {
+  max-width: 800px;
+  margin: 90px auto 90px auto;
+}
+.ck-content .page-node-type-news #body-wrapper h2, .ck-content .page-node-type-news #body-wrapper .h2 {
+  font-size: 1.54rem;
+}
+.ck-content .page-node-type-news #body-wrapper h3, .ck-content .page-node-type-news #body-wrapper .h3 {
+  font-size: 1.32rem;
+}
+.ck-content .page-node-type-news #body-wrapper h4, .ck-content .page-node-type-news #body-wrapper .h4 {
+  font-size: 1.1rem;
+}
 .ck-content .paragraph-wrapper {
   margin-bottom: 60px;
 }
@@ -13723,111 +13772,233 @@ a > .ck-content code {
 .ck-content .paragraph-wrapper .paragraph .content-wrapper p:last-of-type {
   margin-bottom: 0;
 }
-.ck-content .background-blue .elementor-shape-fill {
-  fill: #294366;
+.ck-content .paragraph-wrapper.image-defined-true .paragraph--type--basic-text .content-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: self-start;
 }
-.ck-content .background-blue .page-title,
-.ck-content .background-blue .paragraph {
-  background-color: #294366;
-  color: #FFFFF8;
+.ck-content .paragraph-wrapper.image-defined-true .paragraph--type--basic-text .content-wrapper .text-wrapper {
+  flex: 3;
 }
-.ck-content .background-blue h1, .ck-content .background-blue .h1,
-.ck-content .background-blue h2,
-.ck-content .background-blue .h2,
-.ck-content .background-blue h3,
-.ck-content .background-blue .h3 {
-  color: #FFFFF8;
+.ck-content .paragraph-wrapper.image-defined-true .paragraph--type--basic-text .content-wrapper .image-wrapper {
+  flex: 2;
 }
-.ck-content .background-blue .field--name-field-button .field__item:nth-child(3n+1) a {
-  background-color: #198754;
-  color: #FFFFF8;
+.ck-content .paragraph-wrapper.image-defined-true.image-position-right .content-wrapper {
+  flex-direction: row;
 }
-.ck-content .background-blue .field--name-field-button .field__item:nth-child(3n+2) a {
-  background-color: #294366;
-  color: #FFFFF8;
+.ck-content .paragraph-wrapper.image-defined-true.image-position-left .content-wrapper {
+  flex-direction: row-reverse;
 }
-.ck-content .background-blue .field--name-field-button .field__item:nth-child(3n) a {
-  background-color: #FF7A1A;
-  color: #FFFFF8;
+.ck-content .paragraph-wrapper.image-defined-false .paragraph--type--basic-text .text-wrapper {
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.ck-content .background-blue .field--name-field-button .field__item:nth-child(3n+1) a:hover {
-  background-color: #115c39;
+.ck-content .paragraph-wrapper.image-defined-false .paragraph--type--basic-text .field--name-field-button {
+  justify-content: center;
 }
-.ck-content .background-blue .field--name-field-button .field__item:nth-child(3n+2) a:hover {
-  background-color: #1a2b42;
-}
-.ck-content .background-blue .field--name-field-button .field__item:nth-child(3n) a:hover {
-  background-color: #e66000;
-}
+.ck-content .background-counselling .elementor-shape-fill,
 .ck-content .background-light-green .elementor-shape-fill {
   fill: #1C7678;
 }
+.ck-content .background-counselling .page-title,
+.ck-content .background-counselling .paragraph,
 .ck-content .background-light-green .page-title,
 .ck-content .background-light-green .paragraph {
   background-color: #1C7678;
   color: #FFFFF8;
 }
-.ck-content .background-light-green h1, .ck-content .background-light-green .h1,
+.ck-content .background-counselling h1, .ck-content .background-counselling .h1,
+.ck-content .background-counselling h2,
+.ck-content .background-counselling .h2,
+.ck-content .background-counselling h3,
+.ck-content .background-counselling .h3,
+.ck-content .background-light-green h1,
+.ck-content .background-light-green .h1,
 .ck-content .background-light-green h2,
 .ck-content .background-light-green .h2,
 .ck-content .background-light-green h3,
 .ck-content .background-light-green .h3 {
   color: #FFFFF8;
 }
+.ck-content .background-counselling .field--name-field-button .field__item:nth-child(3n+1) a,
 .ck-content .background-light-green .field--name-field-button .field__item:nth-child(3n+1) a {
   background-color: #198754;
   color: #FFFFF8;
 }
+.ck-content .background-counselling .field--name-field-button .field__item:nth-child(3n+2) a,
 .ck-content .background-light-green .field--name-field-button .field__item:nth-child(3n+2) a {
   background-color: #294366;
   color: #FFFFF8;
 }
+.ck-content .background-counselling .field--name-field-button .field__item:nth-child(3n) a,
 .ck-content .background-light-green .field--name-field-button .field__item:nth-child(3n) a {
   background-color: #FF7A1A;
   color: #FFFFF8;
 }
+.ck-content .background-counselling .field--name-field-button .field__item:nth-child(3n+1) a:hover,
 .ck-content .background-light-green .field--name-field-button .field__item:nth-child(3n+1) a:hover {
   background-color: #115c39;
 }
+.ck-content .background-counselling .field--name-field-button .field__item:nth-child(3n+2) a:hover,
 .ck-content .background-light-green .field--name-field-button .field__item:nth-child(3n+2) a:hover {
   background-color: #1a2b42;
 }
+.ck-content .background-counselling .field--name-field-button .field__item:nth-child(3n) a:hover,
 .ck-content .background-light-green .field--name-field-button .field__item:nth-child(3n) a:hover {
   background-color: #e66000;
 }
+.ck-content .background-employers .elementor-shape-fill,
+.ck-content .background-blue .elementor-shape-fill {
+  fill: #294366;
+}
+.ck-content .background-employers .page-title,
+.ck-content .background-employers .paragraph,
+.ck-content .background-blue .page-title,
+.ck-content .background-blue .paragraph {
+  background-color: #294366;
+  color: #FFFFF8;
+}
+.ck-content .background-employers h1, .ck-content .background-employers .h1,
+.ck-content .background-employers h2,
+.ck-content .background-employers .h2,
+.ck-content .background-employers h3,
+.ck-content .background-employers .h3,
+.ck-content .background-blue h1,
+.ck-content .background-blue .h1,
+.ck-content .background-blue h2,
+.ck-content .background-blue .h2,
+.ck-content .background-blue h3,
+.ck-content .background-blue .h3 {
+  color: #FFFFF8;
+}
+.ck-content .background-employers .field--name-field-button .field__item:nth-child(3n+1) a,
+.ck-content .background-blue .field--name-field-button .field__item:nth-child(3n+1) a {
+  background-color: #198754;
+  color: #FFFFF8;
+}
+.ck-content .background-employers .field--name-field-button .field__item:nth-child(3n+2) a,
+.ck-content .background-blue .field--name-field-button .field__item:nth-child(3n+2) a {
+  background-color: #294366;
+  color: #FFFFF8;
+}
+.ck-content .background-employers .field--name-field-button .field__item:nth-child(3n) a,
+.ck-content .background-blue .field--name-field-button .field__item:nth-child(3n) a {
+  background-color: #FF7A1A;
+  color: #FFFFF8;
+}
+.ck-content .background-employers .field--name-field-button .field__item:nth-child(3n+1) a:hover,
+.ck-content .background-blue .field--name-field-button .field__item:nth-child(3n+1) a:hover {
+  background-color: #115c39;
+}
+.ck-content .background-employers .field--name-field-button .field__item:nth-child(3n+2) a:hover,
+.ck-content .background-blue .field--name-field-button .field__item:nth-child(3n+2) a:hover {
+  background-color: #1a2b42;
+}
+.ck-content .background-employers .field--name-field-button .field__item:nth-child(3n) a:hover,
+.ck-content .background-blue .field--name-field-button .field__item:nth-child(3n) a:hover {
+  background-color: #e66000;
+}
+.ck-content .background-training .elementor-shape-fill,
+.ck-content .background-yellow .elementor-shape-fill {
+  fill: #ffd44a;
+}
+.ck-content .background-training .page-title,
+.ck-content .background-training .paragraph,
+.ck-content .background-yellow .page-title,
+.ck-content .background-yellow .paragraph {
+  background-color: #ffd44a;
+  color: #333333;
+}
+.ck-content .background-training h1, .ck-content .background-training .h1,
+.ck-content .background-training h2,
+.ck-content .background-training .h2,
+.ck-content .background-training h3,
+.ck-content .background-training .h3,
+.ck-content .background-yellow h1,
+.ck-content .background-yellow .h1,
+.ck-content .background-yellow h2,
+.ck-content .background-yellow .h2,
+.ck-content .background-yellow h3,
+.ck-content .background-yellow .h3 {
+  color: #333333;
+}
+.ck-content .background-training .field--name-field-button .field__item:nth-child(3n+1) a,
+.ck-content .background-yellow .field--name-field-button .field__item:nth-child(3n+1) a {
+  background-color: #198754;
+  color: #FFFFF8;
+}
+.ck-content .background-training .field--name-field-button .field__item:nth-child(3n+2) a,
+.ck-content .background-yellow .field--name-field-button .field__item:nth-child(3n+2) a {
+  background-color: #294366;
+  color: #FFFFF8;
+}
+.ck-content .background-training .field--name-field-button .field__item:nth-child(3n) a,
+.ck-content .background-yellow .field--name-field-button .field__item:nth-child(3n) a {
+  background-color: #FF7A1A;
+  color: #FFFFF8;
+}
+.ck-content .background-training .field--name-field-button .field__item:nth-child(3n+1) a:hover,
+.ck-content .background-yellow .field--name-field-button .field__item:nth-child(3n+1) a:hover {
+  background-color: #115c39;
+}
+.ck-content .background-training .field--name-field-button .field__item:nth-child(3n+2) a:hover,
+.ck-content .background-yellow .field--name-field-button .field__item:nth-child(3n+2) a:hover {
+  background-color: #1a2b42;
+}
+.ck-content .background-training .field--name-field-button .field__item:nth-child(3n) a:hover,
+.ck-content .background-yellow .field--name-field-button .field__item:nth-child(3n) a:hover {
+  background-color: #e66000;
+}
+.ck-content .background-other .elementor-shape-fill,
 .ck-content .background-dark-green .elementor-shape-fill {
   fill: #224957;
 }
+.ck-content .background-other .page-title,
+.ck-content .background-other .paragraph,
 .ck-content .background-dark-green .page-title,
 .ck-content .background-dark-green .paragraph {
   background-color: #224957;
   color: #FFFFF8;
 }
-.ck-content .background-dark-green h1, .ck-content .background-dark-green .h1,
+.ck-content .background-other h1, .ck-content .background-other .h1,
+.ck-content .background-other h2,
+.ck-content .background-other .h2,
+.ck-content .background-other h3,
+.ck-content .background-other .h3,
+.ck-content .background-dark-green h1,
+.ck-content .background-dark-green .h1,
 .ck-content .background-dark-green h2,
 .ck-content .background-dark-green .h2,
 .ck-content .background-dark-green h3,
 .ck-content .background-dark-green .h3 {
   color: #FFFFF8;
 }
+.ck-content .background-other .field--name-field-button .field__item:nth-child(3n+1) a,
 .ck-content .background-dark-green .field--name-field-button .field__item:nth-child(3n+1) a {
   background-color: #198754;
   color: #FFFFF8;
 }
+.ck-content .background-other .field--name-field-button .field__item:nth-child(3n+2) a,
 .ck-content .background-dark-green .field--name-field-button .field__item:nth-child(3n+2) a {
   background-color: #294366;
   color: #FFFFF8;
 }
+.ck-content .background-other .field--name-field-button .field__item:nth-child(3n) a,
 .ck-content .background-dark-green .field--name-field-button .field__item:nth-child(3n) a {
   background-color: #FF7A1A;
   color: #FFFFF8;
 }
+.ck-content .background-other .field--name-field-button .field__item:nth-child(3n+1) a:hover,
 .ck-content .background-dark-green .field--name-field-button .field__item:nth-child(3n+1) a:hover {
   background-color: #115c39;
 }
+.ck-content .background-other .field--name-field-button .field__item:nth-child(3n+2) a:hover,
 .ck-content .background-dark-green .field--name-field-button .field__item:nth-child(3n+2) a:hover {
   background-color: #1a2b42;
 }
+.ck-content .background-other .field--name-field-button .field__item:nth-child(3n) a:hover,
 .ck-content .background-dark-green .field--name-field-button .field__item:nth-child(3n) a:hover {
   background-color: #e66000;
 }
@@ -13973,42 +14144,6 @@ a > .ck-content code {
   background-color: #1a2b42;
 }
 .ck-content .background-white .field--name-field-button .field__item:nth-child(3n) a:hover {
-  background-color: #e66000;
-}
-.ck-content .background-yellow .elementor-shape-fill {
-  fill: #ffd44a;
-}
-.ck-content .background-yellow .page-title,
-.ck-content .background-yellow .paragraph {
-  background-color: #ffd44a;
-  color: #333333;
-}
-.ck-content .background-yellow h1, .ck-content .background-yellow .h1,
-.ck-content .background-yellow h2,
-.ck-content .background-yellow .h2,
-.ck-content .background-yellow h3,
-.ck-content .background-yellow .h3 {
-  color: #333333;
-}
-.ck-content .background-yellow .field--name-field-button .field__item:nth-child(3n+1) a {
-  background-color: #198754;
-  color: #FFFFF8;
-}
-.ck-content .background-yellow .field--name-field-button .field__item:nth-child(3n+2) a {
-  background-color: #294366;
-  color: #FFFFF8;
-}
-.ck-content .background-yellow .field--name-field-button .field__item:nth-child(3n) a {
-  background-color: #FF7A1A;
-  color: #FFFFF8;
-}
-.ck-content .background-yellow .field--name-field-button .field__item:nth-child(3n+1) a:hover {
-  background-color: #115c39;
-}
-.ck-content .background-yellow .field--name-field-button .field__item:nth-child(3n+2) a:hover {
-  background-color: #1a2b42;
-}
-.ck-content .background-yellow .field--name-field-button .field__item:nth-child(3n) a:hover {
   background-color: #e66000;
 }
 .ck-content header .main-menu ul.navbar-nav {

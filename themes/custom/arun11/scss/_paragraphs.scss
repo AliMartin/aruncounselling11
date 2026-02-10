@@ -17,3 +17,55 @@
 
 }
 
+/*
+ * Basic text paragraph type
+ * Fire this rule only if an IMAGE has been UPLOADED
+ */
+.paragraph-wrapper.image-defined-true {
+  .paragraph--type--basic-text {
+    .content-wrapper {
+      display: flex;
+      gap: 30px;
+      align-items: self-start;
+
+      .text-wrapper {
+        flex: 3;
+      }
+
+      .image-wrapper {
+        flex: 2;
+      }
+    }
+  }
+
+  &.image-position-right {
+    .content-wrapper {
+      flex-direction: row;
+    }
+  }
+
+  &.image-position-left {
+    .content-wrapper {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+
+/*
+ * Basic text paragraph type
+ * Fire this rule only if there is NO IMAGE
+ */
+.paragraph-wrapper.image-defined-false {
+  .paragraph--type--basic-text {
+    .text-wrapper {
+      text-align: center;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .field--name-field-button {
+      justify-content: center;
+    }
+  }
+}

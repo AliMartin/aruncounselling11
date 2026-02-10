@@ -1,0 +1,11 @@
+uuid: ee31e800-0703-44b8-9a26-d1926ba791c0
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - media
+id: media.author
+label: Author
+description: 'Used for displaying the author image thumbnails on news content types.'
+targetEntityType: media
+cache: true
