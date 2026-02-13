@@ -1,0 +1,10 @@
+uuid: 24048200-2861-44f9-b4ab-d7df45ed50b0
+langcode: en-gb
+status: true
+dependencies: {  }
+id: statistic
+label: Statistic
+icon_uuid: null
+icon_default: null
+description: 'The <em>statistic</em> paragraph type is built using many <em>statistic bundles</em>.'
+behavior_plugins: {  }

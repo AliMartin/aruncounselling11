@@ -98,9 +98,9 @@ $news-heading-scale: 0.8;
     max-width: 800px;
     margin: 90px auto 90px auto;
 
-    h2 { font-size: $h2-font-size * $news-heading-scale; }
-    h3 { font-size: $h3-font-size * $news-heading-scale; }
-    h4 { font-size: $h4-font-size * $news-heading-scale; }
+    h2 { font-size: $h2-font-size * $news-heading-scale; margin: 2rem 0 1rem 0;}
+    h3 { font-size: $h3-font-size * $news-heading-scale; margin: 2rem 0 1rem 0; }
+    h4 { font-size: $h4-font-size * $news-heading-scale; margin: 2rem 0 1rem 0; }
   }
 }
 

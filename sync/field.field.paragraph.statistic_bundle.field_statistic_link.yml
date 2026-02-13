@@ -1,0 +1,23 @@
+uuid: 0a72ed9b-119b-4bd3-ad8b-a46afd4754f2
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_statistic_link
+    - paragraphs.paragraphs_type.statistic_bundle
+  module:
+    - link
+id: paragraph.statistic_bundle.field_statistic_link
+field_name: field_statistic_link
+entity_type: paragraph
+bundle: statistic_bundle
+label: Link
+description: 'Add the website address of your source. This will be displayed as an icon in the final display.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

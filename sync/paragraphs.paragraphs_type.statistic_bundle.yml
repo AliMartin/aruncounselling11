@@ -1,0 +1,10 @@
+uuid: e28ba480-6eb8-40b8-a21a-96ffb9d4a3ce
+langcode: en-gb
+status: true
+dependencies: {  }
+id: statistic_bundle
+label: 'Statistic bundle'
+icon_uuid: null
+icon_default: null
+description: 'This is a complete, discreet statistic defined as a bundle. Bundles are then added to <em>Statistic</em> paragraph types.'
+behavior_plugins: {  }

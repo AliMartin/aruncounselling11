@@ -1783,11 +1783,11 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: calc(1.29rem + 0.48vw);
+  font-size: calc(1.279rem + 0.348vw);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 1.65rem;
+    font-size: 1.54rem;
   }
 }
 
@@ -9999,7 +9999,7 @@ textarea.form-control-lg {
 }
 
 .fs-3 {
-  font-size: calc(1.29rem + 0.48vw) !important;
+  font-size: calc(1.279rem + 0.348vw) !important;
 }
 
 .fs-4 {
@@ -13550,7 +13550,7 @@ textarea.form-control-lg {
     font-size: 1.925rem !important;
   }
   .fs-3 {
-    font-size: 1.65rem !important;
+    font-size: 1.54rem !important;
   }
   .fs-4 {
     font-size: 1.375rem !important;
@@ -14829,6 +14829,7 @@ body.user-logged-in main[role=main] {
   margin-top: 80px;
 }
 
+.view,
 .field--name-field-button {
   display: flex;
   flex-direction: row;
@@ -14837,6 +14838,22 @@ body.user-logged-in main[role=main] {
   gap: 10px;
   justify-content: flex-start;
 }
+.view .btn, .view button.link, .view .button, .view .node-preview-container .node-preview-backlink, .node-preview-container .view .node-preview-backlink,
+.field--name-field-button .btn,
+.field--name-field-button button.link,
+.field--name-field-button .button,
+.field--name-field-button .node-preview-container .node-preview-backlink,
+.node-preview-container .field--name-field-button .node-preview-backlink {
+  margin: 0;
+  padding: 0;
+}
+.view .btn a, .view button.link a, .view .button a, .view .node-preview-container .node-preview-backlink a, .node-preview-container .view .node-preview-backlink a,
+.view .field__item a,
+.field--name-field-button .btn a,
+.field--name-field-button button.link a,
+.field--name-field-button .button a,
+.field--name-field-button .node-preview-container .node-preview-backlink a,
+.node-preview-container .field--name-field-button .node-preview-backlink a,
 .field--name-field-button .field__item a {
   display: flex;
   justify-content: center;
@@ -14848,6 +14865,13 @@ body.user-logged-in main[role=main] {
   text-decoration: none;
   transition: background-color 150ms ease;
 }
+.view .btn a::after, .view button.link a::after, .view .button a::after, .view .node-preview-container .node-preview-backlink a::after, .node-preview-container .view .node-preview-backlink a::after,
+.view .field__item a::after,
+.field--name-field-button .btn a::after,
+.field--name-field-button button.link a::after,
+.field--name-field-button .button a::after,
+.field--name-field-button .node-preview-container .node-preview-backlink a::after,
+.node-preview-container .field--name-field-button .node-preview-backlink a::after,
 .field--name-field-button .field__item a::after {
   display: flex;
   content: "\f054";
@@ -15038,12 +15062,15 @@ main[role=main] .region-content .field--name-field-media-image img {
 }
 .page-node-type-news #body-wrapper h2, .page-node-type-news #body-wrapper .h2 {
   font-size: 1.54rem;
+  margin: 2rem 0 1rem 0;
 }
 .page-node-type-news #body-wrapper h3, .page-node-type-news #body-wrapper .h3 {
-  font-size: 1.32rem;
+  font-size: 1.232rem;
+  margin: 2rem 0 1rem 0;
 }
 .page-node-type-news #body-wrapper h4, .page-node-type-news #body-wrapper .h4 {
   font-size: 1.1rem;
+  margin: 2rem 0 1rem 0;
 }
 
 .paragraph-wrapper {
@@ -15051,6 +15078,12 @@ main[role=main] .region-content .field--name-field-media-image img {
 }
 .paragraph-wrapper .paragraph {
   padding: 45px 0;
+}
+.paragraph-wrapper .paragraph h2, .paragraph-wrapper .paragraph .h2 {
+  margin-bottom: 1rem;
+}
+.paragraph-wrapper .paragraph h3, .paragraph-wrapper .paragraph .h3 {
+  margin-bottom: 0.25rem;
 }
 .paragraph-wrapper .paragraph .content-wrapper {
   max-width: 1100px;
@@ -15097,6 +15130,55 @@ main[role=main] .region-content .field--name-field-media-image img {
   justify-content: center;
 }
 
+.field--name-field-statistic {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 45px;
+  justify-content: center;
+  /* Statistic bundles */
+}
+.field--name-field-statistic .paragraph-wrapper {
+  margin: 0;
+}
+.field--name-field-statistic .paragraph--type--statistic-bundle {
+  padding: 0;
+}
+.field--name-field-statistic .paragraph--type--statistic-bundle .content-wrapper {
+  padding: 0;
+}
+.field--name-field-statistic .paragraph--type--statistic-bundle .statistic-bundle-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  max-width: 220px;
+  gap: 5px;
+}
+.field--name-field-statistic .paragraph--type--statistic-bundle .statistic-bundle-wrapper .number-wrapper {
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 600;
+}
+.field--name-field-statistic .paragraph--type--statistic-bundle .statistic-bundle-wrapper .text-1-wrapper {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.field--name-field-statistic .paragraph--type--statistic-bundle .statistic-bundle-wrapper .source-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.field--name-field-statistic .paragraph--type--statistic-bundle .statistic-bundle-wrapper .source-wrapper .link-wrapper {
+  position: relative;
+  top: -4px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
 /*
  * Light green
  * INDIVIDUALS
@@ -15117,12 +15199,14 @@ main[role=main] .region-content .field--name-field-media-image img {
 .background-counselling .h2,
 .background-counselling h3,
 .background-counselling .h3,
+.background-counselling .paragraph a,
 .background-light-green h1,
 .background-light-green .h1,
 .background-light-green h2,
 .background-light-green .h2,
 .background-light-green h3,
-.background-light-green .h3 {
+.background-light-green .h3,
+.background-light-green .paragraph a {
   color: #FFFFF8;
 }
 .background-counselling .field--name-field-button .field__item:nth-child(3n+1) a,
@@ -15173,12 +15257,14 @@ main[role=main] .region-content .field--name-field-media-image img {
 .background-employers .h2,
 .background-employers h3,
 .background-employers .h3,
+.background-employers .paragraph a,
 .background-blue h1,
 .background-blue .h1,
 .background-blue h2,
 .background-blue .h2,
 .background-blue h3,
-.background-blue .h3 {
+.background-blue .h3,
+.background-blue .paragraph a {
   color: #FFFFF8;
 }
 .background-employers .field--name-field-button .field__item:nth-child(3n+1) a,
@@ -15229,12 +15315,14 @@ main[role=main] .region-content .field--name-field-media-image img {
 .background-training .h2,
 .background-training h3,
 .background-training .h3,
+.background-training .paragraph a,
 .background-yellow h1,
 .background-yellow .h1,
 .background-yellow h2,
 .background-yellow .h2,
 .background-yellow h3,
-.background-yellow .h3 {
+.background-yellow .h3,
+.background-yellow .paragraph a {
   color: #333333;
 }
 .background-training .field--name-field-button .field__item:nth-child(3n+1) a,
@@ -15284,12 +15372,14 @@ main[role=main] .region-content .field--name-field-media-image img {
 .background-other .h2,
 .background-other h3,
 .background-other .h3,
+.background-other .paragraph a,
 .background-dark-green h1,
 .background-dark-green .h1,
 .background-dark-green h2,
 .background-dark-green .h2,
 .background-dark-green h3,
-.background-dark-green .h3 {
+.background-dark-green .h3,
+.background-dark-green .paragraph a {
   color: #FFFFF8;
 }
 .background-other .field--name-field-button .field__item:nth-child(3n+1) a,
@@ -15335,7 +15425,8 @@ main[role=main] .region-content .field--name-field-media-image img {
 .background-pastel-green h2,
 .background-pastel-green .h2,
 .background-pastel-green h3,
-.background-pastel-green .h3 {
+.background-pastel-green .h3,
+.background-pastel-green .paragraph a {
   color: #333333;
 }
 .background-pastel-green .field--name-field-button .field__item:nth-child(3n+1) a {
@@ -15375,7 +15466,8 @@ main[role=main] .region-content .field--name-field-media-image img {
 .background-pastel-yellow h2,
 .background-pastel-yellow .h2,
 .background-pastel-yellow h3,
-.background-pastel-yellow .h3 {
+.background-pastel-yellow .h3,
+.background-pastel-yellow .paragraph a {
   color: #333333;
 }
 .background-pastel-yellow .field--name-field-button .field__item:nth-child(3n+1) a {
@@ -15415,7 +15507,8 @@ main[role=main] .region-content .field--name-field-media-image img {
 .background-pastel-blue h2,
 .background-pastel-blue .h2,
 .background-pastel-blue h3,
-.background-pastel-blue .h3 {
+.background-pastel-blue .h3,
+.background-pastel-blue .paragraph a {
   color: #333333;
 }
 .background-pastel-blue .field--name-field-button .field__item:nth-child(3n+1) a {
@@ -15455,7 +15548,8 @@ main[role=main] .region-content .field--name-field-media-image img {
 .background-white h2,
 .background-white .h2,
 .background-white h3,
-.background-white .h3 {
+.background-white .h3,
+.background-white .paragraph a {
   color: #333333;
 }
 .background-white .field--name-field-button .field__item:nth-child(3n+1) a {
@@ -15478,6 +15572,21 @@ main[role=main] .region-content .field--name-field-media-image img {
 }
 .background-white .field--name-field-button .field__item:nth-child(3n) a:hover {
   background-color: #e66000;
+}
+
+.view-news {
+  max-width: 800px;
+  margin: 0 auto 90px auto;
+}
+.view-news .view-header {
+  width: 100%;
+  text-align: center;
+}
+.view-news .views-row {
+  margin-bottom: 60px;
+}
+.view-news .views-field-body {
+  margin-bottom: 1rem;
 }
 
 header .main-menu ul.navbar-nav {

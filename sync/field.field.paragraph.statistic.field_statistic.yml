@@ -1,19 +1,18 @@
-uuid: 394a0f32-8726-4d42-8720-daf3d7a87e35
+uuid: 40fabfd4-f364-4fb8-9052-b83b7295cd2c
 langcode: en-gb
 status: true
 dependencies:
   config:
-    - field.storage.node.field_content
-    - node.type.landing_page
-    - paragraphs.paragraphs_type.basic_text
+    - field.storage.paragraph.field_statistic
     - paragraphs.paragraphs_type.statistic
+    - paragraphs.paragraphs_type.statistic_bundle
   module:
     - entity_reference_revisions
-id: node.landing_page.field_content
-field_name: field_content
-entity_type: node
-bundle: landing_page
-label: Content
+id: paragraph.statistic.field_statistic
+field_name: field_statistic
+entity_type: paragraph
+bundle: statistic
+label: Statistic
 description: ''
 required: false
 translatable: false
@@ -23,17 +22,16 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      basic_text: basic_text
-      statistic: statistic
+      statistic_bundle: statistic_bundle
     negate: 0
     target_bundles_drag_drop:
       basic_text:
-        weight: 2
-        enabled: true
+        weight: 4
+        enabled: false
       statistic:
         weight: 5
-        enabled: true
+        enabled: false
       statistic_bundle:
         weight: 6
-        enabled: false
+        enabled: true
 field_type: entity_reference_revisions

@@ -1,3 +1,4 @@
+.view,
 .field--name-field-button {
   display: flex;
   flex-direction: row;
@@ -6,6 +7,12 @@
   gap: 10px;
   justify-content: flex-start;
 
+  .btn {
+    margin: 0;
+    padding: 0;
+  }
+
+  .btn,
   .field__item {
     a {
       display: flex;

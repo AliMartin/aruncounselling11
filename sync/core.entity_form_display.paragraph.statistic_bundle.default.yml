@@ -1,0 +1,61 @@
+uuid: e22d0cf7-5a58-4a78-af28-31ca6f4289dc
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.statistic_bundle.field_statistic_link
+    - field.field.paragraph.statistic_bundle.field_statistic_number
+    - field.field.paragraph.statistic_bundle.field_statistic_source
+    - field.field.paragraph.statistic_bundle.field_statistic_text_1
+    - field.field.paragraph.statistic_bundle.field_statistic_text_2
+    - paragraphs.paragraphs_type.statistic_bundle
+  module:
+    - link
+id: paragraph.statistic_bundle.default
+targetEntityType: paragraph
+bundle: statistic_bundle
+mode: default
+content:
+  field_statistic_link:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_statistic_number:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_statistic_source:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_statistic_text_1:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_statistic_text_2:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

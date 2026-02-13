@@ -1670,11 +1670,11 @@
   }
 }
 .ck-content h3, .ck-content .h3 {
-  font-size: calc(1.29rem + 0.48vw);
+  font-size: calc(1.279rem + 0.348vw);
 }
 @media (min-width: 1200px) {
   .ck-content h3, .ck-content .h3 {
-    font-size: 1.65rem;
+    font-size: 1.54rem;
   }
 }
 .ck-content h4, .ck-content .h4 {
@@ -9162,7 +9162,7 @@ a > .ck-content code {
   font-size: calc(1.3175rem + 0.81vw) !important;
 }
 .ck-content .fs-3 {
-  font-size: calc(1.29rem + 0.48vw) !important;
+  font-size: calc(1.279rem + 0.348vw) !important;
 }
 .ck-content .fs-4 {
   font-size: calc(1.2625rem + 0.15vw) !important;
@@ -12532,7 +12532,7 @@ a > .ck-content code {
     font-size: 1.925rem !important;
   }
   .ck-content .fs-3 {
-    font-size: 1.65rem !important;
+    font-size: 1.54rem !important;
   }
   .ck-content .fs-4 {
     font-size: 1.375rem !important;
@@ -13556,6 +13556,7 @@ a > .ck-content code {
 .ck-content body.user-logged-in main[role=main] {
   margin-top: 80px;
 }
+.ck-content .view,
 .ck-content .field--name-field-button {
   display: flex;
   flex-direction: row;
@@ -13564,6 +13565,22 @@ a > .ck-content code {
   gap: 10px;
   justify-content: flex-start;
 }
+.ck-content .view .btn, .ck-content .view button.link, .ck-content .view .button, .ck-content .view .node-preview-container .node-preview-backlink, .ck-content .node-preview-container .view .node-preview-backlink,
+.ck-content .field--name-field-button .btn,
+.ck-content .field--name-field-button button.link,
+.ck-content .field--name-field-button .button,
+.ck-content .field--name-field-button .node-preview-container .node-preview-backlink,
+.ck-content .node-preview-container .field--name-field-button .node-preview-backlink {
+  margin: 0;
+  padding: 0;
+}
+.ck-content .view .btn a, .ck-content .view button.link a, .ck-content .view .button a, .ck-content .view .node-preview-container .node-preview-backlink a, .ck-content .node-preview-container .view .node-preview-backlink a,
+.ck-content .view .field__item a,
+.ck-content .field--name-field-button .btn a,
+.ck-content .field--name-field-button button.link a,
+.ck-content .field--name-field-button .button a,
+.ck-content .field--name-field-button .node-preview-container .node-preview-backlink a,
+.ck-content .node-preview-container .field--name-field-button .node-preview-backlink a,
 .ck-content .field--name-field-button .field__item a {
   display: flex;
   justify-content: center;
@@ -13575,6 +13592,13 @@ a > .ck-content code {
   text-decoration: none;
   transition: background-color 150ms ease;
 }
+.ck-content .view .btn a::after, .ck-content .view button.link a::after, .ck-content .view .button a::after, .ck-content .view .node-preview-container .node-preview-backlink a::after, .ck-content .node-preview-container .view .node-preview-backlink a::after,
+.ck-content .view .field__item a::after,
+.ck-content .field--name-field-button .btn a::after,
+.ck-content .field--name-field-button button.link a::after,
+.ck-content .field--name-field-button .button a::after,
+.ck-content .field--name-field-button .node-preview-container .node-preview-backlink a::after,
+.ck-content .node-preview-container .field--name-field-button .node-preview-backlink a::after,
 .ck-content .field--name-field-button .field__item a::after {
   display: flex;
   content: "\f054";
@@ -13751,18 +13775,27 @@ a > .ck-content code {
 }
 .ck-content .page-node-type-news #body-wrapper h2, .ck-content .page-node-type-news #body-wrapper .h2 {
   font-size: 1.54rem;
+  margin: 2rem 0 1rem 0;
 }
 .ck-content .page-node-type-news #body-wrapper h3, .ck-content .page-node-type-news #body-wrapper .h3 {
-  font-size: 1.32rem;
+  font-size: 1.232rem;
+  margin: 2rem 0 1rem 0;
 }
 .ck-content .page-node-type-news #body-wrapper h4, .ck-content .page-node-type-news #body-wrapper .h4 {
   font-size: 1.1rem;
+  margin: 2rem 0 1rem 0;
 }
 .ck-content .paragraph-wrapper {
   margin-bottom: 60px;
 }
 .ck-content .paragraph-wrapper .paragraph {
   padding: 45px 0;
+}
+.ck-content .paragraph-wrapper .paragraph h2, .ck-content .paragraph-wrapper .paragraph .h2 {
+  margin-bottom: 1rem;
+}
+.ck-content .paragraph-wrapper .paragraph h3, .ck-content .paragraph-wrapper .paragraph .h3 {
+  margin-bottom: 0.25rem;
 }
 .ck-content .paragraph-wrapper .paragraph .content-wrapper {
   max-width: 1100px;
@@ -13798,6 +13831,54 @@ a > .ck-content code {
 .ck-content .paragraph-wrapper.image-defined-false .paragraph--type--basic-text .field--name-field-button {
   justify-content: center;
 }
+.ck-content .field--name-field-statistic {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 45px;
+  justify-content: center;
+  /* Statistic bundles */
+}
+.ck-content .field--name-field-statistic .paragraph-wrapper {
+  margin: 0;
+}
+.ck-content .field--name-field-statistic .paragraph--type--statistic-bundle {
+  padding: 0;
+}
+.ck-content .field--name-field-statistic .paragraph--type--statistic-bundle .content-wrapper {
+  padding: 0;
+}
+.ck-content .field--name-field-statistic .paragraph--type--statistic-bundle .statistic-bundle-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  max-width: 220px;
+  gap: 5px;
+}
+.ck-content .field--name-field-statistic .paragraph--type--statistic-bundle .statistic-bundle-wrapper .number-wrapper {
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 600;
+}
+.ck-content .field--name-field-statistic .paragraph--type--statistic-bundle .statistic-bundle-wrapper .text-1-wrapper {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.ck-content .field--name-field-statistic .paragraph--type--statistic-bundle .statistic-bundle-wrapper .source-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.ck-content .field--name-field-statistic .paragraph--type--statistic-bundle .statistic-bundle-wrapper .source-wrapper .link-wrapper {
+  position: relative;
+  top: -4px;
+  font-size: 12px;
+  margin-left: 5px;
+}
 .ck-content .background-counselling .elementor-shape-fill,
 .ck-content .background-light-green .elementor-shape-fill {
   fill: #1C7678;
@@ -13814,12 +13895,14 @@ a > .ck-content code {
 .ck-content .background-counselling .h2,
 .ck-content .background-counselling h3,
 .ck-content .background-counselling .h3,
+.ck-content .background-counselling .paragraph a,
 .ck-content .background-light-green h1,
 .ck-content .background-light-green .h1,
 .ck-content .background-light-green h2,
 .ck-content .background-light-green .h2,
 .ck-content .background-light-green h3,
-.ck-content .background-light-green .h3 {
+.ck-content .background-light-green .h3,
+.ck-content .background-light-green .paragraph a {
   color: #FFFFF8;
 }
 .ck-content .background-counselling .field--name-field-button .field__item:nth-child(3n+1) a,
@@ -13865,12 +13948,14 @@ a > .ck-content code {
 .ck-content .background-employers .h2,
 .ck-content .background-employers h3,
 .ck-content .background-employers .h3,
+.ck-content .background-employers .paragraph a,
 .ck-content .background-blue h1,
 .ck-content .background-blue .h1,
 .ck-content .background-blue h2,
 .ck-content .background-blue .h2,
 .ck-content .background-blue h3,
-.ck-content .background-blue .h3 {
+.ck-content .background-blue .h3,
+.ck-content .background-blue .paragraph a {
   color: #FFFFF8;
 }
 .ck-content .background-employers .field--name-field-button .field__item:nth-child(3n+1) a,
@@ -13916,12 +14001,14 @@ a > .ck-content code {
 .ck-content .background-training .h2,
 .ck-content .background-training h3,
 .ck-content .background-training .h3,
+.ck-content .background-training .paragraph a,
 .ck-content .background-yellow h1,
 .ck-content .background-yellow .h1,
 .ck-content .background-yellow h2,
 .ck-content .background-yellow .h2,
 .ck-content .background-yellow h3,
-.ck-content .background-yellow .h3 {
+.ck-content .background-yellow .h3,
+.ck-content .background-yellow .paragraph a {
   color: #333333;
 }
 .ck-content .background-training .field--name-field-button .field__item:nth-child(3n+1) a,
@@ -13967,12 +14054,14 @@ a > .ck-content code {
 .ck-content .background-other .h2,
 .ck-content .background-other h3,
 .ck-content .background-other .h3,
+.ck-content .background-other .paragraph a,
 .ck-content .background-dark-green h1,
 .ck-content .background-dark-green .h1,
 .ck-content .background-dark-green h2,
 .ck-content .background-dark-green .h2,
 .ck-content .background-dark-green h3,
-.ck-content .background-dark-green .h3 {
+.ck-content .background-dark-green .h3,
+.ck-content .background-dark-green .paragraph a {
   color: #FFFFF8;
 }
 .ck-content .background-other .field--name-field-button .field__item:nth-child(3n+1) a,
@@ -14014,7 +14103,8 @@ a > .ck-content code {
 .ck-content .background-pastel-green h2,
 .ck-content .background-pastel-green .h2,
 .ck-content .background-pastel-green h3,
-.ck-content .background-pastel-green .h3 {
+.ck-content .background-pastel-green .h3,
+.ck-content .background-pastel-green .paragraph a {
   color: #333333;
 }
 .ck-content .background-pastel-green .field--name-field-button .field__item:nth-child(3n+1) a {
@@ -14050,7 +14140,8 @@ a > .ck-content code {
 .ck-content .background-pastel-yellow h2,
 .ck-content .background-pastel-yellow .h2,
 .ck-content .background-pastel-yellow h3,
-.ck-content .background-pastel-yellow .h3 {
+.ck-content .background-pastel-yellow .h3,
+.ck-content .background-pastel-yellow .paragraph a {
   color: #333333;
 }
 .ck-content .background-pastel-yellow .field--name-field-button .field__item:nth-child(3n+1) a {
@@ -14086,7 +14177,8 @@ a > .ck-content code {
 .ck-content .background-pastel-blue h2,
 .ck-content .background-pastel-blue .h2,
 .ck-content .background-pastel-blue h3,
-.ck-content .background-pastel-blue .h3 {
+.ck-content .background-pastel-blue .h3,
+.ck-content .background-pastel-blue .paragraph a {
   color: #333333;
 }
 .ck-content .background-pastel-blue .field--name-field-button .field__item:nth-child(3n+1) a {
@@ -14122,7 +14214,8 @@ a > .ck-content code {
 .ck-content .background-white h2,
 .ck-content .background-white .h2,
 .ck-content .background-white h3,
-.ck-content .background-white .h3 {
+.ck-content .background-white .h3,
+.ck-content .background-white .paragraph a {
   color: #333333;
 }
 .ck-content .background-white .field--name-field-button .field__item:nth-child(3n+1) a {
@@ -14145,6 +14238,20 @@ a > .ck-content code {
 }
 .ck-content .background-white .field--name-field-button .field__item:nth-child(3n) a:hover {
   background-color: #e66000;
+}
+.ck-content .view-news {
+  max-width: 800px;
+  margin: 0 auto 90px auto;
+}
+.ck-content .view-news .view-header {
+  width: 100%;
+  text-align: center;
+}
+.ck-content .view-news .views-row {
+  margin-bottom: 60px;
+}
+.ck-content .view-news .views-field-body {
+  margin-bottom: 1rem;
 }
 .ck-content header .main-menu ul.navbar-nav {
   flex-direction: row;

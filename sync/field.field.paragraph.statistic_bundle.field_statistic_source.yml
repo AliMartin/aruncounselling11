@@ -1,0 +1,19 @@
+uuid: ac81cbc2-fc29-4cac-a899-5ff16200bbfd
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_statistic_source
+    - paragraphs.paragraphs_type.statistic_bundle
+id: paragraph.statistic_bundle.field_statistic_source
+field_name: field_statistic_source
+entity_type: paragraph
+bundle: statistic_bundle
+label: Source
+description: 'This is a text field that describes the source of the statistic, for example <em>Mental Health UK 2025</em>. Do not add enclosing brackets.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
