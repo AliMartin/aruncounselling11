@@ -1,60 +1,66 @@
 header {
   nav.navbar {
-    background-color: #fffff8;
     padding: 20px 0;
+    background-color: $white;
 
-    .mobile-menu {
-      width: 110px;
-      @media (min-width: 992px) {
-        display: none;
-      }
+    > .container {
+      display: flex;
+      flex-direction: column;
     }
+  }
 
-    .branding {
+  #block-arun11-responsivemenumobileicon {
+    margin-right: 10px;
+    @media (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  .top-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+
+    .left-container {
       display: flex;
       justify-content: flex-start;
-      align-items: center;
-      width: 110px;
+      width: 30%;
 
-      @media (min-width: 992px) and (max-width: 1199px) {
-        width: 95px;
+      .region {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
       }
 
       .navbar-brand {
-        margin: 0;
         padding: 0;
+        margin: 0;
       }
+
       img {
         width: 110px;
         height: auto;
         margin: 0;
         padding: 0;
 
-        @media (min-width: 992px) and (max-width: 1199px) {
+        @media (max-width: 991px) {
           width: 95px;
         }
       }
     }
 
-    .main-menu {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      @media (max-width: 991px) {
-        display: none;
-      } 
-    }
-
     .right-container {
       display: flex;
       justify-content: flex-end;
-      align-items: center;
-      width: 110px;
-      height: 5px;
+      width: 70%;
 
-      @media (min-width: 992px) and (max-width: 1199px) {
-        width: 95px;
+      .region {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
       }
     }
   }

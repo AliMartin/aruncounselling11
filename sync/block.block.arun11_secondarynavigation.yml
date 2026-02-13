@@ -1,0 +1,25 @@
+uuid: 93df839f-567d-4f1c-acca-28d51742124f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - system.menu.secondary-navigation
+  module:
+    - system
+  theme:
+    - arun11
+id: arun11_secondarynavigation
+theme: arun11
+region: nav_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:secondary-navigation'
+settings:
+  id: 'system_menu_block:secondary-navigation'
+  label: 'Secondary navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

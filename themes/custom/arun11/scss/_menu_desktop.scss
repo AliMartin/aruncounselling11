@@ -25,12 +25,8 @@ header {
 
     .tbm-item.level-1 {
       border-right: inherit;
-      margin: 0 15px;
+      margin: 0 18px;
       font-weight: 500;
-
-      @media (min-width: 992px) and (max-width: 1199px) {
-        margin: 0 12px;
-      }
     }
 
     .tbm-link.level-1,
@@ -43,10 +39,6 @@ header {
       padding: 5px 0 4px 0;
       border-bottom: 1px solid rgba(0,0,0,0);
       outline: none;
-
-      @media (min-width: 992px) and (max-width: 1199px) {
-        font-size: 15px;
-      }
     }
 
     .active .tbm-link.level-1,
@@ -92,14 +84,63 @@ header {
       padding: 3px 0 2px 0;
       border-bottom: 1px solid rgba(0,0,0,0);
 
-      @media (min-width: 992px) and (max-width: 1199px) {
-        font-size: 15px;
-      }
-
       &:hover {
         border-bottom: 1px solid $dark-green;
       }
     }
   }
 
+}
+
+
+/* Second top-right navigation */
+#block-arun11-secondarynavigation {
+  ul.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+
+    a.btn-book,
+    a.btn-donate {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 20px;
+      border: 2px solid $dark-green;
+      border-radius: 40px;
+      color: $dark-green;
+      font-size: 16px;
+      line-height: 1;
+      font-weight: $font-weight-bold;
+      text-decoration: none;
+      transition: background-color 150ms ease;
+    }
+
+    a.btn-book {
+      &:hover {
+        background-color: $dark-green;
+        color: $white;
+      }
+    }
+
+    a.btn-donate {
+      background-color: $dark-green;
+      color: $white;
+      &:hover {
+        background-color: darken($dark-green, 10%);
+      }
+    }
+
+    a.btn-contact {
+      color: $dark-green;
+      font-size: 16px;
+      font-weight: 500;
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 8px;
+      }
+    }
+  }
 }

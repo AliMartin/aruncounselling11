@@ -11,8 +11,8 @@ ckeditor5-stylesheets:
   - css/ck5style.css
 regions:
   header: Header
-  nav_mobile: 'Mobile navigation region'
   nav_branding: 'Navigation branding region'
+  nav_second: 'Secondary navigation region'
   nav_main: 'Main navigation region'
   breadcrumb: Breadcrumbs
   content: 'Main content'

@@ -1,0 +1,8 @@
+uuid: 5b0bfe17-6337-4230-a070-f421d968041d
+langcode: en-gb
+status: true
+dependencies: {  }
+id: secondary-navigation
+label: 'Secondary navigation'
+description: 'Appears in the top right corner of the site'
+locked: false

@@ -32,6 +32,7 @@
         "drupal/honeypot": "^2.2",
         "drupal/httpswww": "^2.1",
         "drupal/klaro": "^3.0",
+        "drupal/link_attributes": "^2.1",
         "drupal/paragraphs": "^1.20",
         "drupal/pathauto": "^1.14",
         "drupal/responsive_favicons": "^4.0",

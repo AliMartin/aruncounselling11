@@ -62,16 +62,16 @@ set footer_classes = ' ' ~
 
   <nav class="navbar fixed-top">
     <div class="container">
-      <div class="mobile-menu">
-        {{ page.nav_mobile }}
+      <div class="top-container">
+        <div class="left-container">
+          {{ page.nav_branding }}
+        </div>
+        <div class="right-container">
+          {{ page.nav_second }}
+        </div>
       </div>
-      <div class="branding">
-        {{ page.nav_branding }}
-      </div>
-      <div class="main-menu">
+      <div class="bottom-container">
         {{ page.nav_main }}
-      </div>
-      <div class="right-container">
       </div>
     </div>
   </nav>

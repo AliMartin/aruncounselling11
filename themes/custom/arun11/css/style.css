@@ -14882,64 +14882,63 @@ body.user-logged-in main[role=main] {
 }
 
 header nav.navbar {
-  background-color: #fffff8;
   padding: 20px 0;
+  background-color: #FFFFF8;
 }
-header nav.navbar .mobile-menu {
-  width: 110px;
+header nav.navbar > .container {
+  display: flex;
+  flex-direction: column;
+}
+header #block-arun11-responsivemenumobileicon {
+  margin-right: 10px;
 }
 @media (min-width: 992px) {
-  header nav.navbar .mobile-menu {
+  header #block-arun11-responsivemenumobileicon {
     display: none;
   }
 }
-header nav.navbar .branding {
+header .top-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+header .top-container .left-container {
   display: flex;
   justify-content: flex-start;
+  width: 30%;
+}
+header .top-container .left-container .region {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  width: 110px;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  header nav.navbar .branding {
-    width: 95px;
-  }
-}
-header nav.navbar .branding .navbar-brand {
-  margin: 0;
+header .top-container .left-container .navbar-brand {
   padding: 0;
+  margin: 0;
 }
-header nav.navbar .branding img {
+header .top-container .left-container img {
   width: 110px;
   height: auto;
   margin: 0;
   padding: 0;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  header nav.navbar .branding img {
+@media (max-width: 991px) {
+  header .top-container .left-container img {
     width: 95px;
   }
 }
-header nav.navbar .main-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media (max-width: 991px) {
-  header nav.navbar .main-menu {
-    display: none;
-  }
-}
-header nav.navbar .right-container {
+header .top-container .right-container {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  width: 110px;
-  height: 5px;
+  width: 70%;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  header nav.navbar .right-container {
-    width: 95px;
-  }
+header .top-container .right-container .region {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 footer {
@@ -14982,7 +14981,7 @@ nav.tabs-primary ul {
 
 .mm-page,
 .mm-wrapper_background body {
-  background-color: #fffff8;
+  background-color: #FFFFF8;
 }
 
 main[role=main] {
@@ -15607,13 +15606,8 @@ header .main-menu ul.navbar-nav {
 }
 #block-arun11-mainnavigation .tbm-nav .tbm-item.level-1 {
   border-right: inherit;
-  margin: 0 15px;
+  margin: 0 18px;
   font-weight: 500;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  #block-arun11-mainnavigation .tbm-nav .tbm-item.level-1 {
-    margin: 0 12px;
-  }
 }
 #block-arun11-mainnavigation .tbm-nav .tbm-link.level-1,
 #block-arun11-mainnavigation .tbm-nav .tbm-link.level-1:hover {
@@ -15625,12 +15619,6 @@ header .main-menu ul.navbar-nav {
   padding: 5px 0 4px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
   outline: none;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  #block-arun11-mainnavigation .tbm-nav .tbm-link.level-1,
-#block-arun11-mainnavigation .tbm-nav .tbm-link.level-1:hover {
-    font-size: 15px;
-  }
 }
 #block-arun11-mainnavigation .tbm-nav .active .tbm-link.level-1, #block-arun11-mainnavigation .tbm-nav .media-library-view--widget .view-header a.is-active .tbm-link.level-1, .media-library-view--widget .view-header #block-arun11-mainnavigation .tbm-nav a.is-active .tbm-link.level-1,
 #block-arun11-mainnavigation .tbm-nav .tbm-link.level-1:hover {
@@ -15669,13 +15657,54 @@ header .main-menu ul.navbar-nav {
   padding: 3px 0 2px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  #block-arun11-mainnavigation .tbm-item.level-1 > .tbm-submenu .tbm-link {
-    font-size: 15px;
-  }
-}
 #block-arun11-mainnavigation .tbm-item.level-1 > .tbm-submenu .tbm-link:hover {
   border-bottom: 1px solid #224957;
+}
+
+/* Second top-right navigation */
+#block-arun11-secondarynavigation ul.nav, #block-arun11-secondarynavigation .media-library-view--widget ul.view-header, .media-library-view--widget #block-arun11-secondarynavigation ul.view-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+}
+#block-arun11-secondarynavigation ul.nav a.btn-book, #block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-book, .media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-book,
+#block-arun11-secondarynavigation ul.nav a.btn-donate,
+#block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-donate,
+.media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-donate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border: 2px solid #224957;
+  border-radius: 40px;
+  color: #224957;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+}
+#block-arun11-secondarynavigation ul.nav a.btn-book:hover, #block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-book:hover, .media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-book:hover {
+  background-color: #224957;
+  color: #FFFFF8;
+}
+#block-arun11-secondarynavigation ul.nav a.btn-donate, #block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-donate, .media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-donate {
+  background-color: #224957;
+  color: #FFFFF8;
+}
+#block-arun11-secondarynavigation ul.nav a.btn-donate:hover, #block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-donate:hover, .media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-donate:hover {
+  background-color: #142a32;
+}
+#block-arun11-secondarynavigation ul.nav a.btn-contact, #block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-contact, .media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-contact {
+  color: #224957;
+  font-size: 16px;
+  font-weight: 500;
+}
+#block-arun11-secondarynavigation ul.nav a.btn-contact:hover, #block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-contact:hover, .media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-contact:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
 }
 
 #block-arun11-responsivemenumobileicon {

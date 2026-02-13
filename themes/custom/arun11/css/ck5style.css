@@ -203,6 +203,7 @@
   /*
    * White
    */
+  /* Second top-right navigation */
 }
 .ck-content .text-orange {
   color: #FF7A1A !important;
@@ -13608,64 +13609,63 @@ a > .ck-content code {
   margin-left: 10px;
 }
 .ck-content header nav.navbar {
-  background-color: #fffff8;
   padding: 20px 0;
+  background-color: #FFFFF8;
 }
-.ck-content header nav.navbar .mobile-menu {
-  width: 110px;
+.ck-content header nav.navbar > .container {
+  display: flex;
+  flex-direction: column;
+}
+.ck-content header #block-arun11-responsivemenumobileicon {
+  margin-right: 10px;
 }
 @media (min-width: 992px) {
-  .ck-content header nav.navbar .mobile-menu {
+  .ck-content header #block-arun11-responsivemenumobileicon {
     display: none;
   }
 }
-.ck-content header nav.navbar .branding {
+.ck-content header .top-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.ck-content header .top-container .left-container {
   display: flex;
   justify-content: flex-start;
+  width: 30%;
+}
+.ck-content header .top-container .left-container .region {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  width: 110px;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .ck-content header nav.navbar .branding {
-    width: 95px;
-  }
-}
-.ck-content header nav.navbar .branding .navbar-brand {
-  margin: 0;
+.ck-content header .top-container .left-container .navbar-brand {
   padding: 0;
+  margin: 0;
 }
-.ck-content header nav.navbar .branding img {
+.ck-content header .top-container .left-container img {
   width: 110px;
   height: auto;
   margin: 0;
   padding: 0;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .ck-content header nav.navbar .branding img {
+@media (max-width: 991px) {
+  .ck-content header .top-container .left-container img {
     width: 95px;
   }
 }
-.ck-content header nav.navbar .main-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media (max-width: 991px) {
-  .ck-content header nav.navbar .main-menu {
-    display: none;
-  }
-}
-.ck-content header nav.navbar .right-container {
+.ck-content header .top-container .right-container {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  width: 110px;
-  height: 5px;
+  width: 70%;
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .ck-content header nav.navbar .right-container {
-    width: 95px;
-  }
+.ck-content header .top-container .right-container .region {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .ck-content footer {
   background-color: #224957;
@@ -13705,7 +13705,7 @@ a > .ck-content code {
 }
 .ck-content .mm-page,
 .ck-content .mm-wrapper_background body {
-  background-color: #fffff8;
+  background-color: #FFFFF8;
 }
 .ck-content main[role=main] {
   margin-top: 50px;
@@ -14270,13 +14270,8 @@ a > .ck-content code {
 }
 .ck-content #block-arun11-mainnavigation .tbm-nav .tbm-item.level-1 {
   border-right: inherit;
-  margin: 0 15px;
+  margin: 0 18px;
   font-weight: 500;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .ck-content #block-arun11-mainnavigation .tbm-nav .tbm-item.level-1 {
-    margin: 0 12px;
-  }
 }
 .ck-content #block-arun11-mainnavigation .tbm-nav .tbm-link.level-1,
 .ck-content #block-arun11-mainnavigation .tbm-nav .tbm-link.level-1:hover {
@@ -14288,12 +14283,6 @@ a > .ck-content code {
   padding: 5px 0 4px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
   outline: none;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .ck-content #block-arun11-mainnavigation .tbm-nav .tbm-link.level-1,
-.ck-content #block-arun11-mainnavigation .tbm-nav .tbm-link.level-1:hover {
-    font-size: 15px;
-  }
 }
 .ck-content #block-arun11-mainnavigation .tbm-nav .active .tbm-link.level-1, .ck-content #block-arun11-mainnavigation .tbm-nav .media-library-view--widget .view-header a.is-active .tbm-link.level-1, .ck-content .media-library-view--widget .view-header #block-arun11-mainnavigation .tbm-nav a.is-active .tbm-link.level-1,
 .ck-content #block-arun11-mainnavigation .tbm-nav .tbm-link.level-1:hover {
@@ -14332,13 +14321,52 @@ a > .ck-content code {
   padding: 3px 0 2px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .ck-content #block-arun11-mainnavigation .tbm-item.level-1 > .tbm-submenu .tbm-link {
-    font-size: 15px;
-  }
-}
 .ck-content #block-arun11-mainnavigation .tbm-item.level-1 > .tbm-submenu .tbm-link:hover {
   border-bottom: 1px solid #224957;
+}
+.ck-content #block-arun11-secondarynavigation ul.nav, .ck-content #block-arun11-secondarynavigation .media-library-view--widget ul.view-header, .ck-content .media-library-view--widget #block-arun11-secondarynavigation ul.view-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+}
+.ck-content #block-arun11-secondarynavigation ul.nav a.btn-book, .ck-content #block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-book, .ck-content .media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-book,
+.ck-content #block-arun11-secondarynavigation ul.nav a.btn-donate,
+.ck-content #block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-donate,
+.ck-content .media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-donate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border: 2px solid #224957;
+  border-radius: 40px;
+  color: #224957;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+}
+.ck-content #block-arun11-secondarynavigation ul.nav a.btn-book:hover, .ck-content #block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-book:hover, .ck-content .media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-book:hover {
+  background-color: #224957;
+  color: #FFFFF8;
+}
+.ck-content #block-arun11-secondarynavigation ul.nav a.btn-donate, .ck-content #block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-donate, .ck-content .media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-donate {
+  background-color: #224957;
+  color: #FFFFF8;
+}
+.ck-content #block-arun11-secondarynavigation ul.nav a.btn-donate:hover, .ck-content #block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-donate:hover, .ck-content .media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-donate:hover {
+  background-color: #142a32;
+}
+.ck-content #block-arun11-secondarynavigation ul.nav a.btn-contact, .ck-content #block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-contact, .ck-content .media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-contact {
+  color: #224957;
+  font-size: 16px;
+  font-weight: 500;
+}
+.ck-content #block-arun11-secondarynavigation ul.nav a.btn-contact:hover, .ck-content #block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-contact:hover, .ck-content .media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-contact:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
 }
 .ck-content #block-arun11-responsivemenumobileicon {
   display: flex;

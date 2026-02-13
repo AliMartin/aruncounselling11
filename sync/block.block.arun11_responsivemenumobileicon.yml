@@ -8,8 +8,8 @@ dependencies:
     - arun11
 id: arun11_responsivemenumobileicon
 theme: arun11
-region: nav_mobile
-weight: 0
+region: nav_branding
+weight: -6
 provider: null
 plugin: responsive_menu_toggle
 settings:
