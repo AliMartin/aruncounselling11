@@ -4,11 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.text_panel_bundle.field_attachments
+    - field.field.paragraph.text_panel_bundle.field_google_map
     - field.field.paragraph.text_panel_bundle.field_image
     - field.field.paragraph.text_panel_bundle.field_text
     - paragraphs.paragraphs_type.text_panel_bundle
   module:
     - file
+    - simple_gmap
     - text
 id: paragraph.text_panel_bundle.default
 targetEntityType: paragraph
@@ -22,6 +24,27 @@ content:
       use_description_as_link_text: true
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_google_map:
+    type: simple_gmap
+    label: hidden
+    settings:
+      include_map: true
+      include_static_map: false
+      include_link: true
+      include_text: false
+      iframe_height: '400'
+      iframe_width: 100%
+      iframe_title: ''
+      static_scale: 1
+      zoom_level: 14
+      link_text: 'View larger map'
+      map_type: m
+      langcode: en
+      apikey: ''
+      alt_text: 'Map location: %address'
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_image:
     type: entity_reference_entity_view

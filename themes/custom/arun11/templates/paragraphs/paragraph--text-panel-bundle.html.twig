@@ -79,6 +79,12 @@
               </div>
             {% endif %}
 
+            {% if paragraph.field_google_map.value %}
+              <div class="map-wrapper">
+                {{ content.field_google_map }}
+              </div>
+            {% endif %}
+
           </div>
 
         </div>
