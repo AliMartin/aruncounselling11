@@ -57,6 +57,7 @@ settings:
         - '<h4 id>'
         - '<h5 id>'
         - '<h6 id>'
+        - '<i class>'
 image_upload:
   status: true
   scheme: public

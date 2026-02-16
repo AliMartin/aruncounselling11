@@ -44,12 +44,32 @@
   &.image-position-right {
     .content-wrapper {
       flex-direction: row;
+
+      // Rearrange photo and text for mobile
+      @media (max-width: 767px) {
+        flex-direction: column-reverse;
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 20px;
+        text-align: center;
+      }
     }
   }
 
   &.image-position-left {
     .content-wrapper {
       flex-direction: row-reverse;
+
+      // Rearrange photo and text for mobile
+      @media (max-width: 767px) {
+        flex-direction: column-reverse;
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 20px;
+        text-align: center;
+      }
     }
   }
 }
@@ -70,5 +90,28 @@
     .field--name-field-button {
       justify-content: center;
     }
+  }
+}
+
+
+
+/* Paragraph customisations */
+
+/* "What counselling can support you through" - TEXT */
+.paragraph-wrapper:has(#paragraph-17) {
+  margin: 0;
+}
+
+/* "What counselling can support you through" - ICONS */
+#paragraph-53 {
+  text-align: center;
+
+  svg {
+    font-size: 48px;
+    color: $light-green;
+  }
+
+  h3 {
+    margin-bottom: 1rem;
   }
 }

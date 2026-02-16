@@ -1759,7 +1759,7 @@ h6, .form-wrapper.accordion .accordion-item h2, .form-wrapper.accordion .accordi
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: "Quicksand", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
   color: var(--bs-heading-color);
 }
@@ -14826,7 +14826,7 @@ body.toolbar-fixed.toolbar-tray-open .fixed-top {
  * navbar can be seen
  */
 body.user-logged-in main[role=main] {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 
 .view,
@@ -14837,6 +14837,12 @@ body.user-logged-in main[role=main] {
   margin: 15px 0;
   gap: 10px;
   justify-content: flex-start;
+}
+@media (max-width: 767px) {
+  .view,
+.field--name-field-button {
+    justify-content: center;
+  }
 }
 .view .btn, .view button.link, .view .button, .view .node-preview-container .node-preview-backlink, .node-preview-container .view .node-preview-backlink,
 .field--name-field-button .btn,
@@ -14945,8 +14951,19 @@ footer {
   background-color: #224957;
   color: #FFFFF8;
   padding: 100px 0 60px 0;
+  /*
+  #block-arun11-aruncounselling {
+    h2 {
+      font-size: 32px;
+      font-weight: 500;
+    }
+  }
+  */
   /* Default text based footer menus */
   /* Social media icons */
+}
+footer .container .row > div {
+  padding: 0 15px 45px 15px;
 }
 footer h2, footer .h2 {
   font-size: 24px;
@@ -14954,10 +14971,6 @@ footer h2, footer .h2 {
   font-weight: 400;
   margin-bottom: 15px;
   color: #FFFFF8;
-}
-footer #block-arun11-aruncounselling h2, footer #block-arun11-aruncounselling .h2 {
-  font-size: 32px;
-  font-weight: 500;
 }
 footer ul.navbar-nav .nav-link, footer ul.navbar-nav .media-library-view--widget .view-header a, .media-library-view--widget .view-header footer ul.navbar-nav a {
   padding: 0;
@@ -14975,6 +14988,14 @@ footer #block-arun11-follow ul.navbar-nav .nav-link, footer #block-arun11-follow
   margin: 0;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  footer {
+    font-size: 14px;
+  }
+  footer h2, footer .h2 {
+    font-size: 18px;
+  }
+}
 nav.tabs-primary ul {
   justify-content: center;
 }
@@ -15111,8 +15132,28 @@ main[role=main] .region-content .field--name-field-media-image img {
 .paragraph-wrapper.image-defined-true.image-position-right .content-wrapper {
   flex-direction: row;
 }
+@media (max-width: 767px) {
+  .paragraph-wrapper.image-defined-true.image-position-right .content-wrapper {
+    flex-direction: column-reverse;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+}
 .paragraph-wrapper.image-defined-true.image-position-left .content-wrapper {
   flex-direction: row-reverse;
+}
+@media (max-width: 767px) {
+  .paragraph-wrapper.image-defined-true.image-position-left .content-wrapper {
+    flex-direction: column-reverse;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    text-align: center;
+  }
 }
 
 /*
@@ -15127,6 +15168,24 @@ main[role=main] .region-content .field--name-field-media-image img {
 }
 .paragraph-wrapper.image-defined-false .paragraph--type--basic-text .field--name-field-button {
   justify-content: center;
+}
+
+/* Paragraph customisations */
+/* "What counselling can support you through" - TEXT */
+.paragraph-wrapper:has(#paragraph-17) {
+  margin: 0;
+}
+
+/* "What counselling can support you through" - ICONS */
+#paragraph-53 {
+  text-align: center;
+}
+#paragraph-53 svg {
+  font-size: 48px;
+  color: #1C7678;
+}
+#paragraph-53 h3, #paragraph-53 .h3 {
+  margin-bottom: 1rem;
 }
 
 .field--name-field-statistic {
@@ -15176,6 +15235,44 @@ main[role=main] .region-content .field--name-field-media-image img {
   top: -4px;
   font-size: 12px;
   margin-left: 5px;
+}
+
+.paragraph--type--text-panel .field--name-field-title h2, .paragraph--type--text-panel .field--name-field-title .h2 {
+  text-align: center;
+}
+.paragraph--type--text-panel .field--name-field-text-panel {
+  display: flex;
+  gap: 30px;
+}
+.paragraph--type--text-panel .field--name-field-text-panel > .field__item {
+  flex: 1 1 0; /* equal widths: 1 = 100%, 2 = 50%, 3 = 33.33% */
+  min-width: 0; /* prevents overflow issues */
+}
+.paragraph--type--text-panel .field--name-field-text-panel .paragraph-wrapper {
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .paragraph--type--text-panel .field--name-field-text-panel {
+    flex-direction: column;
+  }
+  .paragraph--type--text-panel .field--name-field-text-panel .paragraph--type--text-panel-bundle {
+    padding: 15px 0;
+  }
+}
+.paragraph--type--text-panel .paragraph--type--text-panel-bundle .content-wrapper {
+  padding: 0;
+}
+@media (max-width: 767px) {
+  .paragraph--type--text-panel .paragraph--type--text-panel-bundle .content-wrapper {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+}
+.paragraph--type--text-panel .field--name-field-media-image {
+  margin-bottom: 1rem;
 }
 
 /*
@@ -15573,6 +15670,16 @@ main[role=main] .region-content .field--name-field-media-image img {
   background-color: #e66000;
 }
 
+/* Hide wavy lines if background-white as there is too much white space */
+.background-white .shape-top,
+.background-white .shape-bottom {
+  display: none;
+}
+
+.background-white .paragraph--type--basic-text {
+  padding: 0;
+}
+
 .view-news {
   max-width: 800px;
   margin: 0 auto 90px auto;
@@ -15678,7 +15785,7 @@ header .main-menu ul.navbar-nav {
   align-items: center;
   padding: 10px 20px;
   border: 2px solid #224957;
-  border-radius: 40px;
+  border-radius: 10px;
   color: #224957;
   font-size: 16px;
   line-height: 1;
@@ -15706,7 +15813,53 @@ header .main-menu ul.navbar-nav {
   text-decoration: underline;
   text-underline-offset: 8px;
 }
+#block-arun11-secondarynavigation svg {
+  display: none;
+}
 
+@media (min-width: 500px) and (max-width: 767px) {
+  #block-arun11-secondarynavigation ul.nav a.btn-book, #block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-book, .media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-book,
+#block-arun11-secondarynavigation ul.nav a.btn-donate,
+#block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-donate,
+.media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-donate {
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 499px) {
+  #block-arun11-secondarynavigation ul.nav svg, #block-arun11-secondarynavigation .media-library-view--widget ul.view-header svg, .media-library-view--widget #block-arun11-secondarynavigation ul.view-header svg {
+    display: block;
+  }
+  #block-arun11-secondarynavigation ul.nav span, #block-arun11-secondarynavigation .media-library-view--widget ul.view-header span, .media-library-view--widget #block-arun11-secondarynavigation ul.view-header span {
+    display: none;
+  }
+  #block-arun11-secondarynavigation ul.nav a.btn-book, #block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-book, .media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-book,
+#block-arun11-secondarynavigation ul.nav a.btn-donate,
+#block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-donate,
+.media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-donate,
+#block-arun11-secondarynavigation ul.nav a.btn-contact,
+#block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-contact,
+.media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-contact {
+    padding: 10px 5px;
+    border: none;
+    color: #224957;
+    font-size: 28px;
+    font-weight: inherit;
+    text-decoration: none;
+    background-color: inherit;
+  }
+  #block-arun11-secondarynavigation ul.nav a.btn-book:hover, #block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-book:hover, .media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-book:hover,
+#block-arun11-secondarynavigation ul.nav a.btn-donate:hover,
+#block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-donate:hover,
+.media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-donate:hover,
+#block-arun11-secondarynavigation ul.nav a.btn-contact:hover,
+#block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-contact:hover,
+.media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-contact:hover {
+    text-decoration: none;
+    text-underline-offset: inherit;
+    background-color: inherit;
+    color: #333333;
+  }
+}
 #block-arun11-responsivemenumobileicon {
   display: flex;
   justify-content: flex-start;

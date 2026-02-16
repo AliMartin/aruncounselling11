@@ -52,33 +52,37 @@
 
   <div class="paragraph-wrapper">
 
-    <div{{ attributes.addClass(classes) }}>
+    <div{{ attributes.addClass(classes).setAttribute('id', 'paragraph-' ~ paragraph.id()) }}>
       {% block content %}
         <div class="container content-wrapper">
 
           <div class="statistic-bundle-wrapper">
-            {% if content.field_statistic_number is not empty %}
+            {% set field_statistic_number_rendered = content.field_statistic_number|render %}
+            {% if field_statistic_number_rendered|striptags|trim is not empty %}
               <div class="number-wrapper">
-                {{ content.field_statistic_number }}
+                {{ field_statistic_number_rendered }}
               </div>
             {% endif %}
 
-            {% if content.field_statistic_text_1 is not empty %}
+            {% set field_statistic_text_1_rendered = content.field_statistic_text_1|render %}
+            {% if field_statistic_text_1_rendered|striptags|trim is not empty %}
               <div class="text-1-wrapper">
-                {{ content.field_statistic_text_1 }}
+                {{ field_statistic_text_1_rendered }}
               </div>
             {% endif %}
 
-            {% if content.field_statistic_text_2 is not empty %}
+            {% set field_statistic_text_2_rendered = content.field_statistic_text_2|render %}
+            {% if field_statistic_text_2_rendered|striptags|trim is not empty %}
               <div class="text-2-wrapper">
-                {{ content.field_statistic_text_2 }}
+                {{ field_statistic_text_2_rendered }}
               </div>
             {% endif %}
 
             <div class="source-wrapper">
-              {% if content.field_statistic_source is not empty %}
+              {% set field_statistic_source_rendered = content.field_statistic_source|render %}
+              {% if field_statistic_source_rendered|striptags|trim is not empty %}
                 <div class="text-wrapper">
-                  <em>{{ content.field_statistic_source }}</em>
+                  <em>{{ field_statistic_source_rendered }}</em>
                 </div>
               {% endif %}
 

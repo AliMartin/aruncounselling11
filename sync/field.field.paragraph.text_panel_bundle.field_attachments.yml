@@ -1,0 +1,27 @@
+uuid: c909fe54-c9ce-40d6-8401-d8a87fa4ce5d
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_attachments
+    - paragraphs.paragraphs_type.text_panel_bundle
+  module:
+    - file
+id: paragraph.text_panel_bundle.field_attachments
+field_name: field_attachments
+entity_type: paragraph
+bundle: text_panel_bundle
+label: Attachments
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt doc docx xls xlsx pdf zip'
+  max_filesize: '10 MB'
+  description_field: true
+field_type: file

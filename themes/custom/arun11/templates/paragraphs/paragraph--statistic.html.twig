@@ -58,7 +58,7 @@
     </div>
 
 
-    <div{{ attributes.addClass(classes) }}>
+    <div{{ attributes.addClass(classes).setAttribute('id', 'paragraph-' ~ paragraph.id()) }}>
       {% block content %}
         <div class="container content-wrapper">
 

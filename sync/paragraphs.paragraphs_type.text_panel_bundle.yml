@@ -1,0 +1,10 @@
+uuid: 9a0ec85e-859e-4822-ad9e-2f0c3679949b
+langcode: en-gb
+status: true
+dependencies: {  }
+id: text_panel_bundle
+label: 'Text panel bundle'
+icon_uuid: null
+icon_default: null
+description: 'This is a complete, discreet <em>text panel</em> defined as a bundle. Bundles are then added to <em>Text panel</em> paragraph types.'
+behavior_plugins: {  }

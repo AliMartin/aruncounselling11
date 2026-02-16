@@ -109,7 +109,7 @@ header {
       align-items: center;
       padding: 10px 20px;
       border: 2px solid $dark-green;
-      border-radius: 40px;
+      border-radius: $border-radius;
       color: $dark-green;
       font-size: 16px;
       line-height: 1;
@@ -140,6 +140,51 @@ header {
       &:hover {
         text-decoration: underline;
         text-underline-offset: 8px;
+      }
+    }
+  }
+
+  // Hide icons on desktop
+  svg {
+    display: none;
+  }
+}
+
+
+@media (min-width: 500px) and (max-width: 767px) {
+  #block-arun11-secondarynavigation ul.nav {
+    a.btn-book,
+    a.btn-donate {
+      padding: 10px 10px;
+    }
+  }
+}
+
+@media (max-width: 499px) {
+  #block-arun11-secondarynavigation ul.nav {
+    svg {
+      display: block;
+    }
+    span {
+      display: none;
+    }
+
+    a.btn-book,
+    a.btn-donate,
+    a.btn-contact {
+      padding: 10px 5px;
+      border: none;
+      color: $dark-green;
+      font-size: 28px;
+      font-weight: inherit;
+      text-decoration: none;
+      background-color: inherit;
+
+      &:hover {
+        text-decoration: none;
+        text-underline-offset: inherit;
+        background-color: inherit;
+        color: $black;
       }
     }
   }

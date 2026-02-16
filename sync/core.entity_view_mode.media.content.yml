@@ -1,0 +1,11 @@
+uuid: 05c00b7e-7806-47cc-adbd-55da58faa35c
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - media
+id: media.content
+label: Content
+description: null
+targetEntityType: media
+cache: true

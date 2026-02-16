@@ -1,0 +1,36 @@
+uuid: 1df548fb-d51d-4cca-a8d2-b553039ff9a6
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_panel.field_background_colour
+    - field.field.paragraph.text_panel.field_text_panel
+    - field.field.paragraph.text_panel.field_title
+    - paragraphs.paragraphs_type.text_panel
+  module:
+    - entity_reference_revisions
+    - heading
+id: paragraph.text_panel.default
+targetEntityType: paragraph
+bundle: text_panel
+mode: default
+content:
+  field_text_panel:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: heading_text
+    label: hidden
+    settings:
+      size: h2
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_background_colour: true

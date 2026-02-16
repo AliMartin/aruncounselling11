@@ -234,8 +234,19 @@
   .field--name-field-button .field__item:nth-child(3n + 1) a:hover { background-color: darken($green,   10%);}
   .field--name-field-button .field__item:nth-child(3n + 2) a:hover { background-color: darken($blue,    10%);}
   .field--name-field-button .field__item:nth-child(3n)     a:hover { background-color: darken($orange,  10%);}
-
 }
 
 
+/* Hide wavy lines if background-white as there is too much white space */
+.background-white .shape-top,
+.background-white .shape-bottom {
+  display: none;
+}
+
+.background-white {
+  // margin: 0;
+  .paragraph--type--basic-text {
+    padding: 0;
+  }
+}
 

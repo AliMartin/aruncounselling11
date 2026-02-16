@@ -40,7 +40,6 @@
 #}
 {%
   set classes = [
-    'MARKER',
     'paragraph',
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
@@ -48,61 +47,42 @@
   ]
 %}
 
-{% set backgroundColour = (paragraph.field_background_colour is not empty) ? paragraph.field_background_colour.value|clean_class : 'false' %}
-{% set imagePosition = (paragraph.field_image_position is not empty) ? paragraph.field_image_position.value|clean_class : 'false' %}
-{% set imageDefined = (paragraph.field_image is not empty) ? 'true' : 'false' %}
-
-
 
 {% block paragraph %}
 
-  <div class="paragraph-wrapper background-{{ backgroundColour }} image-defined-{{ imageDefined }} image-position-{{ imagePosition }}">
-    <div class="shape-top">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-        <path class="elementor-shape-fill" d="M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3,c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3,c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z"></path>
-      </svg>
-    </div>
-
+  <div class="paragraph-wrapper">
 
     <div{{ attributes.addClass(classes).setAttribute('id', 'paragraph-' ~ paragraph.id()) }}>
       {% block content %}
         <div class="container content-wrapper">
 
-          <div class="text-wrapper">
-            {% if content.field_title is not empty %}
-              <div class="title">
-                {{ content.field_title }}
+          <div class="text-panel-bundle-wrapper">
+
+            {% set field_image_rendered = content.field_image|render %}
+            {% if field_image_rendered|striptags|trim is not empty %}
+              <div class="image-wrapper">
+                {{ field_image_rendered }}
               </div>
             {% endif %}
 
-            {% if content.field_text is not empty %}
-              <div class="text">
-                {{ content.field_text }}
+            {% set field_text_rendered = content.field_text|render %}
+            {% if field_text_rendered|striptags|trim is not empty %}
+              <div class="text-wrapper">
+                {{ field_text_rendered }}
               </div>
             {% endif %}
 
-            {% if content.field_button is not empty %}
-              <div class="buttons">
-                {{ content.field_button }}
+            {% set field_attachments_rendered = content.field_attachments|render %}
+            {% if field_attachments_rendered|striptags|trim is not empty %}
+              <div class="attachment-wrapper">
+                {{ field_attachments_rendered }}
               </div>
             {% endif %}
+
           </div>
-
-          {% if content.field_image is not empty %}
-            <div class="image-wrapper">
-              {{ content.field_image }}
-            </div>
-          {% endif %}
 
         </div>
       {% endblock %}
-    </div>
-
-
-    <div class="shape-bottom">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-      <path class="elementor-shape-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7,c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4,c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path>
-      </svg>
     </div>
 
   </div>
