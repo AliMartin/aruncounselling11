@@ -166,6 +166,7 @@
    * navbar can be seen
    */
   /* Wavy lines */
+  /* Remove some an annoying keylines on the SVG */
   /* Author information */
   /* News content type */
   /*
@@ -14355,6 +14356,53 @@ a > .ck-content code {
 }
 .ck-content .view-news .views-field-body {
   margin-bottom: 1rem;
+}
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page {
+  /* Place the text on top */
+  /* Make the SVGs part of the background shape */
+  /* Had to rotate the shape and remove some keylines */
+}
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page > .page-title-wrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: #224957;
+}
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page > .page-title-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  inset: 0;
+  z-index: 0;
+  background-image: url("/themes/custom/arun11/images/waves-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  --background-overlay: "";
+  background-position: center center;
+  opacity: 0.1;
+}
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .content-wrapper {
+  position: relative;
+  z-index: 2;
+}
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .page-title-wrapper .shape-top,
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .page-title-wrapper .shape-bottom {
+  line-height: 0;
+  overflow: hidden;
+}
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .page-title-wrapper .shape-top path,
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .page-title-wrapper .shape-bottom path {
+  fill: #FFFFF8;
+}
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .page-title-wrapper .shape-top svg,
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .page-title-wrapper .shape-bottom svg {
+  transform: scaleY(-1);
+  transform-origin: 50% 50%;
+}
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .shape-top {
+  top: 0px;
+}
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .shape-bottom {
+  top: 0px;
 }
 .ck-content header .main-menu ul.navbar-nav {
   flex-direction: row;

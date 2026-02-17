@@ -1,0 +1,52 @@
+body.path-frontpage {
+  #block-arun11-content {
+
+    // Set the hero image
+    article.node--type-landing-page {
+      > .page-title-wrapper {
+        position: relative;
+        overflow: hidden;
+        background-color: $dark-green;
+      }
+      > .page-title-wrapper::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        inset: 0;
+        z-index: 0;
+        background-image: url("/themes/custom/arun11/images/waves-background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        --background-overlay: '';
+        background-position: center center;
+        opacity: 0.1;
+      }
+
+      /* Place the text on top */
+      .content-wrapper {
+        position: relative;
+        z-index: 2;
+      }
+
+      /* Make the SVGs part of the background shape */
+      /* Had to rotate the shape and remove some keylines */
+      .page-title-wrapper .shape-top,
+      .page-title-wrapper .shape-bottom {
+        line-height: 0;
+        overflow: hidden;
+
+        path {
+          fill: $white;
+        }
+
+        svg {
+          transform: scaleY(-1);
+          transform-origin: 50% 50%;
+        }
+      }
+      
+      .shape-top    {top: 0px;}
+      .shape-bottom {top: 0px;}
+    }
+  }
+}
