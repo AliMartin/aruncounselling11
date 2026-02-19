@@ -14892,6 +14892,34 @@ body.user-logged-in main[role=main] {
   font-weight: 600;
 }
 
+/* Custom button colours for the Our Services panel */
+#paragraph-41 .buttons a,
+#paragraph-100 .buttons a {
+  background-color: #1C7678;
+}
+#paragraph-41 .buttons a:hover,
+#paragraph-100 .buttons a:hover {
+  background-color: #124d4f;
+}
+
+#paragraph-42 .buttons a,
+#paragraph-101 .buttons a {
+  background-color: #294366;
+}
+#paragraph-42 .buttons a:hover,
+#paragraph-101 .buttons a:hover {
+  background-color: #1a2b42;
+}
+
+#paragraph-43 .buttons a,
+#paragraph-102 .buttons a {
+  background-color: #FF7A1A;
+}
+#paragraph-43 .buttons a:hover,
+#paragraph-102 .buttons a:hover {
+  background-color: #e66000;
+}
+
 header nav.navbar {
   padding: 20px 0;
   background-color: #FFFFF8;
@@ -15005,6 +15033,11 @@ footer #block-arun11-follow ul.navbar-nav .nav-link, footer #block-arun11-follow
 }
 nav.tabs-primary ul {
   justify-content: center;
+}
+
+.alert {
+  max-width: 850px;
+  margin: 30px auto 30px auto;
 }
 
 .path-user main[role=main] .region-content {

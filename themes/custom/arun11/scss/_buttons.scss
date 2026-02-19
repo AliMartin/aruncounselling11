@@ -45,3 +45,39 @@
   color: $white;
   font-weight: $font-weight-bold;
 }
+
+
+/* Custom button colours for the Our Services panel */
+
+// Counselling for Individuals
+#paragraph-41,
+#paragraph-100 {
+  .buttons a {
+    background-color: $light-green;
+    &:hover {
+      background-color: darken($light-green, 10%);
+    }
+  }
+}
+
+// Employee Wellbeing Programmes
+#paragraph-42,
+#paragraph-101 {
+  .buttons a {
+    background-color: $blue;
+    &:hover {
+      background-color: darken($blue, 10%);
+    }
+  }
+}
+
+// Training for counsellors
+#paragraph-43,
+#paragraph-102 {
+  .buttons a {
+    background-color: $orange;
+    &:hover {
+      background-color: darken($orange, 10%);
+    }
+  }
+}

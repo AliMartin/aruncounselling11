@@ -4,6 +4,11 @@ nav.tabs-primary {
   }
 }
 
+.alert {
+    max-width: 850px;
+    margin: 30px auto 30px auto;
+}
+
 
 .path-user {
   main[role=main] {
@@ -109,7 +114,6 @@ main[role="main"] {
     margin-right: 10px;
   }  
 }
-
 
 
 /* Remove some an annoying keylines on the SVG */

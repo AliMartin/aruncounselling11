@@ -16,6 +16,12 @@ filters:
     status: true
     weight: 11
     settings: {  }
+  entity_links:
+    id: entity_links
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
   filter_align:
     id: filter_align
     provider: filter
@@ -34,7 +40,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<br> <p class="text-align-left text-align-center text-align-right text-align-justify"> <h2 id class="text-align-left text-align-center text-align-right text-align-justify"> <h3 id class="text-align-left text-align-center text-align-right text-align-justify"> <h4 id class="text-align-left text-align-center text-align-right text-align-justify"> <h5 id class="text-align-left text-align-center text-align-right text-align-justify"> <h6 id class="text-align-left text-align-center text-align-right text-align-justify"> <cite> <dl> <dt> <dd> <a hreflang href> <blockquote cite> <i class> <strong> <em> <code> <ul type> <ol type start> <li> <img src alt height width data-entity-uuid data-entity-type data-caption data-align>'
+      allowed_html: '<br> <p class="text-align-left text-align-center text-align-right text-align-justify"> <h2 id class="text-align-left text-align-center text-align-right text-align-justify"> <h3 id class="text-align-left text-align-center text-align-right text-align-justify"> <h4 id class="text-align-left text-align-center text-align-right text-align-justify"> <h5 id class="text-align-left text-align-center text-align-right text-align-justify"> <h6 id class="text-align-left text-align-center text-align-right text-align-justify"> <cite> <dl> <dt> <dd> <a hreflang href data-entity-type data-entity-uuid data-entity-metadata> <blockquote cite> <i class> <strong> <em> <code> <img data-link-entity-type data-link-entity-uuid src alt height width data-entity-uuid data-entity-type data-caption data-align> <ul type> <ol type start> <li>'
       filter_html_help: false
       filter_html_nofollow: true
   filter_html_image_secure:

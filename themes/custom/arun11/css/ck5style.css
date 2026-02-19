@@ -165,6 +165,7 @@
    * Adjust positioning of main content if logged in so that the editing
    * navbar can be seen
    */
+  /* Custom button colours for the Our Services panel */
   /* Wavy lines */
   /* File attachments */
   /* File download icons */
@@ -13628,6 +13629,30 @@ a > .ck-content code {
   color: #FFFFF8;
   font-weight: 600;
 }
+.ck-content #paragraph-41 .buttons a,
+.ck-content #paragraph-100 .buttons a {
+  background-color: #1C7678;
+}
+.ck-content #paragraph-41 .buttons a:hover,
+.ck-content #paragraph-100 .buttons a:hover {
+  background-color: #124d4f;
+}
+.ck-content #paragraph-42 .buttons a,
+.ck-content #paragraph-101 .buttons a {
+  background-color: #294366;
+}
+.ck-content #paragraph-42 .buttons a:hover,
+.ck-content #paragraph-101 .buttons a:hover {
+  background-color: #1a2b42;
+}
+.ck-content #paragraph-43 .buttons a,
+.ck-content #paragraph-102 .buttons a {
+  background-color: #FF7A1A;
+}
+.ck-content #paragraph-43 .buttons a:hover,
+.ck-content #paragraph-102 .buttons a:hover {
+  background-color: #e66000;
+}
 .ck-content header nav.navbar {
   padding: 20px 0;
   background-color: #FFFFF8;
@@ -13739,6 +13764,10 @@ a > .ck-content code {
 }
 .ck-content nav.tabs-primary ul {
   justify-content: center;
+}
+.ck-content .alert {
+  max-width: 850px;
+  margin: 30px auto 30px auto;
 }
 .ck-content .path-user main[role=main] .region-content {
   max-width: 600px;

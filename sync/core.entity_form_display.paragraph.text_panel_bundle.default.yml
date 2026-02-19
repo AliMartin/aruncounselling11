@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.text_panel_bundle.field_attachments
+    - field.field.paragraph.text_panel_bundle.field_button
     - field.field.paragraph.text_panel_bundle.field_google_map
     - field.field.paragraph.text_panel_bundle.field_image
     - field.field.paragraph.text_panel_bundle.field_text
     - paragraphs.paragraphs_type.text_panel_bundle
   module:
     - file
+    - link
     - media_library
     - text
 id: paragraph.text_panel_bundle.default
@@ -19,14 +21,22 @@ mode: default
 content:
   field_attachments:
     type: file_generic
-    weight: 2
+    weight: 3
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
+  field_button:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
   field_google_map:
     type: string_textfield
-    weight: 3
+    weight: 4
     region: content
     settings:
       size: 60
