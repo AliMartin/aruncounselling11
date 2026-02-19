@@ -5,6 +5,21 @@ nav.tabs-primary {
 }
 
 
+.path-user {
+  main[role=main] {
+    .region-content {
+      max-width: 600px;
+      margin: 60px auto 90px auto;
+      border: 1px solid $gray-200;
+      padding: 20px;
+      border-radius: $border-radius;
+      box-shadow: 0px 0px 18px 9px rgba(0,0,0,0.12);
+    }
+  }
+}
+
+
+
 .mm-page,
 .mm-wrapper_background body {
   background-color: $white;
@@ -12,7 +27,7 @@ nav.tabs-primary {
 
 
 main[role="main"] {
-  margin-top: 50px;
+  margin-top: 150px;
   margin-bottom: 60px;
   
   .region-content {
@@ -59,6 +74,44 @@ main[role="main"] {
   }
 }
 
+
+/* File attachments */
+.field--name-field-attachments {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .field__item {
+    span {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+
+/* File download icons */
+.file--x-office-document {
+  background-image: inherit;
+
+  &:before {
+    display: flex;
+    content: "\f56d";
+    font-family: 'Font Awesome 6 Pro';
+    color: $dark-green;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1;
+    margin-right: 10px;
+  }  
+}
+
+
+
 /* Remove some an annoying keylines on the SVG */
 .shape-top    {top:  1px;}
 .shape-bottom {top: -2px;}
@@ -88,18 +141,25 @@ main[role="main"] {
 }
 
 
-/* News content type */
+/* Articles */
 
-$news-heading-scale: 0.8;
+$article-heading-scale: 0.8;
 
-.page-node-type-news {
+.page-node-type-article {
   #body-wrapper {
     max-width: 800px;
     margin: 90px auto 90px auto;
 
-    h2 { font-size: $h2-font-size * $news-heading-scale; margin: 2rem 0 1rem 0;}
-    h3 { font-size: $h3-font-size * $news-heading-scale; margin: 2rem 0 1rem 0; }
-    h4 { font-size: $h4-font-size * $news-heading-scale; margin: 2rem 0 1rem 0; }
+    h2 { font-size: $h2-font-size * $article-heading-scale; margin: 2rem 0 1rem 0;}
+    h3 { font-size: $h3-font-size * $article-heading-scale; margin: 2rem 0 1rem 0; }
+    h4 { font-size: $h4-font-size * $article-heading-scale; margin: 2rem 0 1rem 0; }
+
+    .field--name-field-media-image {
+      margin-bottom: 1rem;
+      img {
+        border: 1px solid $gray-200;
+      }
+    }
   }
 }
 

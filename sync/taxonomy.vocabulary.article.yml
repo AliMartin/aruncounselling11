@@ -1,0 +1,9 @@
+uuid: ea6c2997-1538-4133-a4fe-8ba409e9cbcd
+langcode: en-gb
+status: true
+dependencies: {  }
+name: Article
+vid: article
+description: 'Categorises articles into news, blogs, training etc'
+weight: 0
+new_revision: false

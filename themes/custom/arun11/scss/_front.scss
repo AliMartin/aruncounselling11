@@ -2,12 +2,17 @@ body.path-frontpage {
   #block-arun11-content {
 
     // Set the hero image
+    // Fix background colour to dark green (although it maybe possible to make this dynamic? 
     article.node--type-landing-page {
       > .page-title-wrapper {
         position: relative;
         overflow: hidden;
         background-color: $dark-green;
+
+        .shape-top    {top: 0px;}
+        .shape-bottom {top: 0px;}
       }
+
       > .page-title-wrapper::before {
         content: '';
         position: absolute;
@@ -44,9 +49,6 @@ body.path-frontpage {
           transform-origin: 50% 50%;
         }
       }
-      
-      .shape-top    {top: 0px;}
-      .shape-bottom {top: 0px;}
     }
   }
 }

@@ -15,6 +15,18 @@ settings:
       value: white
       label: White
     -
+      value: blue
+      label: Blue
+    -
+      value: dark_green
+      label: 'Dark green'
+    -
+      value: light_green
+      label: 'Light green'
+    -
+      value: yellow
+      label: Yellow
+    -
       value: pastel_blue
       label: 'Pastel blue'
     -

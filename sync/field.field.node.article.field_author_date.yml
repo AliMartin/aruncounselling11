@@ -1,24 +1,21 @@
-uuid: 67a77a7d-35c9-477a-852e-fb2d7a5b6158
+uuid: 18a09647-1574-48b4-92f7-aa258710e6ff
 langcode: en-gb
 status: true
 dependencies:
   config:
     - field.storage.node.field_author_date
-    - node.type.news
+    - node.type.article
   module:
     - datetime
-id: node.news.field_author_date
+id: node.article.field_author_date
 field_name: field_author_date
 entity_type: node
-bundle: news
+bundle: article
 label: 'Author date'
 description: ''
 required: false
 translatable: false
-default_value:
-  -
-    default_date_type: now
-    default_date: now
+default_value: {  }
 default_value_callback: ''
 settings: {  }
 field_type: datetime

@@ -1,14 +1,14 @@
-uuid: aea1563b-473e-40ce-9e24-bfcc1437fd7a
+uuid: d5c93d6e-fa2c-4725-ad44-bc6a1646c5df
 langcode: en-gb
 status: true
 dependencies:
   config:
     - field.storage.node.field_author_name
-    - node.type.news
-id: node.news.field_author_name
+    - node.type.article
+id: node.article.field_author_name
 field_name: field_author_name
 entity_type: node
-bundle: news
+bundle: article
 label: 'Author name'
 description: ''
 required: false

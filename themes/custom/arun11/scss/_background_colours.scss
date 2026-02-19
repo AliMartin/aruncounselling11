@@ -1,23 +1,37 @@
 /*
  * Light green
  * INDIVIDUALS
+ *
+ * Need to relocate these colour schemes:
+ * background-funding
  */
+.background-funding,
 .background-counselling,
 .background-light-green {
+
   .elementor-shape-fill {
     fill: $light-green;
   }
+
   .page-title,
   .paragraph {
     background-color: $light-green;
     color: $white;
   }
+
   h1,
   h2,
-  h3,
-  .paragraph a {
+  h3 {
     color: $white;
   }
+
+  .paragraph a {
+   color: $white;
+    &:hover {
+      color: $orange;
+    }
+  }
+
   .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $green;  color: $white;}
   .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $blue;   color: $white;}
   .field--name-field-button .field__item:nth-child(3n)     a { background-color: $orange; color: $white;}
@@ -34,21 +48,32 @@
  * EMPLOYERS
  */
 .background-employers,
+.background-resources,
 .background-blue {
+
   .elementor-shape-fill {
     fill: $blue;
   }
+
   .page-title,
   .paragraph {
     background-color: $blue;
     color: $white;
   }
+
   h1,
   h2,
-  h3,
-  .paragraph a {
+  h3 {
     color: $white;
   }
+
+  .paragraph a {
+    color: $white;
+    &:hover {
+      color: $orange;
+    }
+  }
+
   .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $green;  color: $white;}
   .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $blue;   color: $white;}
   .field--name-field-button .field__item:nth-child(3n)     a { background-color: $orange; color: $white;}
@@ -66,27 +91,37 @@
  */
 .background-training,
 .background-yellow {
+
   .elementor-shape-fill {
     fill: $yellow;
   }
+
   .page-title,
   .paragraph {
     background-color: $yellow;
     color: $black;
   }
+
   h1,
   h2,
-  h3,
-  .paragraph a {
+  h3 {
     color: $black;
   }
-  .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $green;  color: $white;}
-  .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $blue;   color: $white;}
-  .field--name-field-button .field__item:nth-child(3n)     a { background-color: $orange; color: $white;}
 
-  .field--name-field-button .field__item:nth-child(3n + 1) a:hover { background-color: darken($green,   10%);}
-  .field--name-field-button .field__item:nth-child(3n + 2) a:hover { background-color: darken($blue,    10%);}
-  .field--name-field-button .field__item:nth-child(3n)     a:hover { background-color: darken($orange,  10%);}
+  .paragraph a {
+    color: $black;
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $dark-green; color: $white;}
+  .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $blue;       color: $white;}
+  .field--name-field-button .field__item:nth-child(3n)     a { background-color: $orange;     color: $white;}
+
+  .field--name-field-button .field__item:nth-child(3n + 1) a:hover { background-color: darken($dark-green,  10%);}
+  .field--name-field-button .field__item:nth-child(3n + 2) a:hover { background-color: darken($blue,        10%);}
+  .field--name-field-button .field__item:nth-child(3n)     a:hover { background-color: darken($orange,      10%);}
 
 }
 
@@ -96,25 +131,35 @@
  */
 .background-other,
 .background-dark-green {
+
   .elementor-shape-fill {
     fill: $dark-green;
   }
+
   .page-title,
   .paragraph {
     background-color: $dark-green;
     color: $white;
   }
+
   h1,
   h2,
-  h3,
-  .paragraph a {
+  h3 {
     color: $white;
   }
-  .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $green;  color: $white;}
+
+  .paragraph a {
+    color: $white;
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $white;  color: $black;}
   .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $blue;   color: $white;}
   .field--name-field-button .field__item:nth-child(3n)     a { background-color: $orange; color: $white;}
 
-  .field--name-field-button .field__item:nth-child(3n + 1) a:hover { background-color: darken($green,   10%);}
+  .field--name-field-button .field__item:nth-child(3n + 1) a:hover { background-color: darken($white,   10%);}
   .field--name-field-button .field__item:nth-child(3n + 2) a:hover { background-color: darken($blue,    10%);}
   .field--name-field-button .field__item:nth-child(3n)     a:hover { background-color: darken($orange,  10%);}
 }
@@ -125,27 +170,37 @@
  * Pastel green
  */
 .background-pastel-green {
+
   .elementor-shape-fill {
     fill: $pastel-green;
   }
+
   .page-title,
   .paragraph {
     background-color: $pastel-green;
     color: $black;
   }
+
   h1,
   h2,
-  h3,
-  .paragraph a {
+  h3 {
     color: $black;
   }
-  .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $green;  color: $white;}
-  .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $blue;   color: $white;}
-  .field--name-field-button .field__item:nth-child(3n)     a { background-color: $orange; color: $white;}
 
-  .field--name-field-button .field__item:nth-child(3n + 1) a:hover { background-color: darken($green,   10%);}
-  .field--name-field-button .field__item:nth-child(3n + 2) a:hover { background-color: darken($blue,    10%);}
-  .field--name-field-button .field__item:nth-child(3n)     a:hover { background-color: darken($orange,  10%);}
+  .paragraph a {
+    color: $black;
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $light-green;  color: $white;}
+  .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $blue;         color: $white;}
+  .field--name-field-button .field__item:nth-child(3n)     a { background-color: $orange;       color: $white;}
+
+  .field--name-field-button .field__item:nth-child(3n + 1) a:hover { background-color: darken($light-green,   10%);}
+  .field--name-field-button .field__item:nth-child(3n + 2) a:hover { background-color: darken($blue,          10%);}
+  .field--name-field-button .field__item:nth-child(3n)     a:hover { background-color: darken($orange,        10%);}
 }
 
 
@@ -154,27 +209,37 @@
  * Pastel yellow
  */
 .background-pastel-yellow {
+
   .elementor-shape-fill {
     fill: $pastel-yellow;
   }
+
   .page-title,
   .paragraph {
     background-color: $pastel-yellow;
     color: $black;
   }
+
   h1,
   h2,
-  h3,
-  .paragraph a {
+  h3 {
     color: $black;
   }
-  .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $green;  color: $white;}
-  .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $blue;   color: $white;}
-  .field--name-field-button .field__item:nth-child(3n)     a { background-color: $orange; color: $white;}
 
-  .field--name-field-button .field__item:nth-child(3n + 1) a:hover { background-color: darken($green,   10%);}
-  .field--name-field-button .field__item:nth-child(3n + 2) a:hover { background-color: darken($blue,    10%);}
-  .field--name-field-button .field__item:nth-child(3n)     a:hover { background-color: darken($orange,  10%);}
+  .paragraph a {
+    color: $black;
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $dark-green; color: $white;}
+  .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $blue;       color: $white;}
+  .field--name-field-button .field__item:nth-child(3n)     a { background-color: $orange;     color: $white;}
+
+  .field--name-field-button .field__item:nth-child(3n + 1) a:hover { background-color: darken($dark-green,  10%);}
+  .field--name-field-button .field__item:nth-child(3n + 2) a:hover { background-color: darken($blue,        10%);}
+  .field--name-field-button .field__item:nth-child(3n)     a:hover { background-color: darken($orange,      10%);}
 }
 
 
@@ -183,27 +248,37 @@
  * Pastel blue
  */
 .background-pastel-blue {
+
   .elementor-shape-fill {
     fill: $pastel-blue;
   }
+
   .page-title,
   .paragraph {
     background-color: $pastel-blue;
     color: $black;
   }
+
   h1,
   h2,
-  h3,
-  .paragraph a {
+  h3 {
     color: $black;
   }
-  .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $green;  color: $white;}
-  .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $blue;   color: $white;}
-  .field--name-field-button .field__item:nth-child(3n)     a { background-color: $orange; color: $white;}
 
-  .field--name-field-button .field__item:nth-child(3n + 1) a:hover { background-color: darken($green,   10%);}
-  .field--name-field-button .field__item:nth-child(3n + 2) a:hover { background-color: darken($blue,    10%);}
-  .field--name-field-button .field__item:nth-child(3n)     a:hover { background-color: darken($orange,  10%);}
+  .paragraph a {
+    color: $black;
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $dark-green; color: $white;}
+  .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $blue;       color: $white;}
+  .field--name-field-button .field__item:nth-child(3n)     a { background-color: $orange;     color: $white;}
+
+  .field--name-field-button .field__item:nth-child(3n + 1) a:hover { background-color: darken($dark-green,  10%);}
+  .field--name-field-button .field__item:nth-child(3n + 2) a:hover { background-color: darken($blue,        10%);}
+  .field--name-field-button .field__item:nth-child(3n)     a:hover { background-color: darken($orange,      10%);}
 
 }
 
@@ -213,27 +288,37 @@
  * White
  */
 .background-white {
+
   .elementor-shape-fill {
     fill: $white;
   }
+
   .page-title,
   .paragraph {
     background-color: $white;
     color: $black;
   }
+
   h1,
   h2,
-  h3,
-  .paragraph a {
+  h3 {
     color: $black;
   }
-  .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $green;  color: $white;}
-  .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $blue;   color: $white;}
-  .field--name-field-button .field__item:nth-child(3n)     a { background-color: $orange; color: $white;}
 
-  .field--name-field-button .field__item:nth-child(3n + 1) a:hover { background-color: darken($green,   10%);}
-  .field--name-field-button .field__item:nth-child(3n + 2) a:hover { background-color: darken($blue,    10%);}
-  .field--name-field-button .field__item:nth-child(3n)     a:hover { background-color: darken($orange,  10%);}
+  .paragraph a {
+    color: $black;
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $dark-green; color: $white;}
+  .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $blue;       color: $white;}
+  .field--name-field-button .field__item:nth-child(3n)     a { background-color: $orange;     color: $white;}
+
+  .field--name-field-button .field__item:nth-child(3n + 1) a:hover { background-color: darken($dark-green,  10%);}
+  .field--name-field-button .field__item:nth-child(3n + 2) a:hover { background-color: darken($blue,        10%);}
+  .field--name-field-button .field__item:nth-child(3n)     a:hover { background-color: darken($orange,      10%);}
 }
 
 

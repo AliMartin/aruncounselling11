@@ -1,16 +1,16 @@
-uuid: f4ddaf56-f765-4ae7-a153-7637aa1cd475
+uuid: dd7ac37d-24a9-4877-817a-95b4569d85ca
 langcode: en-gb
 status: true
 dependencies:
   config:
-    - field.storage.node.field_author_image
+    - field.storage.node.field_image
     - media.type.image
-    - node.type.news
-id: node.news.field_author_image
-field_name: field_author_image
+    - node.type.article
+id: node.article.field_image
+field_name: field_image
 entity_type: node
-bundle: news
-label: 'Author image'
+bundle: article
+label: Image
 description: ''
 required: false
 translatable: false

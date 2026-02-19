@@ -4,9 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.article.body
-    - field.field.node.article.field_tags
+    - field.field.node.article.field_author_date
+    - field.field.node.article.field_author_image
+    - field.field.node.article.field_author_name
+    - field.field.node.article.field_image
+    - field.field.node.article.field_section
     - node.type.article
   module:
+    - datetime
     - text
     - user
 _core:
@@ -21,20 +26,55 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 4
+    region: content
+  field_author_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: news
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_author_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: author
+      link: false
+    third_party_settings: {  }
     weight: 0
     region: content
-  field_tags:
-    type: entity_reference_label
-    label: above
+  field_author_name:
+    type: string
+    label: hidden
     settings:
-      link: true
+      link_to_entity: false
     third_party_settings: {  }
-    weight: 10
+    weight: 1
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: content
+      link: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_section:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 5
     region: content
 hidden:
   langcode: true

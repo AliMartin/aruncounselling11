@@ -14826,7 +14826,7 @@ body.toolbar-fixed.toolbar-tray-open .fixed-top {
  * navbar can be seen
  */
 body.user-logged-in main[role=main] {
-  margin-top: 120px;
+  margin-top: 150px;
 }
 
 .view,
@@ -14887,9 +14887,15 @@ body.user-logged-in main[role=main] {
   margin-left: 10px;
 }
 
+.btn-secondary {
+  color: #FFFFF8;
+  font-weight: 600;
+}
+
 header nav.navbar {
   padding: 20px 0;
   background-color: #FFFFF8;
+  box-shadow: 0px 0px 18px 9px rgba(0, 0, 0, 0.12);
 }
 header nav.navbar > .container {
   display: flex;
@@ -15001,13 +15007,22 @@ nav.tabs-primary ul {
   justify-content: center;
 }
 
+.path-user main[role=main] .region-content {
+  max-width: 600px;
+  margin: 60px auto 90px auto;
+  border: 1px solid #dadcdf;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 18px 9px rgba(0, 0, 0, 0.12);
+}
+
 .mm-page,
 .mm-wrapper_background body {
   background-color: #FFFFF8;
 }
 
 main[role=main] {
-  margin-top: 50px;
+  margin-top: 150px;
   margin-bottom: 60px;
 }
 main[role=main] .region-content {
@@ -15047,6 +15062,36 @@ main[role=main] .region-content .field--name-field-media-image img {
   width: 100%;
 }
 
+/* File attachments */
+.field--name-field-attachments {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.field--name-field-attachments .field__item span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* File download icons */
+.file--x-office-document {
+  background-image: inherit;
+}
+.file--x-office-document:before {
+  display: flex;
+  content: "\f56d";
+  font-family: "Font Awesome 6 Pro";
+  color: #224957;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1;
+  margin-right: 10px;
+}
+
 /* Remove some an annoying keylines on the SVG */
 .shape-top {
   top: 1px;
@@ -15077,22 +15122,28 @@ main[role=main] .region-content .field--name-field-media-image img {
   font-weight: 600;
 }
 
-/* News content type */
-.page-node-type-news #body-wrapper {
+/* Articles */
+.page-node-type-article #body-wrapper {
   max-width: 800px;
   margin: 90px auto 90px auto;
 }
-.page-node-type-news #body-wrapper h2, .page-node-type-news #body-wrapper .h2 {
+.page-node-type-article #body-wrapper h2, .page-node-type-article #body-wrapper .h2 {
   font-size: 1.54rem;
   margin: 2rem 0 1rem 0;
 }
-.page-node-type-news #body-wrapper h3, .page-node-type-news #body-wrapper .h3 {
+.page-node-type-article #body-wrapper h3, .page-node-type-article #body-wrapper .h3 {
   font-size: 1.232rem;
   margin: 2rem 0 1rem 0;
 }
-.page-node-type-news #body-wrapper h4, .page-node-type-news #body-wrapper .h4 {
+.page-node-type-article #body-wrapper h4, .page-node-type-article #body-wrapper .h4 {
   font-size: 1.1rem;
   margin: 2rem 0 1rem 0;
+}
+.page-node-type-article #body-wrapper .field--name-field-media-image {
+  margin-bottom: 1rem;
+}
+.page-node-type-article #body-wrapper .field--name-field-media-image img {
+  border: 1px solid #dadcdf;
 }
 
 .paragraph-wrapper {
@@ -15280,11 +15331,17 @@ main[role=main] .region-content .field--name-field-media-image img {
 /*
  * Light green
  * INDIVIDUALS
+ *
+ * Need to relocate these colour schemes:
+ * background-funding
  */
+.background-funding .elementor-shape-fill,
 .background-counselling .elementor-shape-fill,
 .background-light-green .elementor-shape-fill {
   fill: #1C7678;
 }
+.background-funding .page-title,
+.background-funding .paragraph,
 .background-counselling .page-title,
 .background-counselling .paragraph,
 .background-light-green .page-title,
@@ -15292,44 +15349,64 @@ main[role=main] .region-content .field--name-field-media-image img {
   background-color: #1C7678;
   color: #FFFFF8;
 }
-.background-counselling h1, .background-counselling .h1,
+.background-funding h1, .background-funding .h1,
+.background-funding h2,
+.background-funding .h2,
+.background-funding h3,
+.background-funding .h3,
+.background-counselling h1,
+.background-counselling .h1,
 .background-counselling h2,
 .background-counselling .h2,
 .background-counselling h3,
 .background-counselling .h3,
-.background-counselling .paragraph a,
 .background-light-green h1,
 .background-light-green .h1,
 .background-light-green h2,
 .background-light-green .h2,
 .background-light-green h3,
-.background-light-green .h3,
+.background-light-green .h3 {
+  color: #FFFFF8;
+}
+.background-funding .paragraph a,
+.background-counselling .paragraph a,
 .background-light-green .paragraph a {
   color: #FFFFF8;
 }
+.background-funding .paragraph a:hover,
+.background-counselling .paragraph a:hover,
+.background-light-green .paragraph a:hover {
+  color: #FF7A1A;
+}
+.background-funding .field--name-field-button .field__item:nth-child(3n+1) a,
 .background-counselling .field--name-field-button .field__item:nth-child(3n+1) a,
 .background-light-green .field--name-field-button .field__item:nth-child(3n+1) a {
   background-color: #198754;
   color: #FFFFF8;
 }
+.background-funding .field--name-field-button .field__item:nth-child(3n+2) a,
 .background-counselling .field--name-field-button .field__item:nth-child(3n+2) a,
 .background-light-green .field--name-field-button .field__item:nth-child(3n+2) a {
   background-color: #294366;
   color: #FFFFF8;
 }
+.background-funding .field--name-field-button .field__item:nth-child(3n) a,
 .background-counselling .field--name-field-button .field__item:nth-child(3n) a,
 .background-light-green .field--name-field-button .field__item:nth-child(3n) a {
   background-color: #FF7A1A;
   color: #FFFFF8;
 }
+.background-funding .field--name-field-button .field__item:nth-child(3n+1) a:hover,
 .background-counselling .field--name-field-button .field__item:nth-child(3n+1) a:hover,
 .background-light-green .field--name-field-button .field__item:nth-child(3n+1) a:hover {
   background-color: #115c39;
 }
+.background-funding .field--name-field-button .field__item:nth-child(3n+2) a:hover,
 .background-counselling .field--name-field-button .field__item:nth-child(3n+2) a:hover,
 .background-light-green .field--name-field-button .field__item:nth-child(3n+2) a:hover {
   background-color: #1a2b42;
 }
+.background-funding .field--name-field-button .field__item:nth-child(3n) a:hover,
 .background-counselling .field--name-field-button .field__item:nth-child(3n) a:hover,
 .background-light-green .field--name-field-button .field__item:nth-child(3n) a:hover {
   background-color: #e66000;
@@ -15340,11 +15417,14 @@ main[role=main] .region-content .field--name-field-media-image img {
  * EMPLOYERS
  */
 .background-employers .elementor-shape-fill,
+.background-resources .elementor-shape-fill,
 .background-blue .elementor-shape-fill {
   fill: #294366;
 }
 .background-employers .page-title,
 .background-employers .paragraph,
+.background-resources .page-title,
+.background-resources .paragraph,
 .background-blue .page-title,
 .background-blue .paragraph {
   background-color: #294366;
@@ -15355,40 +15435,60 @@ main[role=main] .region-content .field--name-field-media-image img {
 .background-employers .h2,
 .background-employers h3,
 .background-employers .h3,
-.background-employers .paragraph a,
+.background-resources h1,
+.background-resources .h1,
+.background-resources h2,
+.background-resources .h2,
+.background-resources h3,
+.background-resources .h3,
 .background-blue h1,
 .background-blue .h1,
 .background-blue h2,
 .background-blue .h2,
 .background-blue h3,
-.background-blue .h3,
+.background-blue .h3 {
+  color: #FFFFF8;
+}
+.background-employers .paragraph a,
+.background-resources .paragraph a,
 .background-blue .paragraph a {
   color: #FFFFF8;
 }
+.background-employers .paragraph a:hover,
+.background-resources .paragraph a:hover,
+.background-blue .paragraph a:hover {
+  color: #FF7A1A;
+}
 .background-employers .field--name-field-button .field__item:nth-child(3n+1) a,
+.background-resources .field--name-field-button .field__item:nth-child(3n+1) a,
 .background-blue .field--name-field-button .field__item:nth-child(3n+1) a {
   background-color: #198754;
   color: #FFFFF8;
 }
 .background-employers .field--name-field-button .field__item:nth-child(3n+2) a,
+.background-resources .field--name-field-button .field__item:nth-child(3n+2) a,
 .background-blue .field--name-field-button .field__item:nth-child(3n+2) a {
   background-color: #294366;
   color: #FFFFF8;
 }
 .background-employers .field--name-field-button .field__item:nth-child(3n) a,
+.background-resources .field--name-field-button .field__item:nth-child(3n) a,
 .background-blue .field--name-field-button .field__item:nth-child(3n) a {
   background-color: #FF7A1A;
   color: #FFFFF8;
 }
 .background-employers .field--name-field-button .field__item:nth-child(3n+1) a:hover,
+.background-resources .field--name-field-button .field__item:nth-child(3n+1) a:hover,
 .background-blue .field--name-field-button .field__item:nth-child(3n+1) a:hover {
   background-color: #115c39;
 }
 .background-employers .field--name-field-button .field__item:nth-child(3n+2) a:hover,
+.background-resources .field--name-field-button .field__item:nth-child(3n+2) a:hover,
 .background-blue .field--name-field-button .field__item:nth-child(3n+2) a:hover {
   background-color: #1a2b42;
 }
 .background-employers .field--name-field-button .field__item:nth-child(3n) a:hover,
+.background-resources .field--name-field-button .field__item:nth-child(3n) a:hover,
 .background-blue .field--name-field-button .field__item:nth-child(3n) a:hover {
   background-color: #e66000;
 }
@@ -15413,19 +15513,25 @@ main[role=main] .region-content .field--name-field-media-image img {
 .background-training .h2,
 .background-training h3,
 .background-training .h3,
-.background-training .paragraph a,
 .background-yellow h1,
 .background-yellow .h1,
 .background-yellow h2,
 .background-yellow .h2,
 .background-yellow h3,
-.background-yellow .h3,
+.background-yellow .h3 {
+  color: #333333;
+}
+.background-training .paragraph a,
 .background-yellow .paragraph a {
   color: #333333;
 }
+.background-training .paragraph a:hover,
+.background-yellow .paragraph a:hover {
+  color: #FF7A1A;
+}
 .background-training .field--name-field-button .field__item:nth-child(3n+1) a,
 .background-yellow .field--name-field-button .field__item:nth-child(3n+1) a {
-  background-color: #198754;
+  background-color: #224957;
   color: #FFFFF8;
 }
 .background-training .field--name-field-button .field__item:nth-child(3n+2) a,
@@ -15440,7 +15546,7 @@ main[role=main] .region-content .field--name-field-media-image img {
 }
 .background-training .field--name-field-button .field__item:nth-child(3n+1) a:hover,
 .background-yellow .field--name-field-button .field__item:nth-child(3n+1) a:hover {
-  background-color: #115c39;
+  background-color: #142a32;
 }
 .background-training .field--name-field-button .field__item:nth-child(3n+2) a:hover,
 .background-yellow .field--name-field-button .field__item:nth-child(3n+2) a:hover {
@@ -15470,20 +15576,26 @@ main[role=main] .region-content .field--name-field-media-image img {
 .background-other .h2,
 .background-other h3,
 .background-other .h3,
-.background-other .paragraph a,
 .background-dark-green h1,
 .background-dark-green .h1,
 .background-dark-green h2,
 .background-dark-green .h2,
 .background-dark-green h3,
-.background-dark-green .h3,
+.background-dark-green .h3 {
+  color: #FFFFF8;
+}
+.background-other .paragraph a,
 .background-dark-green .paragraph a {
   color: #FFFFF8;
 }
+.background-other .paragraph a:hover,
+.background-dark-green .paragraph a:hover {
+  color: #FF7A1A;
+}
 .background-other .field--name-field-button .field__item:nth-child(3n+1) a,
 .background-dark-green .field--name-field-button .field__item:nth-child(3n+1) a {
-  background-color: #198754;
-  color: #FFFFF8;
+  background-color: #FFFFF8;
+  color: #333333;
 }
 .background-other .field--name-field-button .field__item:nth-child(3n+2) a,
 .background-dark-green .field--name-field-button .field__item:nth-child(3n+2) a {
@@ -15497,7 +15609,7 @@ main[role=main] .region-content .field--name-field-media-image img {
 }
 .background-other .field--name-field-button .field__item:nth-child(3n+1) a:hover,
 .background-dark-green .field--name-field-button .field__item:nth-child(3n+1) a:hover {
-  background-color: #115c39;
+  background-color: #ffffc5;
 }
 .background-other .field--name-field-button .field__item:nth-child(3n+2) a:hover,
 .background-dark-green .field--name-field-button .field__item:nth-child(3n+2) a:hover {
@@ -15523,12 +15635,17 @@ main[role=main] .region-content .field--name-field-media-image img {
 .background-pastel-green h2,
 .background-pastel-green .h2,
 .background-pastel-green h3,
-.background-pastel-green .h3,
+.background-pastel-green .h3 {
+  color: #333333;
+}
 .background-pastel-green .paragraph a {
   color: #333333;
 }
+.background-pastel-green .paragraph a:hover {
+  color: #FF7A1A;
+}
 .background-pastel-green .field--name-field-button .field__item:nth-child(3n+1) a {
-  background-color: #198754;
+  background-color: #1C7678;
   color: #FFFFF8;
 }
 .background-pastel-green .field--name-field-button .field__item:nth-child(3n+2) a {
@@ -15540,7 +15657,7 @@ main[role=main] .region-content .field--name-field-media-image img {
   color: #FFFFF8;
 }
 .background-pastel-green .field--name-field-button .field__item:nth-child(3n+1) a:hover {
-  background-color: #115c39;
+  background-color: #124d4f;
 }
 .background-pastel-green .field--name-field-button .field__item:nth-child(3n+2) a:hover {
   background-color: #1a2b42;
@@ -15564,12 +15681,17 @@ main[role=main] .region-content .field--name-field-media-image img {
 .background-pastel-yellow h2,
 .background-pastel-yellow .h2,
 .background-pastel-yellow h3,
-.background-pastel-yellow .h3,
+.background-pastel-yellow .h3 {
+  color: #333333;
+}
 .background-pastel-yellow .paragraph a {
   color: #333333;
 }
+.background-pastel-yellow .paragraph a:hover {
+  color: #FF7A1A;
+}
 .background-pastel-yellow .field--name-field-button .field__item:nth-child(3n+1) a {
-  background-color: #198754;
+  background-color: #224957;
   color: #FFFFF8;
 }
 .background-pastel-yellow .field--name-field-button .field__item:nth-child(3n+2) a {
@@ -15581,7 +15703,7 @@ main[role=main] .region-content .field--name-field-media-image img {
   color: #FFFFF8;
 }
 .background-pastel-yellow .field--name-field-button .field__item:nth-child(3n+1) a:hover {
-  background-color: #115c39;
+  background-color: #142a32;
 }
 .background-pastel-yellow .field--name-field-button .field__item:nth-child(3n+2) a:hover {
   background-color: #1a2b42;
@@ -15605,12 +15727,17 @@ main[role=main] .region-content .field--name-field-media-image img {
 .background-pastel-blue h2,
 .background-pastel-blue .h2,
 .background-pastel-blue h3,
-.background-pastel-blue .h3,
+.background-pastel-blue .h3 {
+  color: #333333;
+}
 .background-pastel-blue .paragraph a {
   color: #333333;
 }
+.background-pastel-blue .paragraph a:hover {
+  color: #FF7A1A;
+}
 .background-pastel-blue .field--name-field-button .field__item:nth-child(3n+1) a {
-  background-color: #198754;
+  background-color: #224957;
   color: #FFFFF8;
 }
 .background-pastel-blue .field--name-field-button .field__item:nth-child(3n+2) a {
@@ -15622,7 +15749,7 @@ main[role=main] .region-content .field--name-field-media-image img {
   color: #FFFFF8;
 }
 .background-pastel-blue .field--name-field-button .field__item:nth-child(3n+1) a:hover {
-  background-color: #115c39;
+  background-color: #142a32;
 }
 .background-pastel-blue .field--name-field-button .field__item:nth-child(3n+2) a:hover {
   background-color: #1a2b42;
@@ -15646,12 +15773,17 @@ main[role=main] .region-content .field--name-field-media-image img {
 .background-white h2,
 .background-white .h2,
 .background-white h3,
-.background-white .h3,
+.background-white .h3 {
+  color: #333333;
+}
 .background-white .paragraph a {
   color: #333333;
 }
+.background-white .paragraph a:hover {
+  color: #FF7A1A;
+}
 .background-white .field--name-field-button .field__item:nth-child(3n+1) a {
-  background-color: #198754;
+  background-color: #224957;
   color: #FFFFF8;
 }
 .background-white .field--name-field-button .field__item:nth-child(3n+2) a {
@@ -15663,7 +15795,7 @@ main[role=main] .region-content .field--name-field-media-image img {
   color: #FFFFF8;
 }
 .background-white .field--name-field-button .field__item:nth-child(3n+1) a:hover {
-  background-color: #115c39;
+  background-color: #142a32;
 }
 .background-white .field--name-field-button .field__item:nth-child(3n+2) a:hover {
   background-color: #1a2b42;
@@ -15685,6 +15817,7 @@ main[role=main] .region-content .field--name-field-media-image img {
 .view-news {
   max-width: 800px;
   margin: 0 auto 90px auto;
+  padding: 0 20px;
 }
 .view-news .view-header {
   width: 100%;
@@ -15706,6 +15839,12 @@ body.path-frontpage #block-arun11-content article.node--type-landing-page > .pag
   position: relative;
   overflow: hidden;
   background-color: #224957;
+}
+body.path-frontpage #block-arun11-content article.node--type-landing-page > .page-title-wrapper .shape-top {
+  top: 0px;
+}
+body.path-frontpage #block-arun11-content article.node--type-landing-page > .page-title-wrapper .shape-bottom {
+  top: 0px;
 }
 body.path-frontpage #block-arun11-content article.node--type-landing-page > .page-title-wrapper::before {
   content: "";
@@ -15737,12 +15876,6 @@ body.path-frontpage #block-arun11-content article.node--type-landing-page .page-
 body.path-frontpage #block-arun11-content article.node--type-landing-page .page-title-wrapper .shape-bottom svg {
   transform: scaleY(-1);
   transform-origin: 50% 50%;
-}
-body.path-frontpage #block-arun11-content article.node--type-landing-page .shape-top {
-  top: 0px;
-}
-body.path-frontpage #block-arun11-content article.node--type-landing-page .shape-bottom {
-  top: 0px;
 }
 
 header .main-menu ul.navbar-nav {
