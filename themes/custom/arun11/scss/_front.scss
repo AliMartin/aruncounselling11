@@ -52,12 +52,12 @@ body.path-frontpage {
 
       /* Custom front page banner button colours to match the themes of the target pages */
       .page-title-wrapper .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $pastel-green  !important; color: $black !important;}
-      .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $pastel-blue   !important; color: $black !important;}
-      .field--name-field-button .field__item:nth-child(3n)     a { background-color: $pastel-yellow !important; color: $black !important;}
+      .page-title-wrapper .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $pastel-blue   !important; color: $black !important;}
+      .page-title-wrapper .field--name-field-button .field__item:nth-child(3n)     a { background-color: $pastel-yellow !important; color: $black !important;}
 
-      .field--name-field-button .field__item:nth-child(3n + 1) a:hover { background-color: darken($pastel-green,  10%) !important;}
-      .field--name-field-button .field__item:nth-child(3n + 2) a:hover { background-color: darken($pastel-blue,   10%) !important;}
-      .field--name-field-button .field__item:nth-child(3n)     a:hover { background-color: darken($pastel-yellow, 10%) !important;}
+      .page-title-wrapper .field--name-field-button .field__item:nth-child(3n + 1) a:hover { background-color: darken($pastel-green,  10%) !important;}
+      .page-title-wrapper .field--name-field-button .field__item:nth-child(3n + 2) a:hover { background-color: darken($pastel-blue,   10%) !important;}
+      .page-title-wrapper .field--name-field-button .field__item:nth-child(3n)     a:hover { background-color: darken($pastel-yellow, 10%) !important;}
     }
   }
 }

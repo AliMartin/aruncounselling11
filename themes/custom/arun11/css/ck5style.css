@@ -14702,21 +14702,21 @@ a > .ck-content code {
   background-color: #DFFFDE !important;
   color: #333333 !important;
 }
-.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .field--name-field-button .field__item:nth-child(3n+2) a {
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .page-title-wrapper .field--name-field-button .field__item:nth-child(3n+2) a {
   background-color: #E0FBFC !important;
   color: #333333 !important;
 }
-.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .field--name-field-button .field__item:nth-child(3n) a {
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .page-title-wrapper .field--name-field-button .field__item:nth-child(3n) a {
   background-color: #FFFCDF !important;
   color: #333333 !important;
 }
-.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .field--name-field-button .field__item:nth-child(3n+1) a:hover {
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .page-title-wrapper .field--name-field-button .field__item:nth-child(3n+1) a:hover {
   background-color: #aeffab !important;
 }
-.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .field--name-field-button .field__item:nth-child(3n+2) a:hover {
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .page-title-wrapper .field--name-field-button .field__item:nth-child(3n+2) a:hover {
   background-color: #b2f5f8 !important;
 }
-.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .field--name-field-button .field__item:nth-child(3n) a:hover {
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .page-title-wrapper .field--name-field-button .field__item:nth-child(3n) a:hover {
   background-color: #fff7ac !important;
 }
 .ck-content header .main-menu ul.navbar-nav {
