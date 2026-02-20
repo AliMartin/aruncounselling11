@@ -16046,26 +16046,26 @@ body.path-frontpage #block-arun11-content article.node--type-landing-page .page-
   transform: scaleY(-1);
   transform-origin: 50% 50%;
 }
-body.path-frontpage #block-arun11-content article.node--type-landing-page .field--name-field-button .field__item:nth-child(3n+1) a {
-  background-color: #DFFFDE;
-  color: #333333;
+body.path-frontpage #block-arun11-content article.node--type-landing-page .page-title-wrapper .field--name-field-button .field__item:nth-child(3n+1) a {
+  background-color: #DFFFDE !important;
+  color: #333333 !important;
 }
 body.path-frontpage #block-arun11-content article.node--type-landing-page .field--name-field-button .field__item:nth-child(3n+2) a {
-  background-color: #E0FBFC;
-  color: #333333;
+  background-color: #E0FBFC !important;
+  color: #333333 !important;
 }
 body.path-frontpage #block-arun11-content article.node--type-landing-page .field--name-field-button .field__item:nth-child(3n) a {
-  background-color: #FFFCDF;
-  color: #333333;
+  background-color: #FFFCDF !important;
+  color: #333333 !important;
 }
 body.path-frontpage #block-arun11-content article.node--type-landing-page .field--name-field-button .field__item:nth-child(3n+1) a:hover {
-  background-color: #aeffab;
+  background-color: #aeffab !important;
 }
 body.path-frontpage #block-arun11-content article.node--type-landing-page .field--name-field-button .field__item:nth-child(3n+2) a:hover {
-  background-color: #b2f5f8;
+  background-color: #b2f5f8 !important;
 }
 body.path-frontpage #block-arun11-content article.node--type-landing-page .field--name-field-button .field__item:nth-child(3n) a:hover {
-  background-color: #fff7ac;
+  background-color: #fff7ac !important;
 }
 
 header .main-menu ul.navbar-nav {
