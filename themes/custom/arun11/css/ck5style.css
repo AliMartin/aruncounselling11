@@ -13795,7 +13795,12 @@ a > .ck-content code {
   margin-bottom: 60px;
 }
 .ck-content .page-title-wrapper .page-title {
-  padding: 45px 0;
+  padding: 60px 0 45px 0;
+}
+@media (max-width: 991px) {
+  .ck-content .page-title-wrapper .page-title {
+    padding: 30px 0 45px 0;
+  }
 }
 .ck-content .page-title-wrapper .page-title .content-wrapper {
   max-width: 950px;
@@ -13882,7 +13887,7 @@ a > .ck-content code {
 }
 .ck-content .page-node-type-article #body-wrapper {
   max-width: 800px;
-  margin: 90px auto 90px auto;
+  margin: 150px auto 90px auto;
 }
 .ck-content .page-node-type-article #body-wrapper h2, .ck-content .page-node-type-article #body-wrapper .h2 {
   font-size: 1.54rem;
