@@ -32,6 +32,7 @@
     }
   }
 
+  /* General button colours */
   .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $green;  color: $white;}
   .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $blue;   color: $white;}
   .field--name-field-button .field__item:nth-child(3n)     a { background-color: $orange; color: $white;}
@@ -39,6 +40,15 @@
   .field--name-field-button .field__item:nth-child(3n + 1) a:hover { background-color: darken($green,   10%);}
   .field--name-field-button .field__item:nth-child(3n + 2) a:hover { background-color: darken($blue,    10%);}
   .field--name-field-button .field__item:nth-child(3n)     a:hover { background-color: darken($orange,  10%);}
+
+  /* Landing page button override */
+  &.page-title-wrapper .field--name-field-button a {
+    background-color: $pastel-green !important;
+    color: $black !important;
+    &:hover {
+      background-color: darken($pastel-green, 10%) !important;
+    }
+  }
 }
 
 
@@ -74,6 +84,7 @@
     }
   }
 
+  /* General button colours */
   .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $green;  color: $white;}
   .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $blue;   color: $white;}
   .field--name-field-button .field__item:nth-child(3n)     a { background-color: $orange; color: $white;}
@@ -81,6 +92,15 @@
   .field--name-field-button .field__item:nth-child(3n + 1) a:hover { background-color: darken($green,   10%);}
   .field--name-field-button .field__item:nth-child(3n + 2) a:hover { background-color: darken($blue,    10%);}
   .field--name-field-button .field__item:nth-child(3n)     a:hover { background-color: darken($orange,  10%);}
+
+  /* Landing page button override */
+  &.page-title-wrapper .field--name-field-button a {
+    background-color: $pastel-blue !important;
+    color: $black !important;
+    &:hover {
+      background-color: darken($pastel-blue, 10%) !important;
+    }
+  }
 }
 
 
@@ -115,6 +135,7 @@
     }
   }
 
+  /* General button colours */
   .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $dark-green; color: $white;}
   .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $blue;       color: $white;}
   .field--name-field-button .field__item:nth-child(3n)     a { background-color: $orange;     color: $white;}
@@ -123,6 +144,14 @@
   .field--name-field-button .field__item:nth-child(3n + 2) a:hover { background-color: darken($blue,        10%);}
   .field--name-field-button .field__item:nth-child(3n)     a:hover { background-color: darken($orange,      10%);}
 
+  /* Landing page button override */
+  &.page-title-wrapper .field--name-field-button a {
+    background-color: $pastel-yellow !important;
+    color: $black !important;
+    &:hover {
+      background-color: darken($pastel-yellow, 10%) !important;
+    }
+  }
 }
 
 
@@ -155,6 +184,7 @@
     }
   }
 
+  /* General button colours */
   .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $white;  color: $black;}
   .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $blue;   color: $white;}
   .field--name-field-button .field__item:nth-child(3n)     a { background-color: $orange; color: $white;}
@@ -162,6 +192,15 @@
   .field--name-field-button .field__item:nth-child(3n + 1) a:hover { background-color: darken($white,   10%);}
   .field--name-field-button .field__item:nth-child(3n + 2) a:hover { background-color: darken($blue,    10%);}
   .field--name-field-button .field__item:nth-child(3n)     a:hover { background-color: darken($orange,  10%);}
+
+  /* Landing page button override */
+  &.page-title-wrapper .field--name-field-button a {
+    background-color: $pastel-green !important;
+    color: $black !important;
+    &:hover {
+      background-color: darken($pastel-green, 10%) !important;
+    }
+  }
 }
 
 
@@ -194,6 +233,7 @@
     }
   }
 
+  /* General button colours */
   .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $light-green;  color: $white;}
   .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $blue;         color: $white;}
   .field--name-field-button .field__item:nth-child(3n)     a { background-color: $orange;       color: $white;}
@@ -233,6 +273,7 @@
     }
   }
 
+  /* General button colours */
   .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $dark-green; color: $white;}
   .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $blue;       color: $white;}
   .field--name-field-button .field__item:nth-child(3n)     a { background-color: $orange;     color: $white;}
@@ -272,6 +313,7 @@
     }
   }
 
+  /* General button colours */
   .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $dark-green; color: $white;}
   .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $blue;       color: $white;}
   .field--name-field-button .field__item:nth-child(3n)     a { background-color: $orange;     color: $white;}
@@ -312,6 +354,7 @@
     }
   }
 
+  /* General button colours */
   .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $dark-green; color: $white;}
   .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $blue;       color: $white;}
   .field--name-field-button .field__item:nth-child(3n)     a { background-color: $orange;     color: $white;}

@@ -1,0 +1,68 @@
+#klaro {
+  #klaro-cookie-notice,
+  .cm-modal {
+    border: 5px solid $dark-green;
+    border-radius: $border-radius;
+    box-shadow: inherit;
+    outline: inherit;
+
+    a.cn-learn-more {
+      text-decoration: underline;
+    }
+
+    .cn-buttons button {
+      width: inherit;
+      padding: 10px 20px;
+      border-radius: $border-radius;
+      font-size: 1.1rem;
+      font-weight: $font-weight-bold;
+      background-color: $dark-green;
+      color: $white;
+
+      &:hover {
+        background-color: darken($dark-green, 10%);
+        color: $white;
+      }
+    }
+  }
+
+  .slider {
+    background-color: $light-green;
+  }
+
+  .cookie-modal .cm-list-description,
+  .context-notice .cm-list-description,
+  .cookie-notice .cm-list-description {
+    font-size: 0.85em;
+    padding: 0;
+  }
+
+  .label.cm-list-label {
+    min-height: 20px;
+  }
+
+  .cm-footer-buttons button {
+    width: inherit;
+    padding: 10px 20px;
+    border-radius: $border-radius;
+    font-size: 1.1rem;
+    font-weight: $font-weight-bold;
+    background-color: $dark-green;
+    color: $white;
+
+    &:hover {
+      background-color: darken($dark-green, 10%);
+      color: $white;
+    }
+  }
+
+  button.hide {
+    background-color: $black;
+    border-radius: 50%;
+    outline: inherit;
+
+    svg {
+      stroke: $white;
+    }
+  }
+}

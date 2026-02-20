@@ -8,6 +8,7 @@ dependencies:
     - file
     - filter
     - fontawesome
+    - klaro
     - media
     - shortcut
     - system
@@ -22,5 +23,6 @@ permissions:
   - 'access fontawesome additional settings'
   - 'access shortcuts'
   - 'delete own files'
+  - 'use klaro'
   - 'use text format basic_html'
   - 'view media'

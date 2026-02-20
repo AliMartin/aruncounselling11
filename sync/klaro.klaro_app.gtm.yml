@@ -1,6 +1,6 @@
 uuid: c5f16e5c-9bcf-4c8e-8394-ae9244662607
 langcode: en-gb
-status: false
+status: true
 dependencies: {  }
 _core:
   default_config_hash: p1dtty8n0_QsIkVflvUTbHLiT0RpYW7huKeQOCTAgQE
@@ -14,8 +14,8 @@ cookies: {  }
 required: false
 opt_out: false
 only_once: false
-contextual_consent_only: null
-contextual_consent_text: null
+contextual_consent_only: false
+contextual_consent_text: ''
 info_url: 'https://marketingplatform.google.com/intl/de/about/tag-manager/'
 privacy_policy_url: 'https://policies.google.com/privacy'
 javascripts:

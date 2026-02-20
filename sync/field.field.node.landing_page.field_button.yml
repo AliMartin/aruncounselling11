@@ -1,0 +1,23 @@
+uuid: c21fa06e-2cd2-4e83-aa79-22219165cd62
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_button
+    - node.type.landing_page
+  module:
+    - link
+id: node.landing_page.field_button
+field_name: field_button
+entity_type: node
+bundle: landing_page
+label: Button
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

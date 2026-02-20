@@ -32,7 +32,7 @@ nav.tabs-primary {
 
 
 main[role="main"] {
-  margin-top: 150px;
+  margin-top: 90px;
   margin-bottom: 60px;
   
   .region-content {
@@ -49,7 +49,7 @@ main[role="main"] {
   margin-bottom: 60px;
 
   .page-title {
-    padding: 90px 0;
+    padding: 45px 0;
 
     .content-wrapper {
       max-width: 950px;
@@ -63,7 +63,21 @@ main[role="main"] {
       font-size: clamp(40px, calc(6.10vw + 9.51px), 70px);
       letter-spacing: -1px;
       line-height: 1.1;
-      margin: 0 0 30px 0;
+      margin: 0 0 15px 0;
+    }
+
+    .subtitle {
+      margin: 0 0 15px 0;
+    }
+
+    .button {
+      margin: 0;
+      padding: 0;
+
+      .field--name-field-button {
+        margin: 0;
+        padding: 0;
+      }
     }
   }
 }

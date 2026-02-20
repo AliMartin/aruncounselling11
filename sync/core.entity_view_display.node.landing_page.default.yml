@@ -4,17 +4,31 @@ status: true
 dependencies:
   config:
     - field.field.node.landing_page.field_background_colour
+    - field.field.node.landing_page.field_button
     - field.field.node.landing_page.field_content
     - field.field.node.landing_page.field_subtitle
     - node.type.landing_page
   module:
     - entity_reference_revisions
+    - link
     - user
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page
 mode: default
 content:
+  field_button:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_content:
     type: entity_reference_revisions_entity_view
     label: hidden

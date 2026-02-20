@@ -49,6 +49,15 @@ body.path-frontpage {
           transform-origin: 50% 50%;
         }
       }
+
+      /* Custom front page banner button colours to match the themes of the target pages */
+      .field--name-field-button .field__item:nth-child(3n + 1) a { background-color: $pastel-green;   color: $black;}
+      .field--name-field-button .field__item:nth-child(3n + 2) a { background-color: $pastel-blue;    color: $black;}
+      .field--name-field-button .field__item:nth-child(3n)     a { background-color: $pastel-yellow;  color: $black;}
+
+      .field--name-field-button .field__item:nth-child(3n + 1) a:hover { background-color: darken($pastel-green,  10%);}
+      .field--name-field-button .field__item:nth-child(3n + 2) a:hover { background-color: darken($pastel-blue,   10%);}
+      .field--name-field-button .field__item:nth-child(3n)     a:hover { background-color: darken($pastel-yellow, 10%);}
     }
   }
 }

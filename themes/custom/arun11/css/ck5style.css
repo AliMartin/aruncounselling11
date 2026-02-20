@@ -13782,7 +13782,7 @@ a > .ck-content code {
   background-color: #FFFFF8;
 }
 .ck-content main[role=main] {
-  margin-top: 150px;
+  margin-top: 90px;
   margin-bottom: 60px;
 }
 .ck-content main[role=main] .region-content {
@@ -13795,7 +13795,7 @@ a > .ck-content code {
   margin-bottom: 60px;
 }
 .ck-content .page-title-wrapper .page-title {
-  padding: 90px 0;
+  padding: 45px 0;
 }
 .ck-content .page-title-wrapper .page-title .content-wrapper {
   max-width: 950px;
@@ -13807,7 +13807,18 @@ a > .ck-content code {
   font-size: clamp(40px, 6.1vw + 9.51px, 70px);
   letter-spacing: -1px;
   line-height: 1.1;
-  margin: 0 0 30px 0;
+  margin: 0 0 15px 0;
+}
+.ck-content .page-title-wrapper .page-title .subtitle {
+  margin: 0 0 15px 0;
+}
+.ck-content .page-title-wrapper .page-title .button {
+  margin: 0;
+  padding: 0;
+}
+.ck-content .page-title-wrapper .page-title .button .field--name-field-button {
+  margin: 0;
+  padding: 0;
 }
 .ck-content .shape-top,
 .ck-content .shape-bottom {
@@ -14055,6 +14066,12 @@ a > .ck-content code {
 .ck-content .paragraph--type--text-panel .field--name-field-media-image {
   margin-bottom: 1rem;
 }
+.ck-content .background-funding,
+.ck-content .background-counselling,
+.ck-content .background-light-green {
+  /* General button colours */
+  /* Landing page button override */
+}
 .ck-content .background-funding .elementor-shape-fill,
 .ck-content .background-counselling .elementor-shape-fill,
 .ck-content .background-light-green .elementor-shape-fill {
@@ -14130,6 +14147,23 @@ a > .ck-content code {
 .ck-content .background-counselling .field--name-field-button .field__item:nth-child(3n) a:hover,
 .ck-content .background-light-green .field--name-field-button .field__item:nth-child(3n) a:hover {
   background-color: #e66000;
+}
+.ck-content .background-funding.page-title-wrapper .field--name-field-button a,
+.ck-content .background-counselling.page-title-wrapper .field--name-field-button a,
+.ck-content .background-light-green.page-title-wrapper .field--name-field-button a {
+  background-color: #DFFFDE !important;
+  color: #333333 !important;
+}
+.ck-content .background-funding.page-title-wrapper .field--name-field-button a:hover,
+.ck-content .background-counselling.page-title-wrapper .field--name-field-button a:hover,
+.ck-content .background-light-green.page-title-wrapper .field--name-field-button a:hover {
+  background-color: #aeffab !important;
+}
+.ck-content .background-employers,
+.ck-content .background-resources,
+.ck-content .background-blue {
+  /* General button colours */
+  /* Landing page button override */
 }
 .ck-content .background-employers .elementor-shape-fill,
 .ck-content .background-resources .elementor-shape-fill,
@@ -14207,6 +14241,22 @@ a > .ck-content code {
 .ck-content .background-blue .field--name-field-button .field__item:nth-child(3n) a:hover {
   background-color: #e66000;
 }
+.ck-content .background-employers.page-title-wrapper .field--name-field-button a,
+.ck-content .background-resources.page-title-wrapper .field--name-field-button a,
+.ck-content .background-blue.page-title-wrapper .field--name-field-button a {
+  background-color: #E0FBFC !important;
+  color: #333333 !important;
+}
+.ck-content .background-employers.page-title-wrapper .field--name-field-button a:hover,
+.ck-content .background-resources.page-title-wrapper .field--name-field-button a:hover,
+.ck-content .background-blue.page-title-wrapper .field--name-field-button a:hover {
+  background-color: #b2f5f8 !important;
+}
+.ck-content .background-training,
+.ck-content .background-yellow {
+  /* General button colours */
+  /* Landing page button override */
+}
 .ck-content .background-training .elementor-shape-fill,
 .ck-content .background-yellow .elementor-shape-fill {
   fill: #ffd44a;
@@ -14265,6 +14315,20 @@ a > .ck-content code {
 .ck-content .background-training .field--name-field-button .field__item:nth-child(3n) a:hover,
 .ck-content .background-yellow .field--name-field-button .field__item:nth-child(3n) a:hover {
   background-color: #e66000;
+}
+.ck-content .background-training.page-title-wrapper .field--name-field-button a,
+.ck-content .background-yellow.page-title-wrapper .field--name-field-button a {
+  background-color: #FFFCDF !important;
+  color: #333333 !important;
+}
+.ck-content .background-training.page-title-wrapper .field--name-field-button a:hover,
+.ck-content .background-yellow.page-title-wrapper .field--name-field-button a:hover {
+  background-color: #fff7ac !important;
+}
+.ck-content .background-other,
+.ck-content .background-dark-green {
+  /* General button colours */
+  /* Landing page button override */
 }
 .ck-content .background-other .elementor-shape-fill,
 .ck-content .background-dark-green .elementor-shape-fill {
@@ -14325,6 +14389,18 @@ a > .ck-content code {
 .ck-content .background-dark-green .field--name-field-button .field__item:nth-child(3n) a:hover {
   background-color: #e66000;
 }
+.ck-content .background-other.page-title-wrapper .field--name-field-button a,
+.ck-content .background-dark-green.page-title-wrapper .field--name-field-button a {
+  background-color: #DFFFDE !important;
+  color: #333333 !important;
+}
+.ck-content .background-other.page-title-wrapper .field--name-field-button a:hover,
+.ck-content .background-dark-green.page-title-wrapper .field--name-field-button a:hover {
+  background-color: #aeffab !important;
+}
+.ck-content .background-pastel-green {
+  /* General button colours */
+}
 .ck-content .background-pastel-green .elementor-shape-fill {
   fill: #DFFFDE;
 }
@@ -14366,6 +14442,9 @@ a > .ck-content code {
 }
 .ck-content .background-pastel-green .field--name-field-button .field__item:nth-child(3n) a:hover {
   background-color: #e66000;
+}
+.ck-content .background-pastel-yellow {
+  /* General button colours */
 }
 .ck-content .background-pastel-yellow .elementor-shape-fill {
   fill: #FFFCDF;
@@ -14409,6 +14488,9 @@ a > .ck-content code {
 .ck-content .background-pastel-yellow .field--name-field-button .field__item:nth-child(3n) a:hover {
   background-color: #e66000;
 }
+.ck-content .background-pastel-blue {
+  /* General button colours */
+}
 .ck-content .background-pastel-blue .elementor-shape-fill {
   fill: #E0FBFC;
 }
@@ -14450,6 +14532,9 @@ a > .ck-content code {
 }
 .ck-content .background-pastel-blue .field--name-field-button .field__item:nth-child(3n) a:hover {
   background-color: #e66000;
+}
+.ck-content .background-white {
+  /* General button colours */
 }
 .ck-content .background-white .elementor-shape-fill {
   fill: #FFFFF8;
@@ -14505,12 +14590,62 @@ a > .ck-content code {
   margin: 0 auto 90px auto;
   padding: 0 20px;
 }
+.ck-content .view-news .view-filters {
+  width: 100%;
+  border: 2px solid #dadcdf;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+.ck-content .view-news .view-filters fieldset {
+  margin: 0;
+  padding: 0;
+  float: inherit !important;
+}
+.ck-content .view-news .view-filters a.bef-toggle {
+  display: block;
+  padding: 3px 8px;
+  background-color: #FF7A1A;
+  color: #FFFFF8;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  width: 130px;
+  margin: 0 auto;
+}
+.ck-content .view-news .view-filters a.bef-toggle:hover {
+  background-color: #e66000;
+}
+.ck-content .view-news .view-filters .bef-checkboxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+}
+.ck-content .view-news .view-filters .bef-checkboxes .form-item {
+  margin: 0;
+}
+.ck-content .view-news .view-filters .form-actions {
+  margin: 0;
+  padding: 0;
+}
 .ck-content .view-news .view-header {
   width: 100%;
   text-align: center;
 }
 .ck-content .view-news .views-row {
   margin-bottom: 60px;
+}
+.ck-content .view-news .views-field-field-section {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
 }
 .ck-content .view-news .views-field-body {
   margin-bottom: 1rem;
@@ -14519,6 +14654,7 @@ a > .ck-content code {
   /* Place the text on top */
   /* Make the SVGs part of the background shape */
   /* Had to rotate the shape and remove some keylines */
+  /* Custom front page banner button colours to match the themes of the target pages */
 }
 .ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page > .page-title-wrapper {
   position: relative;
@@ -14561,6 +14697,27 @@ a > .ck-content code {
 .ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .page-title-wrapper .shape-bottom svg {
   transform: scaleY(-1);
   transform-origin: 50% 50%;
+}
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .field--name-field-button .field__item:nth-child(3n+1) a {
+  background-color: #DFFFDE;
+  color: #333333;
+}
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .field--name-field-button .field__item:nth-child(3n+2) a {
+  background-color: #E0FBFC;
+  color: #333333;
+}
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .field--name-field-button .field__item:nth-child(3n) a {
+  background-color: #FFFCDF;
+  color: #333333;
+}
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .field--name-field-button .field__item:nth-child(3n+1) a:hover {
+  background-color: #aeffab;
+}
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .field--name-field-button .field__item:nth-child(3n+2) a:hover {
+  background-color: #b2f5f8;
+}
+.ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .field--name-field-button .field__item:nth-child(3n) a:hover {
+  background-color: #fff7ac;
 }
 .ck-content header .main-menu ul.navbar-nav {
   flex-direction: row;
@@ -14826,6 +14983,65 @@ a > .ck-content code {
   width: 12px;
   height: 12px;
   border-color: #224957;
+}
+.ck-content #klaro #klaro-cookie-notice,
+.ck-content #klaro .cm-modal {
+  border: 5px solid #224957;
+  border-radius: 10px;
+  box-shadow: inherit;
+  outline: inherit;
+}
+.ck-content #klaro #klaro-cookie-notice a.cn-learn-more,
+.ck-content #klaro .cm-modal a.cn-learn-more {
+  text-decoration: underline;
+}
+.ck-content #klaro #klaro-cookie-notice .cn-buttons button,
+.ck-content #klaro .cm-modal .cn-buttons button {
+  width: inherit;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #224957;
+  color: #FFFFF8;
+}
+.ck-content #klaro #klaro-cookie-notice .cn-buttons button:hover,
+.ck-content #klaro .cm-modal .cn-buttons button:hover {
+  background-color: #142a32;
+  color: #FFFFF8;
+}
+.ck-content #klaro .slider {
+  background-color: #1C7678;
+}
+.ck-content #klaro .cookie-modal .cm-list-description,
+.ck-content #klaro .context-notice .cm-list-description,
+.ck-content #klaro .cookie-notice .cm-list-description {
+  font-size: 0.85em;
+  padding: 0;
+}
+.ck-content #klaro .label.cm-list-label {
+  min-height: 20px;
+}
+.ck-content #klaro .cm-footer-buttons button {
+  width: inherit;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #224957;
+  color: #FFFFF8;
+}
+.ck-content #klaro .cm-footer-buttons button:hover {
+  background-color: #142a32;
+  color: #FFFFF8;
+}
+.ck-content #klaro button.hide {
+  background-color: #333333;
+  border-radius: 50%;
+  outline: inherit;
+}
+.ck-content #klaro button.hide svg {
+  stroke: #FFFFF8;
 }
 
 /*# sourceMappingURL=ck5style.css.map */
