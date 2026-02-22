@@ -14591,24 +14591,28 @@ a > .ck-content code {
   padding: 0;
 }
 .ck-content .view-news {
-  max-width: 800px;
-  margin: 0 auto 90px auto;
   padding: 0 20px;
+  /* Views outputs .views-row as the direct children of .view-content, not the <a.card>.
+     Make the .views-row chain stretch so the card can truly become equal height. */
 }
 .ck-content .view-news .view-filters {
   width: 100%;
+}
+.ck-content .view-news .view-filters form {
+  max-width: 850px;
+  margin: 0 auto 90px auto;
   border: 2px solid #dadcdf;
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 30px;
   background-color: #fff;
 }
-.ck-content .view-news .view-filters fieldset {
+.ck-content .view-news .view-filters form fieldset {
   margin: 0;
   padding: 0;
   float: inherit !important;
 }
-.ck-content .view-news .view-filters a.bef-toggle {
+.ck-content .view-news .view-filters form a.bef-toggle {
   display: block;
   padding: 3px 8px;
   background-color: #FF7A1A;
@@ -14621,10 +14625,10 @@ a > .ck-content code {
   width: 130px;
   margin: 0 auto;
 }
-.ck-content .view-news .view-filters a.bef-toggle:hover {
+.ck-content .view-news .view-filters form a.bef-toggle:hover {
   background-color: #e66000;
 }
-.ck-content .view-news .view-filters .bef-checkboxes {
+.ck-content .view-news .view-filters form .bef-checkboxes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -14632,10 +14636,10 @@ a > .ck-content code {
   justify-content: center;
   margin-top: 10px;
 }
-.ck-content .view-news .view-filters .bef-checkboxes .form-item {
+.ck-content .view-news .view-filters form .bef-checkboxes .form-item {
   margin: 0;
 }
-.ck-content .view-news .view-filters .form-actions {
+.ck-content .view-news .view-filters form .form-actions {
   margin: 0;
   padding: 0;
 }
@@ -14643,17 +14647,71 @@ a > .ck-content code {
   width: 100%;
   text-align: center;
 }
-.ck-content .view-news .views-row {
-  margin-bottom: 60px;
+.ck-content .view-news .view-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch; /* equal height cards per row */
 }
-.ck-content .view-news .views-field-field-section {
+.ck-content .view-news .view-content > .views-row {
+  display: flex;
+  width: 250px; /* match .card width */
+}
+.ck-content .view-news .view-content > .views-row > .views-field,
+.ck-content .view-news .view-content > .views-row > .views-field > .field-content,
+.ck-content .view-news .view-content > .views-row > .views-field > .field-content > span {
+  display: flex;
+  width: 100%;
+}
+.ck-content .view-news .view-content > .views-row a.card, .ck-content .view-news .view-content > .views-row .view-media-library .media-library-views-form__rows .media-library-item--grid a.views-field-rendered-entity, .ck-content .view-media-library .media-library-views-form__rows .media-library-item--grid .view-news .view-content > .views-row a.views-field-rendered-entity, .ck-content .view-news .view-content > .views-row .media-library-selection a.media-library-item.media-library-item--grid, .ck-content .media-library-selection .view-news .view-content > .views-row a.media-library-item.media-library-item--grid {
+  width: 100%;
+  flex: 1 1 auto;
+}
+.ck-content .view-news .card, .ck-content .view-news .view-media-library .media-library-views-form__rows .media-library-item--grid .views-field-rendered-entity, .ck-content .view-media-library .media-library-views-form__rows .media-library-item--grid .view-news .views-field-rendered-entity, .ck-content .view-news .media-library-selection .media-library-item.media-library-item--grid, .ck-content .media-library-selection .view-news .media-library-item.media-library-item--grid {
+  border: 1px solid #dadcdf;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+.ck-content .view-news .card:hover, .ck-content .view-news .view-media-library .media-library-views-form__rows .media-library-item--grid .views-field-rendered-entity:hover, .ck-content .view-media-library .media-library-views-form__rows .media-library-item--grid .view-news .views-field-rendered-entity:hover, .ck-content .view-news .media-library-selection .media-library-item.media-library-item--grid:hover, .ck-content .media-library-selection .view-news .media-library-item.media-library-item--grid:hover {
+  transform: scale(1.05);
+}
+.ck-content .view-news .image {
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.ck-content .view-news .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px 10px 0 0 !important;
+}
+.ck-content .view-news h2.title, .ck-content .view-news .title.h2 {
+  padding: 0 10px 10px 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.25;
+}
+.ck-content .view-news .section {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.9rem;
-  margin-bottom: 0.2rem;
+  padding: 0 10px 10px 10px;
+  color: #9095a0;
 }
-.ck-content .view-news .views-field-body {
-  margin-bottom: 1rem;
+.ck-content .view-news .body {
+  padding: 0 10px 10px 10px;
 }
 .ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page {
   /* Place the text on top */

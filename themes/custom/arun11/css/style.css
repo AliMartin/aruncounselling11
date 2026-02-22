@@ -15938,24 +15938,28 @@ main[role=main] .region-content .field--name-field-media-image img {
 }
 
 .view-news {
-  max-width: 800px;
-  margin: 0 auto 90px auto;
   padding: 0 20px;
+  /* Views outputs .views-row as the direct children of .view-content, not the <a.card>.
+     Make the .views-row chain stretch so the card can truly become equal height. */
 }
 .view-news .view-filters {
   width: 100%;
+}
+.view-news .view-filters form {
+  max-width: 850px;
+  margin: 0 auto 90px auto;
   border: 2px solid #dadcdf;
   border-radius: 10px;
   padding: 15px;
   margin-bottom: 30px;
   background-color: #fff;
 }
-.view-news .view-filters fieldset {
+.view-news .view-filters form fieldset {
   margin: 0;
   padding: 0;
   float: inherit !important;
 }
-.view-news .view-filters a.bef-toggle {
+.view-news .view-filters form a.bef-toggle {
   display: block;
   padding: 3px 8px;
   background-color: #FF7A1A;
@@ -15968,10 +15972,10 @@ main[role=main] .region-content .field--name-field-media-image img {
   width: 130px;
   margin: 0 auto;
 }
-.view-news .view-filters a.bef-toggle:hover {
+.view-news .view-filters form a.bef-toggle:hover {
   background-color: #e66000;
 }
-.view-news .view-filters .bef-checkboxes {
+.view-news .view-filters form .bef-checkboxes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -15979,10 +15983,10 @@ main[role=main] .region-content .field--name-field-media-image img {
   justify-content: center;
   margin-top: 10px;
 }
-.view-news .view-filters .bef-checkboxes .form-item {
+.view-news .view-filters form .bef-checkboxes .form-item {
   margin: 0;
 }
-.view-news .view-filters .form-actions {
+.view-news .view-filters form .form-actions {
   margin: 0;
   padding: 0;
 }
@@ -15990,17 +15994,71 @@ main[role=main] .region-content .field--name-field-media-image img {
   width: 100%;
   text-align: center;
 }
-.view-news .views-row {
-  margin-bottom: 60px;
+.view-news .view-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch; /* equal height cards per row */
 }
-.view-news .views-field-field-section {
+.view-news .view-content > .views-row {
+  display: flex;
+  width: 250px; /* match .card width */
+}
+.view-news .view-content > .views-row > .views-field,
+.view-news .view-content > .views-row > .views-field > .field-content,
+.view-news .view-content > .views-row > .views-field > .field-content > span {
+  display: flex;
+  width: 100%;
+}
+.view-news .view-content > .views-row a.card, .view-news .view-content > .views-row .view-media-library .media-library-views-form__rows .media-library-item--grid a.views-field-rendered-entity, .view-media-library .media-library-views-form__rows .media-library-item--grid .view-news .view-content > .views-row a.views-field-rendered-entity, .view-news .view-content > .views-row .media-library-selection a.media-library-item.media-library-item--grid, .media-library-selection .view-news .view-content > .views-row a.media-library-item.media-library-item--grid {
+  width: 100%;
+  flex: 1 1 auto;
+}
+.view-news .card, .view-news .view-media-library .media-library-views-form__rows .media-library-item--grid .views-field-rendered-entity, .view-media-library .media-library-views-form__rows .media-library-item--grid .view-news .views-field-rendered-entity, .view-news .media-library-selection .media-library-item.media-library-item--grid, .media-library-selection .view-news .media-library-item.media-library-item--grid {
+  border: 1px solid #dadcdf;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+.view-news .card:hover, .view-news .view-media-library .media-library-views-form__rows .media-library-item--grid .views-field-rendered-entity:hover, .view-media-library .media-library-views-form__rows .media-library-item--grid .view-news .views-field-rendered-entity:hover, .view-news .media-library-selection .media-library-item.media-library-item--grid:hover, .media-library-selection .view-news .media-library-item.media-library-item--grid:hover {
+  transform: scale(1.05);
+}
+.view-news .image {
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.view-news .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px 10px 0 0 !important;
+}
+.view-news h2.title, .view-news .title.h2 {
+  padding: 0 10px 10px 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.25;
+}
+.view-news .section {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.9rem;
-  margin-bottom: 0.2rem;
+  padding: 0 10px 10px 10px;
+  color: #9095a0;
 }
-.view-news .views-field-body {
-  margin-bottom: 1rem;
+.view-news .body {
+  padding: 0 10px 10px 10px;
 }
 
 body.path-frontpage #block-arun11-content article.node--type-landing-page {
