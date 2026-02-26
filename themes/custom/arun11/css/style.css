@@ -14981,18 +14981,23 @@ header .top-container .right-container .region {
   align-items: center;
 }
 
+/* Wavy lines */
+.footer-shape-top {
+  position: relative;
+  top: 1px;
+}
+.footer-shape-top svg {
+  height: 28px;
+  width: 100%;
+}
+.footer-shape-top svg .elementor-shape-fill {
+  fill: #224957;
+}
+
 footer {
   background-color: #224957;
   color: #FFFFF8;
-  padding: 100px 0 60px 0;
-  /*
-  #block-arun11-aruncounselling {
-    h2 {
-      font-size: 32px;
-      font-weight: 500;
-    }
-  }
-  */
+  padding: 30px 0 60px 0;
   /* Default text based footer menus */
   /* Social media icons */
 }
@@ -15022,6 +15027,12 @@ footer #block-arun11-follow ul.navbar-nav {
 footer #block-arun11-follow ul.navbar-nav .nav-link, footer #block-arun11-follow ul.navbar-nav .media-library-view--widget .view-header a, .media-library-view--widget .view-header footer #block-arun11-follow ul.navbar-nav a {
   margin: 0;
 }
+footer .about,
+footer .copyright {
+  font-size: medium;
+  text-align: center;
+  padding: 0 0 5px 0 !important;
+}
 
 @media (min-width: 768px) and (max-width: 991px) {
   footer {
@@ -15031,6 +15042,34 @@ footer #block-arun11-follow ul.navbar-nav .nav-link, footer #block-arun11-follow
     font-size: 18px;
   }
 }
+#footer-logos {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+#footer-logos img {
+  height: auto;
+}
+#footer-logos .bacp img {
+  width: 200px;
+}
+#footer-logos .disability-confident img {
+  height: 50px;
+  width: auto;
+}
+#footer-logos .living-wage img {
+  height: 50px;
+  width: auto;
+}
+#footer-logos .chamber-member img {
+  height: 50px;
+  width: auto;
+}
+
 nav.tabs-primary ul {
   justify-content: center;
 }

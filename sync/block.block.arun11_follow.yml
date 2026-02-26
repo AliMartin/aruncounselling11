@@ -16,7 +16,7 @@ provider: null
 plugin: 'system_menu_block:follow'
 settings:
   id: 'system_menu_block:follow'
-  label: Follow
+  label: 'Follow us'
   label_display: visible
   provider: system
   level: 1

@@ -16,7 +16,7 @@ provider: null
 plugin: 'block_content:11150923-b728-4768-ad6f-84150b866324'
 settings:
   id: 'block_content:11150923-b728-4768-ad6f-84150b866324'
-  label: 'Arun Counselling'
+  label: 'Arun Counselling Centre'
   label_display: visible
   provider: block_content
   view_mode: full

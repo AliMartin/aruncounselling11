@@ -167,6 +167,7 @@
    */
   /* Custom button colours for the Our Services panel */
   /* Wavy lines */
+  /* Wavy lines */
   /* File attachments */
   /* File download icons */
   /* Remove some an annoying keylines on the SVG */
@@ -13713,18 +13714,21 @@ a > .ck-content code {
   flex-direction: row;
   align-items: center;
 }
+.ck-content .footer-shape-top {
+  position: relative;
+  top: 1px;
+}
+.ck-content .footer-shape-top svg {
+  height: 28px;
+  width: 100%;
+}
+.ck-content .footer-shape-top svg .elementor-shape-fill {
+  fill: #224957;
+}
 .ck-content footer {
   background-color: #224957;
   color: #FFFFF8;
-  padding: 100px 0 60px 0;
-  /*
-  #block-arun11-aruncounselling {
-    h2 {
-      font-size: 32px;
-      font-weight: 500;
-    }
-  }
-  */
+  padding: 30px 0 60px 0;
   /* Default text based footer menus */
   /* Social media icons */
 }
@@ -13754,6 +13758,12 @@ a > .ck-content code {
 .ck-content footer #block-arun11-follow ul.navbar-nav .nav-link, .ck-content footer #block-arun11-follow ul.navbar-nav .media-library-view--widget .view-header a, .ck-content .media-library-view--widget .view-header footer #block-arun11-follow ul.navbar-nav a {
   margin: 0;
 }
+.ck-content footer .about,
+.ck-content footer .copyright {
+  font-size: medium;
+  text-align: center;
+  padding: 0 0 5px 0 !important;
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .ck-content footer {
     font-size: 14px;
@@ -13761,6 +13771,33 @@ a > .ck-content code {
   .ck-content footer h2, .ck-content footer .h2 {
     font-size: 18px;
   }
+}
+.ck-content #footer-logos {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.ck-content #footer-logos img {
+  height: auto;
+}
+.ck-content #footer-logos .bacp img {
+  width: 200px;
+}
+.ck-content #footer-logos .disability-confident img {
+  height: 50px;
+  width: auto;
+}
+.ck-content #footer-logos .living-wage img {
+  height: 50px;
+  width: auto;
+}
+.ck-content #footer-logos .chamber-member img {
+  height: 50px;
+  width: auto;
 }
 .ck-content nav.tabs-primary ul {
   justify-content: center;

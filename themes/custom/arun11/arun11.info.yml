@@ -21,7 +21,7 @@ regions:
   footer_region_1: 'Footer region first'
   footer_region_2: 'Footer region second'
   footer_region_3: 'Footer region third'
-  footer_region_4: 'Footer region fourth'
+  footer_logos: 'Footer logos'
 libraries-override:
   bootstrap5/global-styling: false
   bootstrap5/ckeditor5-stylesheets: false

@@ -1,0 +1,23 @@
+uuid: 3d7944f0-09ee-42e2-b55b-248f329e5c83
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fbfa82dc-39c2-4056-b58f-b1b9ea7e7a34'
+  module:
+    - block_content
+  theme:
+    - arun11
+id: arun11_footerlogos
+theme: arun11
+region: footer_logos
+weight: 0
+provider: null
+plugin: 'block_content:fbfa82dc-39c2-4056-b58f-b1b9ea7e7a34'
+settings:
+  id: 'block_content:fbfa82dc-39c2-4056-b58f-b1b9ea7e7a34'
+  label: 'Footer logos'
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }
