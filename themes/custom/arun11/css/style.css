@@ -15001,6 +15001,9 @@ footer {
   font-size: medium;
   text-align: center;
 }
+footer h2, footer .h2 {
+  color: #FFFFF8;
+}
 footer .about {
   margin-bottom: 5px;
 }
@@ -15172,6 +15175,10 @@ main[role=main] .region-content .field--name-field-media-image img {
   border-radius: 10px;
 }
 
+ol, ul, dl {
+  margin-bottom: 2rem;
+}
+
 .page-title-wrapper {
   margin-bottom: 60px;
 }
@@ -15320,7 +15327,7 @@ main[role=main] .region-content .field--name-field-media-image img {
   padding: 0 30px;
 }
 .paragraph-wrapper .paragraph .content-wrapper p:last-of-type {
-  margin-bottom: 0;
+  margin-bottom: 2rem;
 }
 .paragraph-wrapper .paragraph .text {
   margin-bottom: 2rem;
@@ -15337,6 +15344,7 @@ main[role=main] .region-content .field--name-field-media-image img {
 }
 .paragraph-wrapper.image-defined-true .paragraph--type--basic-text .content-wrapper .text-wrapper {
   flex: 3;
+  margin-bottom: 2rem;
 }
 .paragraph-wrapper.image-defined-true .paragraph--type--basic-text .content-wrapper .image-wrapper {
   flex: 2;
@@ -15373,13 +15381,56 @@ main[role=main] .region-content .field--name-field-media-image img {
  * Fire this rule only if there is NO IMAGE
  */
 .paragraph-wrapper.image-defined-false .paragraph--type--basic-text .text-wrapper {
-  text-align: center;
   max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 2rem auto;
 }
-.paragraph-wrapper.image-defined-false .paragraph--type--basic-text .field--name-field-button {
+.paragraph-wrapper.image-defined-false .paragraph--type--basic-text h2, .paragraph-wrapper.image-defined-false .paragraph--type--basic-text .h2 {
+  text-align: center;
+}
+/*
+ * View paragraph type
+ * Override the default background colour
+ */
+.paragraph--type--view {
+  background-color: inherit !important;
+}
+.paragraph--type--view .field--name-field-title h2, .paragraph--type--view .field--name-field-title .h2 {
+  color: #333333 !important;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.paragraph--type--view h2.title, .paragraph--type--view .title.h2 {
+  color: #333333 !important;
+}
+.paragraph--type--view .field--name-field-text,
+.paragraph--type--view .field--name-field-text a,
+.paragraph--type--view .field--name-field-text a:hover {
+  color: #333333 !important;
+}
+.paragraph--type--view .more-link a {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+  background-color: #224957;
+  color: #FFFFF8 !important;
+}
+.paragraph--type--view .more-link a:hover {
+  background-color: #142a32;
+  color: #FFFFF8 !important;
+}
+.paragraph--type--view .more-link a::after {
+  display: flex;
+  content: "\f054";
+  font-family: "Font Awesome 6 Pro";
+  font-size: 1rem;
+  line-height: 1;
+  margin-left: 10px;
 }
 
 /* Paragraph customisations */
@@ -16048,10 +16099,10 @@ main[role=main] .region-content .field--name-field-media-image img {
 }
 
 .view-news {
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 120px;
   /* On smaller screens, center the cards/rows so 1–2 column layouts don't hug the left edge */
   /* Views outputs .views-row as the direct children of .view-content, not the <a.card>.
      Make the .views-row chain stretch so the card can truly become equal height. */
@@ -16108,6 +16159,21 @@ main[role=main] .region-content .field--name-field-media-image img {
 .view-news .view-header {
   width: 100%;
   text-align: center;
+  margin-bottom: 90px;
+}
+.view-news .view-header .title {
+  background-color: #224957;
+}
+.view-news .view-header h1, .view-news .view-header .h1 {
+  font-size: clamp(40px, 6.1vw + 9.51px, 70px);
+  letter-spacing: -1px;
+  line-height: 1.1;
+  margin: 0;
+  padding: 90px 0;
+  color: #FFFFF8;
+}
+.view-news .view-header .elementor-shape-fill {
+  fill: #224957;
 }
 .view-news .view-content {
   /* Cap the grid so we never get more than 3 x 350px cards (+ 2 x 30px gaps) */

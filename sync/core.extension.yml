@@ -16,6 +16,7 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  draggableviews: 0
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
@@ -31,12 +32,14 @@ module:
   history: 0
   httpswww: 0
   image: 0
+  insert_view: 0
   klaro: 0
   language: 0
   link: 0
   link_attributes: 0
   link_attributes_menu_link_content: 0
   locale: 0
+  maxlength: 0
   media: 0
   media_library: 0
   menu_link_content: 0

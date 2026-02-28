@@ -18,6 +18,10 @@ footer {
   font-size: medium;
   text-align: center;
 
+  h2 {
+    color: $white;
+  }
+
   .about {margin-bottom: 5px;}
   .copyright {margin-bottom: 5px;}
 }

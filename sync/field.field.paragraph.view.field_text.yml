@@ -1,0 +1,24 @@
+uuid: 10a3f797-44a2-4ab4-a0d4-9ba14e9af0f7
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - filter.format.code
+    - paragraphs.paragraphs_type.view
+  module:
+    - text
+id: paragraph.view.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: view
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - code
+field_type: text_long

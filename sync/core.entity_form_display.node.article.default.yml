@@ -1,5 +1,5 @@
 uuid: 3ce58c93-95f6-43d6-b407-d4b8550dd0c5
-langcode: en
+langcode: en-gb
 status: true
 dependencies:
   config:
@@ -12,6 +12,7 @@ dependencies:
     - node.type.article
   module:
     - datetime
+    - maxlength
     - media_library
     - path
     - text
@@ -113,7 +114,11 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
+    third_party_settings:
+      maxlength:
+        maxlength_js: 60
+        maxlength_js_label: 'Content limited to @limit characters, remaining: <strong>@remaining</strong>'
+        maxlength_js_enforce: false
   uid:
     type: entity_reference_autocomplete
     weight: 8

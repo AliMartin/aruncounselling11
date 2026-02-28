@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.basic_text
     - paragraphs.paragraphs_type.statistic
     - paragraphs.paragraphs_type.text_panel
+    - paragraphs.paragraphs_type.view
   module:
     - entity_reference_revisions
 id: node.landing_page.field_content
@@ -27,6 +28,7 @@ settings:
       basic_text: basic_text
       statistic: statistic
       text_panel: text_panel
+      view: view
     negate: 0
     target_bundles_drag_drop:
       basic_text:
@@ -44,4 +46,7 @@ settings:
       text_panel_bundle:
         weight: 10
         enabled: false
+      view:
+        weight: 12
+        enabled: true
 field_type: entity_reference_revisions

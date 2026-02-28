@@ -1,0 +1,10 @@
+uuid: a0cf4b9a-b3f7-420d-8530-9a9d0fceb5dc
+langcode: en-gb
+status: true
+dependencies: {  }
+id: view
+label: View
+icon_uuid: null
+icon_default: null
+description: 'A special paragraph type for inserting <em>views</em>, such as latest news.'
+behavior_plugins: {  }
