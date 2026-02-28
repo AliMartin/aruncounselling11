@@ -10,14 +10,14 @@ dependencies:
     - arun11
 id: arun11_follow
 theme: arun11
-region: footer_region_3
+region: footer_top
 weight: -6
 provider: null
 plugin: 'system_menu_block:follow'
 settings:
   id: 'system_menu_block:follow'
   label: 'Follow us'
-  label_display: visible
+  label_display: '0'
   provider: system
   level: 1
   depth: null

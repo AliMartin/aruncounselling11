@@ -14835,7 +14835,7 @@ body.user-logged-in main[role=main] {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 15px 0;
-  gap: 10px;
+  gap: 30px;
   justify-content: flex-start;
 }
 @media (max-width: 767px) {
@@ -14866,7 +14866,7 @@ body.user-logged-in main[role=main] {
   align-items: center;
   padding: 10px 20px;
   border-radius: 10px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   transition: background-color 150ms ease;
@@ -14998,76 +14998,144 @@ footer {
   background-color: #224957;
   color: #FFFFF8;
   padding: 30px 0 60px 0;
-  /* Default text based footer menus */
-  /* Social media icons */
-}
-footer .container .row > div {
-  padding: 0 15px 45px 15px;
-}
-footer h2, footer .h2 {
-  color: #FFFFF8 !important;
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 400;
-  margin-bottom: 15px;
-  color: #FFFFF8;
-}
-footer ul.navbar-nav .nav-link, footer ul.navbar-nav .media-library-view--widget .view-header a, .media-library-view--widget .view-header footer ul.navbar-nav a {
-  padding: 0;
-  margin: 0 0 5px 0;
-  font-weight: 600;
-}
-footer ul.navbar-nav .nav-link:hover, footer ul.navbar-nav .media-library-view--widget .view-header a:hover, .media-library-view--widget .view-header footer ul.navbar-nav a:hover {
-  text-decoration: underline;
-}
-footer #block-arun11-follow ul.navbar-nav {
-  flex-direction: row;
-  gap: 15px;
-}
-footer #block-arun11-follow ul.navbar-nav .nav-link, footer #block-arun11-follow ul.navbar-nav .media-library-view--widget .view-header a, .media-library-view--widget .view-header footer #block-arun11-follow ul.navbar-nav a {
-  margin: 0;
-}
-footer .about,
-footer .copyright {
   font-size: medium;
   text-align: center;
-  padding: 0 0 5px 0 !important;
+}
+footer .about {
+  margin-bottom: 5px;
+}
+footer .copyright {
+  margin-bottom: 5px;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  footer {
-    font-size: 14px;
-  }
-  footer h2, footer .h2 {
-    font-size: 18px;
-  }
+/* About Arun Counselling Centre */
+#block-arun11-aruncounselling {
+  margin-bottom: 10px;
 }
-#footer-logos {
-  margin-top: 60px;
+#block-arun11-aruncounselling p {
+  margin: 0;
+}
+
+/* Social media icons */
+#block-arun11-follow {
+  margin-bottom: 60px;
+}
+#block-arun11-follow ul.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+#block-arun11-follow ul.navbar-nav .nav-link, #block-arun11-follow ul.navbar-nav .media-library-view--widget .view-header a, .media-library-view--widget .view-header #block-arun11-follow ul.navbar-nav a {
+  margin: 0;
+}
+#block-arun11-follow ul.navbar-nav svg {
+  font-size: 24px;
+  line-height: 1;
+}
+
+/* Footer logos */
+#footer-logos .logo-wrapper {
+  margin-bottom: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  /* Use separate row/column gaps so we can match edge spacing */
+  column-gap: 45px;
+  row-gap: 15px;
+  /* Match the outer edges to the internal spacing */
+  padding-inline: 30px;
+  /* Prevent Bootstrap/field wrappers from stretching items */
 }
-#footer-logos img {
+#footer-logos .logo-wrapper > * {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none;
+}
+#footer-logos .logo-wrapper img {
+  display: block;
   height: auto;
 }
-#footer-logos .bacp img {
+#footer-logos .logo-wrapper .bacp img {
   width: 200px;
 }
-#footer-logos .disability-confident img {
+#footer-logos .logo-wrapper .disability-confident img {
   height: 50px;
   width: auto;
 }
-#footer-logos .living-wage img {
+#footer-logos .logo-wrapper .living-wage img {
   height: 50px;
   width: auto;
 }
-#footer-logos .chamber-member img {
+#footer-logos .logo-wrapper .chamber-member img {
   height: 50px;
   width: auto;
+}
+
+@media (max-width: 767.98px) {
+  #footer-logos .logo-wrapper {
+    column-gap: 30px;
+    row-gap: 15px;
+    padding-inline: 7.5px;
+  }
+  #footer-logos .logo-wrapper img {
+    transform-origin: center;
+  }
+}
+/* Default text based footer menus */
+#block-arun11-footer {
+  margin-bottom: 60px;
+}
+#block-arun11-footer ul.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: medium;
+  /* Reset list defaults (varies by markup / Bootstrap version) */
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  /* Separators */
+}
+#block-arun11-footer ul.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+}
+#block-arun11-footer ul.navbar-nav .nav-item::after {
+  content: "|";
+  margin: 0 12px;
+  opacity: 0.6;
+  position: relative;
+  top: -3px;
+}
+#block-arun11-footer ul.navbar-nav .nav-item:last-child::after {
+  content: none;
+  margin: 0;
+}
+#block-arun11-footer ul.navbar-nav .nav-link, #block-arun11-footer ul.navbar-nav .media-library-view--widget .view-header a, .media-library-view--widget .view-header #block-arun11-footer ul.navbar-nav a {
+  padding: 0;
+  margin: 0 0 5px 0;
+  text-decoration: none;
+}
+#block-arun11-footer ul.navbar-nav .nav-link:hover, #block-arun11-footer ul.navbar-nav .media-library-view--widget .view-header a:hover, .media-library-view--widget .view-header #block-arun11-footer ul.navbar-nav a:hover, #block-arun11-footer ul.navbar-nav .nav-link:focus-visible, #block-arun11-footer ul.navbar-nav .media-library-view--widget .view-header a:focus-visible, .media-library-view--widget .view-header #block-arun11-footer ul.navbar-nav a:focus-visible {
+  text-decoration: underline;
+}
+
+/* Ultraluminal */
+#ultraluminal .text {
+  font-size: 9px;
+  line-height: 1;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+#ultraluminal .logo img {
+  width: 70px;
+  height: auto;
 }
 
 nav.tabs-primary ul {
@@ -15108,7 +15176,7 @@ main[role=main] .region-content .field--name-field-media-image img {
   margin-bottom: 60px;
 }
 .page-title-wrapper .page-title {
-  padding: 60px 0 45px 0;
+  padding: 90px 0 80px 0;
 }
 @media (max-width: 991px) {
   .page-title-wrapper .page-title {
@@ -15125,10 +15193,10 @@ main[role=main] .region-content .field--name-field-media-image img {
   font-size: clamp(40px, 6.1vw + 9.51px, 70px);
   letter-spacing: -1px;
   line-height: 1.1;
-  margin: 0 0 15px 0;
+  margin: 0 0 45px 0;
 }
 .page-title-wrapper .page-title .subtitle {
-  margin: 0 0 15px 0;
+  margin: 0 0 45px 0;
 }
 .page-title-wrapper .page-title .button {
   margin: 0;
@@ -15253,6 +15321,9 @@ main[role=main] .region-content .field--name-field-media-image img {
 }
 .paragraph-wrapper .paragraph .content-wrapper p:last-of-type {
   margin-bottom: 0;
+}
+.paragraph-wrapper .paragraph .text {
+  margin-bottom: 2rem;
 }
 
 /*
@@ -15978,10 +16049,15 @@ main[role=main] .region-content .field--name-field-media-image img {
 
 .view-news {
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* On smaller screens, center the cards/rows so 1–2 column layouts don't hug the left edge */
   /* Views outputs .views-row as the direct children of .view-content, not the <a.card>.
      Make the .views-row chain stretch so the card can truly become equal height. */
 }
 .view-news .view-filters {
+  display: none;
   width: 100%;
 }
 .view-news .view-filters form {
@@ -16034,18 +16110,27 @@ main[role=main] .region-content .field--name-field-media-image img {
   text-align: center;
 }
 .view-news .view-content {
-  max-width: 1200px;
+  /* Cap the grid so we never get more than 3 x 350px cards (+ 2 x 30px gaps) */
+  max-width: 1110px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
-  align-items: stretch; /* equal height cards per row */
+  /* On large screens: the grid block is centered (via margin auto), but cards align left */
+  justify-content: flex-start;
+  align-items: stretch;
+}
+@media (max-width: 1199.98px) {
+  .view-news .view-content {
+    justify-content: center;
+  }
 }
 .view-news .view-content > .views-row {
   display: flex;
-  width: 250px; /* match .card width */
+  flex: 0 0 350px; /* match card width */
+  width: 350px;
 }
 .view-news .view-content > .views-row > .views-field,
 .view-news .view-content > .views-row > .views-field > .field-content,
@@ -16059,9 +16144,8 @@ main[role=main] .region-content .field--name-field-media-image img {
 }
 .view-news .card, .view-news .view-media-library .media-library-views-form__rows .media-library-item--grid .views-field-rendered-entity, .view-media-library .media-library-views-form__rows .media-library-item--grid .view-news .views-field-rendered-entity, .view-news .media-library-selection .media-library-item.media-library-item--grid, .media-library-selection .view-news .media-library-item.media-library-item--grid {
   border: 1px solid #dadcdf;
-  text-align: center;
   text-decoration: none;
-  background-color: #fff;
+  background-color: #FFFFF8;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -16084,7 +16168,7 @@ main[role=main] .region-content .field--name-field-media-image img {
   border-radius: 10px 10px 0 0 !important;
 }
 .view-news h2.title, .view-news .title.h2 {
-  padding: 0 10px 10px 10px;
+  padding: 10px 20px 10px 20px;
   font-weight: 600;
   font-size: 1.1rem;
   line-height: 1.25;
@@ -16093,11 +16177,11 @@ main[role=main] .region-content .field--name-field-media-image img {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.9rem;
-  padding: 0 10px 10px 10px;
+  padding: 0 20px 20px 20px;
   color: #9095a0;
 }
 .view-news .body {
-  padding: 0 10px 10px 10px;
+  padding: 0 20px 10px 20px;
 }
 
 body.path-frontpage #block-arun11-content article.node--type-landing-page {

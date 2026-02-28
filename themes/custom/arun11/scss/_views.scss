@@ -1,7 +1,11 @@
 .view-news {
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .view-filters {
+    display: none;
     width: 100%;
 
     form {
@@ -65,21 +69,34 @@
   }
 
   .view-content {
-    max-width: 1200px;
+    /* Cap the grid so we never get more than 3 x 350px cards (+ 2 x 30px gaps) */
+    max-width: 1110px;
+    width: 100%;
     margin: 0 auto;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: center;
-    align-items: stretch; /* equal height cards per row */
+
+    /* On large screens: the grid block is centered (via margin auto), but cards align left */
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  /* On smaller screens, center the cards/rows so 1–2 column layouts don't hug the left edge */
+  @media (max-width: 1199.98px) {
+    .view-content {
+      justify-content: center;
+    }
   }
 
   /* Views outputs .views-row as the direct children of .view-content, not the <a.card>.
      Make the .views-row chain stretch so the card can truly become equal height. */
   .view-content > .views-row {
     display: flex;
-    width: 250px; /* match .card width */
+    flex: 0 0 350px; /* match card width */
+    width: 350px;
   }
 
   .view-content > .views-row > .views-field,
@@ -96,9 +113,9 @@
 
   .card {
     border: 1px solid $gray-200;
-    text-align: center;
+    // text-align: center;
     text-decoration: none;
-    background-color: #fff;
+    background-color: $white;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -125,7 +142,7 @@
   }
 
   h2.title {
-    padding: 0 10px 10px 10px;
+    padding: 10px 20px 10px 20px;
     font-weight: $font-weight-bold;
     font-size: 1.1rem;
     line-height: 1.25;
@@ -135,11 +152,11 @@
     text-transform: uppercase;
     font-weight: $font-weight-bold;
     font-size: 0.9rem;
-    padding: 0 10px 10px 10px;
+    padding: 0 20px 20px 20px;
     color: $gray-400;
   }
 
   .body {
-    padding: 0 10px 10px 10px;
+    padding: 0 20px 10px 20px;
   }
 }

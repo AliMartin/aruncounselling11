@@ -11,7 +11,7 @@ dependencies:
 id: arun11_footerlogos
 theme: arun11
 region: footer_logos
-weight: 0
+weight: -6
 provider: null
 plugin: 'block_content:fbfa82dc-39c2-4056-b58f-b1b9ea7e7a34'
 settings:

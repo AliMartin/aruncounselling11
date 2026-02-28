@@ -103,14 +103,19 @@ set footer_classes = ' ' ~
 <footer role="contentinfo" class="mt-auto {{ footer_classes }}">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-5 col-md-5">{{ page.footer_region_1 }}</div>
-      <div class="col-xs-12 col-sm-5 col-md-5">{{ page.footer_region_2 }}</div>
-      <div class="col-xs-12 col-sm-2 col-md-2">{{ page.footer_region_3 }}</div>
+      <div class="footer-top">{{ page.footer_top }}</div>
     </div>
     <div class="row">
       <div class="logos">{{ page.footer_logos }}</div>
       <div class="about">Arun Counselling Centre is a registered charity (293053) and a BACP Accredited Service (101628)</div>
       <div class="copyright">&copy; Arun Counselling Centre {{ "now"|date("Y") }}</div>
+    </div>
+    <div class="row">
+      <div class="footer-bottom">{{ page.footer_bottom }}</div>
+      <div id="ultraluminal">
+        <div class="text">Website by</div>
+        <div class="logo"><a href="https://ultraluminal.co.uk" target="_blank"><img src="/themes/custom/arun11/images/ultraluminal.png"><a/></div>
+      </div>
     </div>
   </div>
 </footer>

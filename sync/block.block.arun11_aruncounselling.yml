@@ -10,8 +10,8 @@ dependencies:
     - arun11
 id: arun11_aruncounselling
 theme: arun11
-region: footer_region_1
-weight: -6
+region: footer_top
+weight: -7
 provider: null
 plugin: 'block_content:11150923-b728-4768-ad6f-84150b866324'
 settings:

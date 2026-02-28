@@ -4,7 +4,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin: 15px 0;
-  gap: 10px;
+  gap: 30px;
   justify-content: flex-start;
 
   @media (max-width: 767px) {
@@ -24,7 +24,7 @@
       align-items: center;
       padding: 10px 20px;
       border-radius: $border-radius;
-      font-size: 1.1rem;
+      font-size: 1.0rem;
       font-weight: $font-weight-bold;
       text-decoration: none;
       transition: background-color 150ms ease;

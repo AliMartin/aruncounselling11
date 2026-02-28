@@ -15,86 +15,154 @@ footer {
   background-color: $dark-green;
   color: $white;
   padding: 30px 0 60px 0;
+  font-size: medium;
+  text-align: center;
 
-  .container {
-    .row > div {
-      padding: 0 15px 45px 15px;
-    }
+  .about {margin-bottom: 5px;}
+  .copyright {margin-bottom: 5px;}
+}
+
+
+/* About Arun Counselling Centre */
+#block-arun11-aruncounselling {
+  margin-bottom: 10px;
+  p {
+    margin: 0;
   }
+}
 
-  h2 {
-    color: $white !important;
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 400;
-    margin-bottom: 15px;
-    color: $white;
-  }
 
-  /* Default text based footer menus */
+/* Social media icons */
+#block-arun11-follow {
+  margin-bottom: 60px;
+
   ul.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+
     .nav-link {
-      padding: 0;
-      margin: 0 0 5px 0;
-      font-weight: $font-weight-bold;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-
-  /* Social media icons */
-  #block-arun11-follow {
-    ul.navbar-nav {
-      flex-direction: row;
-      gap: 15px;
-      .nav-link {
-        margin: 0;
-      }
-    }
-  }
-
-  .about,
-  .copyright {
-    font-size: medium;
-    text-align: center;
-    padding: 0 0 5px 0 !important;
-  }
-}
-
-
-@media (min-width: 768px) and (max-width: 991px) {
-  footer {
-    font-size: 14px;
-
-    .container {
-      .row {
-      }
+      margin: 0;
     }
 
-    h2 {
-      font-size: 18px;
+    svg {
+      font-size: 24px;
+      line-height: 1;
     }
   }
 }
 
 
-#footer-logos {
-  margin-top: 60px;
+/* Footer logos */
+#footer-logos .logo-wrapper {
+  margin-bottom: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+
+  /* Use separate row/column gaps so we can match edge spacing */
+  column-gap: 45px;
+  row-gap: 15px;
+
+  /* Match the outer edges to the internal spacing */
+  padding-inline: 30px;
+
+  /* Prevent Bootstrap/field wrappers from stretching items */
+  > * {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
 
   img {
+    display: block;
     height: auto;
   }
 
-  .bacp img {width: 200px;}
-  .disability-confident img {height: 50px; width: auto;}
-  .living-wage img {height: 50px; width: auto;}
-  .chamber-member img {height: 50px; width: auto;}
+  .bacp img { width: 200px; }
+  .disability-confident img { height: 50px; width: auto; }
+  .living-wage img { height: 50px; width: auto; }
+  .chamber-member img { height: 50px; width: auto; }
+}
+
+@media (max-width: 767.98px) {
+  #footer-logos .logo-wrapper {
+    column-gap: 30px;
+    row-gap: 15px;
+    padding-inline: 7.5px;
+
+    img {
+      // transform: scale(0.8);
+      transform-origin: center;
+    }
+  }
+}
+
+
+/* Default text based footer menus */
+#block-arun11-footer {
+  margin-bottom: 60px;
+
+  ul.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: medium;
+
+    /* Reset list defaults (varies by markup / Bootstrap version) */
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+
+    /* Separators */
+    .nav-item {
+      display: flex;
+      align-items: center;
+
+      &::after {
+        content: "|";
+        margin: 0 12px;
+        opacity: 0.6;
+        position: relative;
+        top: -3px;
+      }
+
+      &:last-child::after {
+        content: none;
+        margin: 0;
+      }
+    }
+
+    .nav-link {
+      padding: 0;
+      margin: 0 0 5px 0;
+      text-decoration: none;
+
+      &:hover,
+      &:focus-visible {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+/* Ultraluminal */
+#ultraluminal {
+  .text {
+    font-size: 9px;
+    line-height: 1;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  .logo img {
+    width: 70px;
+    height: auto;
+  }
 }
