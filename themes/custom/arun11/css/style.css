@@ -15198,6 +15198,11 @@ main[role=main] .region-content .field--name-field-media-image img {
 ol, ul, dl {
   margin-bottom: 2rem;
 }
+@media (max-width: 767px) {
+  ol, ul, dl {
+    text-align: left;
+  }
+}
 
 .page-title-wrapper {
   margin-bottom: 60px;
@@ -15392,6 +15397,15 @@ ol, ul, dl {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 30px;
+}
+@media (max-width: 767px) {
+  .paragraph-wrapper .paragraph .content-wrapper {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    text-align: center;
+  }
 }
 .paragraph-wrapper .paragraph .content-wrapper p:last-of-type {
   margin-bottom: 2rem;
@@ -16634,6 +16648,7 @@ ol, ul, dl {
 
 /* Sponsor logos */
 .view-sponsors {
+  padding: 0 20px;
   margin: -60px 0 60px 0;
 }
 .view-sponsors .view-content {
@@ -16721,6 +16736,11 @@ body.path-frontpage #block-arun11-content article.node--type-landing-page .page-
 }
 body.path-frontpage #block-arun11-content article.node--type-landing-page .page-title-wrapper .field--name-field-button .field__item:nth-child(3n) a:hover {
   background-color: #fff7ac !important;
+}
+@media (max-width: 767px) {
+  body.path-frontpage .page-title-wrapper .field--name-field-button {
+    justify-content: center;
+  }
 }
 
 header .main-menu ul.navbar-nav {
@@ -16993,6 +17013,17 @@ body.mm-wrapper_opening #block-arun11-responsivemenumobileicon .responsive-menu-
   width: 12px;
   height: 12px;
   border-color: #224957;
+}
+
+.mm-menu {
+  /* Odd blank menu item at top of list */
+  /* Odd menu item appearing, let's hide it */
+}
+.mm-menu ul > a:first-of-type {
+  display: none;
+}
+.mm-menu ul > li.menu-item--cb91780e-e103-45a7-a575-c696df7b9a19 > a.mm-listitem__text:first-of-type {
+  display: none;
 }
 
 #klaro #klaro-cookie-notice,

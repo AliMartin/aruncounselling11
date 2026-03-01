@@ -60,4 +60,10 @@ body.path-frontpage {
       .page-title-wrapper .field--name-field-button .field__item:nth-child(3n)     a:hover { background-color: darken($pastel-yellow, 10%) !important;}
     }
   }
+
+  .page-title-wrapper .field--name-field-button {
+    @media (max-width: 767px) {
+      justify-content: center;
+    }
+  }
 }

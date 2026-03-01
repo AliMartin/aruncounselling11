@@ -13928,6 +13928,11 @@ a > .ck-content code {
 .ck-content ol, .ck-content ul, .ck-content dl {
   margin-bottom: 2rem;
 }
+@media (max-width: 767px) {
+  .ck-content ol, .ck-content ul, .ck-content dl {
+    text-align: left;
+  }
+}
 .ck-content .page-title-wrapper {
   margin-bottom: 60px;
 }
@@ -14101,6 +14106,15 @@ a > .ck-content code {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 30px;
+}
+@media (max-width: 767px) {
+  .ck-content .paragraph-wrapper .paragraph .content-wrapper {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    text-align: center;
+  }
 }
 .ck-content .paragraph-wrapper .paragraph .content-wrapper p:last-of-type {
   margin-bottom: 2rem;
@@ -15267,6 +15281,7 @@ a > .ck-content code {
   margin-left: 10px;
 }
 .ck-content .view-sponsors {
+  padding: 0 20px;
   margin: -60px 0 60px 0;
 }
 .ck-content .view-sponsors .view-content {
@@ -15353,6 +15368,11 @@ a > .ck-content code {
 }
 .ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page .page-title-wrapper .field--name-field-button .field__item:nth-child(3n) a:hover {
   background-color: #fff7ac !important;
+}
+@media (max-width: 767px) {
+  .ck-content body.path-frontpage .page-title-wrapper .field--name-field-button {
+    justify-content: center;
+  }
 }
 .ck-content header .main-menu ul.navbar-nav {
   flex-direction: row;
@@ -15618,6 +15638,16 @@ a > .ck-content code {
   width: 12px;
   height: 12px;
   border-color: #224957;
+}
+.ck-content .mm-menu {
+  /* Odd blank menu item at top of list */
+  /* Odd menu item appearing, let's hide it */
+}
+.ck-content .mm-menu ul > a:first-of-type {
+  display: none;
+}
+.ck-content .mm-menu ul > li.menu-item--cb91780e-e103-45a7-a575-c696df7b9a19 > a.mm-listitem__text:first-of-type {
+  display: none;
 }
 .ck-content #klaro #klaro-cookie-notice,
 .ck-content #klaro .cm-modal {

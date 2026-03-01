@@ -120,4 +120,15 @@ body.mm-wrapper_opening {
   }
 }
 
+.mm-menu {
+  /* Odd blank menu item at top of list */
+  ul > a:first-of-type {
+    display: none;
+  }
+
+  /* Odd menu item appearing, let's hide it */
+  ul > li.menu-item--cb91780e-e103-45a7-a575-c696df7b9a19 > a.mm-listitem__text:first-of-type {
+    display: none;
+  }
+}
 

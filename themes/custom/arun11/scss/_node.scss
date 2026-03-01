@@ -47,6 +47,10 @@ main[role="main"] {
 
 ol, ul, dl {
   margin-bottom: 2rem;
+
+  @media (max-width: 767px) {
+    text-align: left;
+  }
 }
 
 
