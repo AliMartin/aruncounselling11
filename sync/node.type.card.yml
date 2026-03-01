@@ -1,0 +1,17 @@
+uuid: cc079035-4fa4-4b32-9236-90018eabb267
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Card
+type: card
+description: 'Add a <em>card</em> to the website, such as for emergency services.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

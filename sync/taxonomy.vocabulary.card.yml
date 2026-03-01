@@ -1,0 +1,9 @@
+uuid: 7e2f1c0a-22db-43a5-a148-b6c03e9eba25
+langcode: en-gb
+status: true
+dependencies: {  }
+name: Card
+vid: card
+description: 'Categorises cards, such as emergency services'
+weight: 0
+new_revision: false
