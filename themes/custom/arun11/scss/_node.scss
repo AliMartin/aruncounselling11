@@ -49,6 +49,7 @@ ol, ul, dl {
   margin-bottom: 2rem;
 }
 
+
 .page-title-wrapper {
   margin-bottom: 60px;
 
@@ -168,7 +169,6 @@ ol, ul, dl {
 
 
 /* Articles */
-
 $article-heading-scale: 0.8;
 
 .page-node-type-article {
@@ -189,3 +189,23 @@ $article-heading-scale: 0.8;
   }
 }
 
+
+/* Individual staff pages */
+.page-node-type-staff {
+  .subtitle {
+    margin: 0 !important;
+  }
+  .staff-profile {
+    max-width: 650px;
+    margin: 30px auto 90px auto;
+
+    .image {
+      text-align: center;
+      margin-bottom: 60px;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
+}

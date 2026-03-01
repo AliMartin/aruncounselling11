@@ -1,0 +1,29 @@
+uuid: 29ac1e2b-dcbf-4ac2-a6b5-f9aab8cf6573
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_staff_role
+    - node.type.staff
+    - taxonomy.vocabulary.staff
+id: node.staff.field_staff_role
+field_name: field_staff_role
+entity_type: node
+bundle: staff
+label: 'Staff role'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      staff: staff
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

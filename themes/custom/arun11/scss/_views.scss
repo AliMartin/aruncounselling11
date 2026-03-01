@@ -178,3 +178,170 @@
     padding: 0 20px 10px 20px;
   }
 }
+
+
+.draggable-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+  margin: 30px auto;
+}
+
+
+.view input.btn.btn-secondary {
+  padding: 10px 20px;
+  &:hover {
+    background-color: darken($orange, 10%);
+    color: $white !important;
+  } 
+}
+
+
+.more-link a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: $border-radius;
+  font-size: 1.0rem;
+  font-weight: $font-weight-bold;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+  background-color: $dark-green;
+  color: $white !important;
+
+  &:hover {
+
+    color: $white !important;
+  }
+
+  &::after {
+    display: flex;
+    content: "\f054";
+    font-family: 'Font Awesome 6 Pro';
+    font-size: 1rem;
+    line-height: 1;
+    margin-left: 10px;
+  }
+}
+
+
+/* Staff cards */
+.view-trustees,
+.view-counsellors,
+.view-operations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+
+  .view-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 90px;
+
+    .title {
+      background-color: $dark-green;
+    }
+
+    h1 {
+      font-size: clamp(40px, calc(6.10vw + 9.51px), 70px);
+      letter-spacing: -1px;
+      line-height: 1.1;
+      margin: 0;
+      padding: 90px 0;
+      color: $white;
+    }
+
+    .elementor-shape-fill {
+      fill: $dark-green;
+    }
+  }
+
+  .view-content {
+    /* Cap the grid so we never get more than 3 x 350px cards (+ 2 x 30px gaps) */
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    /* On large screens: the grid block is centered (via margin auto), but cards align left */
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  /* On smaller screens, center the cards/rows so 1–2 column layouts don't hug the left edge */
+  @media (max-width: 1199.98px) {
+    .view-content {
+      justify-content: center;
+    }
+  }
+
+  /* Views outputs .views-row as the direct children of .view-content, not the <a.card>.
+     Make the .views-row chain stretch so the card can truly become equal height. */
+  .view-content > .views-row {
+    display: flex;
+    flex: 0 0 350px; /* match card width */
+    width: 350px;
+  }
+
+  .view-content > .views-row > .views-field,
+  .view-content > .views-row > .views-field > .field-content,
+  .view-content > .views-row > .views-field > .field-content > span {
+    display: flex;
+    width: 100%;
+  }
+
+  .view-content > .views-row a.card {
+    width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .card {
+    border: 1px solid $gray-200;
+    text-decoration: none;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.12);
+  }
+
+  .image {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    margin-bottom: 10px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 10px 10px 0 0 !important;
+    }
+  }
+
+  h2.title {
+    padding: 10px 20px 10px 20px;
+    font-weight: $font-weight-bold;
+    font-size: 1.1rem;
+    line-height: 1.25;
+  }
+
+  .position {
+    //text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    font-size: 0.9rem;
+    padding: 0 20px 20px 20px;
+    color: $gray-400;
+  }
+
+  .body {
+    padding: 0 20px 20px 20px;
+  }
+}

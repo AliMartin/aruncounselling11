@@ -178,6 +178,7 @@
   /* Remove some an annoying keylines on the SVG */
   /* Author information */
   /* Articles */
+  /* Individual staff pages */
   /*
    * Basic text paragraph type
    * Fire this rule only if an IMAGE has been UPLOADED
@@ -224,6 +225,7 @@
    * White
    */
   /* Hide wavy lines if background-white as there is too much white space */
+  /* Staff cards */
   /* Second top-right navigation */
 }
 .ck-content .text-orange {
@@ -12825,6 +12827,31 @@ a > .ck-content code {
   --bs-btn-disabled-bg: #FFFFF8;
   --bs-btn-disabled-border-color: #FFFFF8;
 }
+.ck-content .accordion details {
+  overflow: unset;
+}
+.ck-content .accordion details[open] .accordion-button {
+  color: var(--bs-accordion-active-color);
+  background-color: var(--bs-accordion-active-bg);
+}
+.ck-content .accordion details[open] .accordion-button::after {
+  background-image: var(--bs-accordion-btn-active-icon);
+  transform: var(--bs-accordion-btn-icon-transform);
+}
+.ck-content .accordion details:not([open]) {
+  border-bottom: 0;
+}
+.ck-content .accordion details:not([open]) .accordion-button {
+  color: var(--bs-accordion-btn-color);
+  background-color: var(--bs-accordion-btn-bg);
+  border: unset;
+  border-bottom-right-radius: var(--bs-accordion-border-radius);
+  border-bottom-left-radius: var(--bs-accordion-border-radius);
+}
+.ck-content .accordion details:not([open]) .accordion-button::after {
+  background-image: var(--bs-accordion-btn-active-icon);
+  transform: unset;
+}
 .ck-content .form-control.image-button {
   width: unset;
 }
@@ -12995,13 +13022,7 @@ a > .ck-content code {
 }
 .ck-content footer .region-footer {
   display: flex;
-  gap: 40px;
-}
-@media screen and (max-width: 767px) {
-  .ck-content footer .region-footer {
-    flex-direction: column;
-    gap: 30px;
-  }
+  flex-direction: column;
 }
 .ck-content .region-sidebar-first,
 .ck-content .region-sidebar-second,
@@ -14018,6 +14039,20 @@ a > .ck-content code {
 .ck-content .page-node-type-article #body-wrapper .field--name-field-media-image img {
   border: 1px solid #dadcdf;
 }
+.ck-content .page-node-type-staff .subtitle {
+  margin: 0 !important;
+}
+.ck-content .page-node-type-staff .staff-profile {
+  max-width: 650px;
+  margin: 30px auto 90px auto;
+}
+.ck-content .page-node-type-staff .staff-profile .image {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.ck-content .page-node-type-staff .staff-profile .image img {
+  border-radius: 50%;
+}
 .ck-content .paragraph-wrapper {
   margin-bottom: 60px;
 }
@@ -14894,6 +14929,197 @@ a > .ck-content code {
 }
 .ck-content .view-news .body {
   padding: 0 20px 10px 20px;
+}
+.ck-content .draggable-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+  margin: 30px auto;
+}
+.ck-content .view input.btn.btn-secondary, .ck-content .view input.btn-secondary.button, .ck-content .view .node-preview-container input.btn-secondary.node-preview-backlink, .ck-content .node-preview-container .view input.btn-secondary.node-preview-backlink {
+  padding: 10px 20px;
+}
+.ck-content .view input.btn.btn-secondary:hover, .ck-content .view input.btn-secondary.button:hover, .ck-content .view .node-preview-container input.btn-secondary.node-preview-backlink:hover, .ck-content .node-preview-container .view input.btn-secondary.node-preview-backlink:hover {
+  background-color: #e66000;
+  color: #FFFFF8 !important;
+}
+.ck-content .more-link a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+  background-color: #224957;
+  color: #FFFFF8 !important;
+}
+.ck-content .more-link a:hover {
+  color: #FFFFF8 !important;
+}
+.ck-content .more-link a::after {
+  display: flex;
+  content: "\f054";
+  font-family: "Font Awesome 6 Pro";
+  font-size: 1rem;
+  line-height: 1;
+  margin-left: 10px;
+}
+.ck-content .view-trustees,
+.ck-content .view-counsellors,
+.ck-content .view-operations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+  /* On smaller screens, center the cards/rows so 1–2 column layouts don't hug the left edge */
+  /* Views outputs .views-row as the direct children of .view-content, not the <a.card>.
+     Make the .views-row chain stretch so the card can truly become equal height. */
+}
+.ck-content .view-trustees .view-header,
+.ck-content .view-counsellors .view-header,
+.ck-content .view-operations .view-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 90px;
+}
+.ck-content .view-trustees .view-header .title,
+.ck-content .view-counsellors .view-header .title,
+.ck-content .view-operations .view-header .title {
+  background-color: #224957;
+}
+.ck-content .view-trustees .view-header h1, .ck-content .view-trustees .view-header .h1,
+.ck-content .view-counsellors .view-header h1,
+.ck-content .view-counsellors .view-header .h1,
+.ck-content .view-operations .view-header h1,
+.ck-content .view-operations .view-header .h1 {
+  font-size: clamp(40px, 6.1vw + 9.51px, 70px);
+  letter-spacing: -1px;
+  line-height: 1.1;
+  margin: 0;
+  padding: 90px 0;
+  color: #FFFFF8;
+}
+.ck-content .view-trustees .view-header .elementor-shape-fill,
+.ck-content .view-counsellors .view-header .elementor-shape-fill,
+.ck-content .view-operations .view-header .elementor-shape-fill {
+  fill: #224957;
+}
+.ck-content .view-trustees .view-content,
+.ck-content .view-counsellors .view-content,
+.ck-content .view-operations .view-content {
+  /* Cap the grid so we never get more than 3 x 350px cards (+ 2 x 30px gaps) */
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  /* On large screens: the grid block is centered (via margin auto), but cards align left */
+  justify-content: flex-start;
+  align-items: stretch;
+}
+@media (max-width: 1199.98px) {
+  .ck-content .view-trustees .view-content,
+.ck-content .view-counsellors .view-content,
+.ck-content .view-operations .view-content {
+    justify-content: center;
+  }
+}
+.ck-content .view-trustees .view-content > .views-row,
+.ck-content .view-counsellors .view-content > .views-row,
+.ck-content .view-operations .view-content > .views-row {
+  display: flex;
+  flex: 0 0 350px; /* match card width */
+  width: 350px;
+}
+.ck-content .view-trustees .view-content > .views-row > .views-field,
+.ck-content .view-trustees .view-content > .views-row > .views-field > .field-content,
+.ck-content .view-trustees .view-content > .views-row > .views-field > .field-content > span,
+.ck-content .view-counsellors .view-content > .views-row > .views-field,
+.ck-content .view-counsellors .view-content > .views-row > .views-field > .field-content,
+.ck-content .view-counsellors .view-content > .views-row > .views-field > .field-content > span,
+.ck-content .view-operations .view-content > .views-row > .views-field,
+.ck-content .view-operations .view-content > .views-row > .views-field > .field-content,
+.ck-content .view-operations .view-content > .views-row > .views-field > .field-content > span {
+  display: flex;
+  width: 100%;
+}
+.ck-content .view-trustees .view-content > .views-row a.card, .ck-content .view-trustees .view-content > .views-row .view-media-library .media-library-views-form__rows .media-library-item--grid a.views-field-rendered-entity, .ck-content .view-media-library .media-library-views-form__rows .media-library-item--grid .view-trustees .view-content > .views-row a.views-field-rendered-entity, .ck-content .view-trustees .view-content > .views-row .media-library-selection a.media-library-item.media-library-item--grid, .ck-content .media-library-selection .view-trustees .view-content > .views-row a.media-library-item.media-library-item--grid,
+.ck-content .view-counsellors .view-content > .views-row a.card,
+.ck-content .view-counsellors .view-content > .views-row .view-media-library .media-library-views-form__rows .media-library-item--grid a.views-field-rendered-entity,
+.ck-content .view-media-library .media-library-views-form__rows .media-library-item--grid .view-counsellors .view-content > .views-row a.views-field-rendered-entity,
+.ck-content .view-counsellors .view-content > .views-row .media-library-selection a.media-library-item.media-library-item--grid,
+.ck-content .media-library-selection .view-counsellors .view-content > .views-row a.media-library-item.media-library-item--grid,
+.ck-content .view-operations .view-content > .views-row a.card,
+.ck-content .view-operations .view-content > .views-row .view-media-library .media-library-views-form__rows .media-library-item--grid a.views-field-rendered-entity,
+.ck-content .view-media-library .media-library-views-form__rows .media-library-item--grid .view-operations .view-content > .views-row a.views-field-rendered-entity,
+.ck-content .view-operations .view-content > .views-row .media-library-selection a.media-library-item.media-library-item--grid,
+.ck-content .media-library-selection .view-operations .view-content > .views-row a.media-library-item.media-library-item--grid {
+  width: 100%;
+  flex: 1 1 auto;
+}
+.ck-content .view-trustees .card, .ck-content .view-trustees .view-media-library .media-library-views-form__rows .media-library-item--grid .views-field-rendered-entity, .ck-content .view-media-library .media-library-views-form__rows .media-library-item--grid .view-trustees .views-field-rendered-entity, .ck-content .view-trustees .media-library-selection .media-library-item.media-library-item--grid, .ck-content .media-library-selection .view-trustees .media-library-item.media-library-item--grid,
+.ck-content .view-counsellors .card,
+.ck-content .view-counsellors .view-media-library .media-library-views-form__rows .media-library-item--grid .views-field-rendered-entity,
+.ck-content .view-media-library .media-library-views-form__rows .media-library-item--grid .view-counsellors .views-field-rendered-entity,
+.ck-content .view-counsellors .media-library-selection .media-library-item.media-library-item--grid,
+.ck-content .media-library-selection .view-counsellors .media-library-item.media-library-item--grid,
+.ck-content .view-operations .card,
+.ck-content .view-operations .view-media-library .media-library-views-form__rows .media-library-item--grid .views-field-rendered-entity,
+.ck-content .view-media-library .media-library-views-form__rows .media-library-item--grid .view-operations .views-field-rendered-entity,
+.ck-content .view-operations .media-library-selection .media-library-item.media-library-item--grid,
+.ck-content .media-library-selection .view-operations .media-library-item.media-library-item--grid {
+  border: 1px solid #dadcdf;
+  text-decoration: none;
+  background-color: #FFFFF8;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.12);
+}
+.ck-content .view-trustees .image,
+.ck-content .view-counsellors .image,
+.ck-content .view-operations .image {
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.ck-content .view-trustees .image img,
+.ck-content .view-counsellors .image img,
+.ck-content .view-operations .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px 10px 0 0 !important;
+}
+.ck-content .view-trustees h2.title, .ck-content .view-trustees .title.h2,
+.ck-content .view-counsellors h2.title,
+.ck-content .view-counsellors .title.h2,
+.ck-content .view-operations h2.title,
+.ck-content .view-operations .title.h2 {
+  padding: 10px 20px 10px 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.25;
+}
+.ck-content .view-trustees .position,
+.ck-content .view-counsellors .position,
+.ck-content .view-operations .position {
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0 20px 20px 20px;
+  color: #9095a0;
+}
+.ck-content .view-trustees .body,
+.ck-content .view-counsellors .body,
+.ck-content .view-operations .body {
+  padding: 0 20px 20px 20px;
 }
 .ck-content body.path-frontpage #block-arun11-content article.node--type-landing-page {
   /* Place the text on top */
