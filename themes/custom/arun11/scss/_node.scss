@@ -209,3 +209,28 @@ $article-heading-scale: 0.8;
     }
   }
 }
+
+
+/* Individual card pages */
+.page-node-type-card {
+  .subtitle {
+    margin: 0 !important;
+  }
+  .card-content {
+    max-width: 650px;
+    margin: 30px auto 90px auto;
+
+    .image {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+  }
+  .field--name-field-button a {
+    background-color: $dark-green;
+    color: $white;
+    &:hover {
+      background-color: darken($dark-green, 10%);
+      color: $white !important;
+    } 
+  }
+}

@@ -15345,6 +15345,27 @@ ol, ul, dl {
   border-radius: 50%;
 }
 
+/* Individual card pages */
+.page-node-type-card .subtitle {
+  margin: 0 !important;
+}
+.page-node-type-card .card-content {
+  max-width: 650px;
+  margin: 30px auto 90px auto;
+}
+.page-node-type-card .card-content .image {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.page-node-type-card .field--name-field-button a {
+  background-color: #224957;
+  color: #FFFFF8;
+}
+.page-node-type-card .field--name-field-button a:hover {
+  background-color: #142a32;
+  color: #FFFFF8 !important;
+}
+
 .paragraph-wrapper {
   margin-bottom: 60px;
 }
@@ -15485,6 +15506,11 @@ ol, ul, dl {
 }
 #paragraph-53 h3, #paragraph-53 .h3 {
   margin-bottom: 1rem;
+}
+
+/* "Emergency mental health support" button */
+#paragraph-28 .field--name-field-button {
+  justify-content: center;
 }
 
 .field--name-field-statistic {
@@ -16480,6 +16506,105 @@ ol, ul, dl {
 .view-counsellors .body,
 .view-operations .body {
   padding: 0 20px 20px 20px;
+}
+
+.view-emergency-mental-health-support {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+  /* On smaller screens, center the cards/rows so 1–2 column layouts don't hug the left edge */
+  /* Views outputs .views-row as the direct children of .view-content, not the <a.card>.
+     Make the .views-row chain stretch so the card can truly become equal height. */
+}
+.view-emergency-mental-health-support .view-content {
+  /* Cap the grid so we never get more than 3 x 350px cards (+ 2 x 30px gaps) */
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  /* On large screens: the grid block is centered (via margin auto), but cards align left */
+  justify-content: flex-start;
+  align-items: stretch;
+}
+@media (max-width: 1199.98px) {
+  .view-emergency-mental-health-support .view-content {
+    justify-content: center;
+  }
+}
+.view-emergency-mental-health-support .view-content > .views-row {
+  display: flex;
+  flex: 0 0 350px; /* match card width */
+  width: 350px;
+}
+.view-emergency-mental-health-support .view-content > .views-row > .views-field,
+.view-emergency-mental-health-support .view-content > .views-row > .views-field > .field-content,
+.view-emergency-mental-health-support .view-content > .views-row > .views-field > .field-content > span {
+  display: flex;
+  width: 100%;
+}
+.view-emergency-mental-health-support .view-content > .views-row a.card, .view-emergency-mental-health-support .view-content > .views-row .view-media-library .media-library-views-form__rows .media-library-item--grid a.views-field-rendered-entity, .view-media-library .media-library-views-form__rows .media-library-item--grid .view-emergency-mental-health-support .view-content > .views-row a.views-field-rendered-entity, .view-emergency-mental-health-support .view-content > .views-row .media-library-selection a.media-library-item.media-library-item--grid, .media-library-selection .view-emergency-mental-health-support .view-content > .views-row a.media-library-item.media-library-item--grid {
+  width: 100%;
+  flex: 1 1 auto;
+}
+.view-emergency-mental-health-support .card, .view-emergency-mental-health-support .view-media-library .media-library-views-form__rows .media-library-item--grid .views-field-rendered-entity, .view-media-library .media-library-views-form__rows .media-library-item--grid .view-emergency-mental-health-support .views-field-rendered-entity, .view-emergency-mental-health-support .media-library-selection .media-library-item.media-library-item--grid, .media-library-selection .view-emergency-mental-health-support .media-library-item.media-library-item--grid {
+  border: 1px solid #dadcdf;
+  text-decoration: none;
+  background-color: #FFFFF8;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0px 0px 16px 3px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+.view-emergency-mental-health-support .card:hover, .view-emergency-mental-health-support .view-media-library .media-library-views-form__rows .media-library-item--grid .views-field-rendered-entity:hover, .view-media-library .media-library-views-form__rows .media-library-item--grid .view-emergency-mental-health-support .views-field-rendered-entity:hover, .view-emergency-mental-health-support .media-library-selection .media-library-item.media-library-item--grid:hover, .media-library-selection .view-emergency-mental-health-support .media-library-item.media-library-item--grid:hover {
+  transform: scale(1.05);
+}
+.view-emergency-mental-health-support .image {
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.view-emergency-mental-health-support .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px 10px 0 0 !important;
+}
+.view-emergency-mental-health-support h2.title, .view-emergency-mental-health-support .title.h2 {
+  padding: 10px 20px 10px 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.25;
+}
+.view-emergency-mental-health-support .body {
+  padding: 0 20px 10px 20px;
+}
+.view-emergency-mental-health-support .link-wrapper {
+  padding: 0 20px 20px 20px;
+}
+.view-emergency-mental-health-support .link {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #224957;
+  color: #FFFFF8;
+}
+.view-emergency-mental-health-support .link::after {
+  display: flex;
+  content: "\f054";
+  font-family: "Font Awesome 6 Pro";
+  font-size: 1rem;
+  line-height: 1;
+  margin-left: 10px;
 }
 
 body.path-frontpage #block-arun11-content article.node--type-landing-page {
