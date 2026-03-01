@@ -464,3 +464,29 @@
     }
   }
 }
+
+
+/* Sponsor logos */
+.view-sponsors {
+  margin: -60px 0 60px 0;
+
+  .view-content {
+    max-width: 950px;
+    margin: 0 auto 60px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    .views-row {
+      img {
+        max-width: 100px;
+        max-height: 100px;
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+}

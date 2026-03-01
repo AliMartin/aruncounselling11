@@ -3,13 +3,33 @@ langcode: en-gb
 status: true
 dependencies:
   config:
+    - block_content.type.basic
+    - filter.format.basic_html
+    - filter.format.code
+    - filter.format.full_html
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
     - node.type.article
-    - node.type.page
+    - node.type.card
+    - node.type.landing_page
+    - node.type.logo
+    - node.type.staff
+    - taxonomy.vocabulary.article
+    - taxonomy.vocabulary.card
+    - taxonomy.vocabulary.staff
     - taxonomy.vocabulary.tags
   module:
+    - block_content
     - contextual
+    - draggableviews
     - file
+    - filter
+    - media
     - node
+    - paragraphs
     - path
     - system
     - taxonomy
@@ -22,24 +42,143 @@ weight: 2
 is_admin: false
 permissions:
   - 'access administration pages'
+  - 'access content'
   - 'access content overview'
   - 'access contextual links'
+  - 'access draggableviews'
   - 'access files overview'
+  - 'access media overview'
+  - 'access taxonomy overview'
   - 'access toolbar'
+  - 'administer menu'
+  - 'administer node published status'
+  - 'administer nodes'
+  - 'administer taxonomy'
   - 'administer url aliases'
   - 'create article content'
-  - 'create page content'
+  - 'create audio media'
+  - 'create card content'
+  - 'create document media'
+  - 'create image media'
+  - 'create landing_page content'
+  - 'create logo content'
+  - 'create media'
+  - 'create remote_video media'
+  - 'create staff content'
+  - 'create terms in article'
+  - 'create terms in card'
+  - 'create terms in staff'
   - 'create terms in tags'
   - 'create url aliases'
+  - 'create video media'
+  - 'delete all taxonomy revisions'
+  - 'delete any article content'
+  - 'delete any audio media'
+  - 'delete any audio media revisions'
+  - 'delete any card content'
+  - 'delete any document media'
+  - 'delete any document media revisions'
+  - 'delete any image media'
+  - 'delete any image media revisions'
+  - 'delete any landing_page content'
+  - 'delete any logo content'
+  - 'delete any media'
+  - 'delete any remote_video media'
+  - 'delete any remote_video media revisions'
+  - 'delete any staff content'
+  - 'delete any video media'
+  - 'delete any video media revisions'
   - 'delete article revisions'
+  - 'delete card revisions'
+  - 'delete landing_page revisions'
+  - 'delete logo revisions'
+  - 'delete media'
   - 'delete own article content'
+  - 'delete own audio media'
+  - 'delete own card content'
+  - 'delete own document media'
   - 'delete own files'
-  - 'delete own page content'
-  - 'delete page revisions'
+  - 'delete own image media'
+  - 'delete own landing_page content'
+  - 'delete own logo content'
+  - 'delete own remote_video media'
+  - 'delete own staff content'
+  - 'delete own video media'
+  - 'delete staff revisions'
+  - 'delete term revisions in article'
+  - 'delete term revisions in card'
+  - 'delete term revisions in staff'
+  - 'delete term revisions in tags'
+  - 'delete terms in article'
+  - 'delete terms in card'
+  - 'delete terms in staff'
+  - 'delete terms in tags'
+  - 'edit any article content'
+  - 'edit any audio media'
+  - 'edit any basic block content'
+  - 'edit any card content'
+  - 'edit any document media'
+  - 'edit any image media'
+  - 'edit any landing_page content'
+  - 'edit any logo content'
+  - 'edit any remote_video media'
+  - 'edit any staff content'
+  - 'edit any video media'
   - 'edit own article content'
-  - 'edit own page content'
+  - 'edit own audio media'
+  - 'edit own card content'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own landing_page content'
+  - 'edit own logo content'
+  - 'edit own remote_video media'
+  - 'edit own staff content'
+  - 'edit own video media'
+  - 'edit terms in article'
+  - 'edit terms in card'
+  - 'edit terms in staff'
   - 'edit terms in tags'
   - 'revert all revisions'
+  - 'revert all taxonomy revisions'
+  - 'revert any audio media revisions'
+  - 'revert any document media revisions'
+  - 'revert any image media revisions'
+  - 'revert any remote_video media revisions'
+  - 'revert any video media revisions'
+  - 'revert article revisions'
+  - 'revert card revisions'
+  - 'revert landing_page revisions'
+  - 'revert logo revisions'
+  - 'revert staff revisions'
+  - 'revert term revisions in article'
+  - 'revert term revisions in card'
+  - 'revert term revisions in staff'
+  - 'revert term revisions in tags'
+  - 'update any media'
+  - 'update media'
+  - 'use text format basic_html'
+  - 'use text format code'
+  - 'use text format full_html'
+  - 'view all media revisions'
   - 'view all revisions'
+  - 'view all taxonomy revisions'
+  - 'view any audio media revisions'
+  - 'view any document media revisions'
+  - 'view any image media revisions'
+  - 'view any remote_video media revisions'
+  - 'view any video media revisions'
+  - 'view article revisions'
+  - 'view card revisions'
+  - 'view landing_page revisions'
+  - 'view logo revisions'
+  - 'view media'
   - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view staff revisions'
+  - 'view term revisions in article'
+  - 'view term revisions in card'
+  - 'view term revisions in staff'
+  - 'view term revisions in tags'
   - 'view the administration theme'
+  - 'view unpublished paragraphs'
+  - 'view vocabulary labels'

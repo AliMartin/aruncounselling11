@@ -1,0 +1,17 @@
+uuid: 8d3ae2a4-0c49-4c95-893c-79f79c5edd65
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Logo
+type: logo
+description: 'Add a <em>logo</em> to the website.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false
