@@ -16,11 +16,11 @@ settings:
   display_default: true
   uri_scheme: public
   default_image:
-    uuid: ''
-    alt: ''
+    uuid: 5b4b4bac-26d0-4d7c-816e-f026389eec74
+    alt: 'Placeholder for staff photo'
     title: ''
-    width: null
-    height: null
+    width: 1200
+    height: 800
 module: image
 locked: false
 cardinality: 1

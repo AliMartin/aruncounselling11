@@ -176,6 +176,67 @@ ol, ul, dl {
 $article-heading-scale: 0.8;
 
 .page-node-type-article {
+
+  .page-title-wrapper {
+    .page-title {
+      .content-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: flex-start;
+        max-width: 1200px;
+        text-align: inherit;
+        margin: 30px auto 45px auto;
+
+        @media (max-width: 767px) {
+          flex-direction: column-reverse;
+          align-items: inherit;
+          justify-content: center;
+          text-align: center;
+
+          h1,
+          .image {
+            width: 100%;
+
+            @media (max-width: 767px) {
+              width: inherit;
+            }
+          }
+        }
+
+        h1 {
+          flex: 2 1 0;
+          width: 0;
+          font-size: clamp(35px, 4.1vw + 6.51px, 50px);
+          margin: 0;
+          @media (max-width: 767px) {
+            flex: inherit;
+            width: inherit;
+          }
+        }
+
+        .image {
+          flex: 1 1 0;
+          width: 0;
+          @media (max-width: 767px) {
+            flex: inherit;
+            width: inherit;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+
   #body-wrapper {
     max-width: 800px;
     margin: 150px auto 90px auto;

@@ -14027,6 +14027,63 @@ a > .ck-content code {
 .ck-content #author-wrapper .author-name {
   font-weight: 600;
 }
+.ck-content .page-node-type-article .page-title-wrapper .page-title .content-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: flex-start;
+  max-width: 1200px;
+  text-align: inherit;
+  margin: 30px auto 45px auto;
+}
+@media (max-width: 767px) {
+  .ck-content .page-node-type-article .page-title-wrapper .page-title .content-wrapper {
+    flex-direction: column-reverse;
+    align-items: inherit;
+    justify-content: center;
+    text-align: center;
+  }
+  .ck-content .page-node-type-article .page-title-wrapper .page-title .content-wrapper h1, .ck-content .page-node-type-article .page-title-wrapper .page-title .content-wrapper .h1,
+.ck-content .page-node-type-article .page-title-wrapper .page-title .content-wrapper .image {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) and (max-width: 767px) {
+  .ck-content .page-node-type-article .page-title-wrapper .page-title .content-wrapper h1, .ck-content .page-node-type-article .page-title-wrapper .page-title .content-wrapper .h1,
+.ck-content .page-node-type-article .page-title-wrapper .page-title .content-wrapper .image {
+    width: inherit;
+  }
+}
+.ck-content .page-node-type-article .page-title-wrapper .page-title .content-wrapper h1, .ck-content .page-node-type-article .page-title-wrapper .page-title .content-wrapper .h1 {
+  flex: 2 1 0;
+  width: 0;
+  font-size: clamp(35px, 4.1vw + 6.51px, 50px);
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .ck-content .page-node-type-article .page-title-wrapper .page-title .content-wrapper h1, .ck-content .page-node-type-article .page-title-wrapper .page-title .content-wrapper .h1 {
+    flex: inherit;
+    width: inherit;
+  }
+}
+.ck-content .page-node-type-article .page-title-wrapper .page-title .content-wrapper .image {
+  flex: 1 1 0;
+  width: 0;
+}
+@media (max-width: 767px) {
+  .ck-content .page-node-type-article .page-title-wrapper .page-title .content-wrapper .image {
+    flex: inherit;
+    width: inherit;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.ck-content .page-node-type-article .page-title-wrapper .page-title .content-wrapper .image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .ck-content .page-node-type-article #body-wrapper {
   max-width: 800px;
   margin: 150px auto 90px auto;
