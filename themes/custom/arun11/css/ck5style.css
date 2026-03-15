@@ -194,10 +194,13 @@
    * Override the default background colour
    */
   /* Paragraph customisations */
+  /* Home page - "Why counselling" - BUTTON ALIGNMENY */
+  /* "Our services" - spacing */
   /* "What counselling can support you through" - TEXT */
   /* "What counselling can support you through" - ICONS */
   /* "Emergency mental health support" button */
   /* Sponsor logos */
+  /* Privacy statement */
   /*
    * Light green
    * INDIVIDUALS
@@ -14265,6 +14268,14 @@ a > .ck-content code {
   line-height: 1;
   margin-left: 10px;
 }
+.ck-content .paragraph-wrapper:has(#paragraph-2) .field--name-field-button {
+  justify-content: center;
+}
+.ck-content .paragraph-wrapper:has(#paragraph-42) h3, .ck-content .paragraph-wrapper:has(#paragraph-42) .h3,
+.ck-content .paragraph-wrapper:has(#paragraph-103) h3,
+.ck-content .paragraph-wrapper:has(#paragraph-103) .h3 {
+  margin: 2rem 0 1rem 0;
+}
 .ck-content .paragraph-wrapper:has(#paragraph-17) {
   margin: 0;
 }
@@ -14292,6 +14303,9 @@ a > .ck-content code {
 }
 .ck-content #paragraph-78 .paragraph-wrapper {
   padding-bottom: 0;
+}
+.ck-content .paragraph-wrapper:has(#paragraph-108) h2, .ck-content .paragraph-wrapper:has(#paragraph-108) .h2, .ck-content .paragraph-wrapper:has(#paragraph-108) h3, .ck-content .paragraph-wrapper:has(#paragraph-108) .h3, .ck-content .paragraph-wrapper:has(#paragraph-108) h4, .ck-content .paragraph-wrapper:has(#paragraph-108) .h4 {
+  text-align: left;
 }
 .ck-content .field--name-field-statistic {
   display: flex;
@@ -14346,7 +14360,7 @@ a > .ck-content code {
 }
 .ck-content .paragraph--type--text-panel .field--name-field-text-panel {
   display: flex;
-  gap: 30px;
+  gap: 60px;
 }
 .ck-content .paragraph--type--text-panel .field--name-field-text-panel > .field__item {
   flex: 1 1 0; /* equal widths: 1 = 100%, 2 = 50%, 3 = 33.33% */
@@ -14978,7 +14992,7 @@ a > .ck-content code {
   /* Cap the grid so we never get more than 3 x 350px cards (+ 2 x 30px gaps) */
   max-width: 1110px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -15549,7 +15563,7 @@ a > .ck-content code {
 .ck-content #block-arun11-secondarynavigation svg {
   display: none;
 }
-@media (min-width: 500px) and (max-width: 767px) {
+@media (min-width: 520px) and (max-width: 767px) {
   .ck-content #block-arun11-secondarynavigation ul.nav a.btn-book, .ck-content #block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-book, .ck-content .media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-book,
 .ck-content #block-arun11-secondarynavigation ul.nav a.btn-donate,
 .ck-content #block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-donate,
@@ -15557,7 +15571,7 @@ a > .ck-content code {
     padding: 10px 10px;
   }
 }
-@media (max-width: 499px) {
+@media (max-width: 519px) {
   .ck-content #block-arun11-secondarynavigation ul.nav svg, .ck-content #block-arun11-secondarynavigation .media-library-view--widget ul.view-header svg, .ck-content .media-library-view--widget #block-arun11-secondarynavigation ul.view-header svg {
     display: block;
   }

@@ -15572,6 +15572,18 @@ ol, ul, dl {
 }
 
 /* Paragraph customisations */
+/* Home page - "Why counselling" - BUTTON ALIGNMENY */
+.paragraph-wrapper:has(#paragraph-2) .field--name-field-button {
+  justify-content: center;
+}
+
+/* "Our services" - spacing */
+.paragraph-wrapper:has(#paragraph-42) h3, .paragraph-wrapper:has(#paragraph-42) .h3,
+.paragraph-wrapper:has(#paragraph-103) h3,
+.paragraph-wrapper:has(#paragraph-103) .h3 {
+  margin: 2rem 0 1rem 0;
+}
+
 /* "What counselling can support you through" - TEXT */
 .paragraph-wrapper:has(#paragraph-17) {
   margin: 0;
@@ -15607,6 +15619,11 @@ ol, ul, dl {
 }
 #paragraph-78 .paragraph-wrapper {
   padding-bottom: 0;
+}
+
+/* Privacy statement */
+.paragraph-wrapper:has(#paragraph-108) h2, .paragraph-wrapper:has(#paragraph-108) .h2, .paragraph-wrapper:has(#paragraph-108) h3, .paragraph-wrapper:has(#paragraph-108) .h3, .paragraph-wrapper:has(#paragraph-108) h4, .paragraph-wrapper:has(#paragraph-108) .h4 {
+  text-align: left;
 }
 
 .field--name-field-statistic {
@@ -15663,7 +15680,7 @@ ol, ul, dl {
 }
 .paragraph--type--text-panel .field--name-field-text-panel {
   display: flex;
-  gap: 30px;
+  gap: 60px;
 }
 .paragraph--type--text-panel .field--name-field-text-panel > .field__item {
   flex: 1 1 0; /* equal widths: 1 = 100%, 2 = 50%, 3 = 33.33% */
@@ -16337,7 +16354,7 @@ ol, ul, dl {
   /* Cap the grid so we never get more than 3 x 350px cards (+ 2 x 30px gaps) */
   max-width: 1110px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -16922,7 +16939,7 @@ header .main-menu ul.navbar-nav {
   display: none;
 }
 
-@media (min-width: 500px) and (max-width: 767px) {
+@media (min-width: 520px) and (max-width: 767px) {
   #block-arun11-secondarynavigation ul.nav a.btn-book, #block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-book, .media-library-view--widget #block-arun11-secondarynavigation ul.view-header a.btn-book,
 #block-arun11-secondarynavigation ul.nav a.btn-donate,
 #block-arun11-secondarynavigation .media-library-view--widget ul.view-header a.btn-donate,
@@ -16930,7 +16947,7 @@ header .main-menu ul.navbar-nav {
     padding: 10px 10px;
   }
 }
-@media (max-width: 499px) {
+@media (max-width: 519px) {
   #block-arun11-secondarynavigation ul.nav svg, #block-arun11-secondarynavigation .media-library-view--widget ul.view-header svg, .media-library-view--widget #block-arun11-secondarynavigation ul.view-header svg {
     display: block;
   }
