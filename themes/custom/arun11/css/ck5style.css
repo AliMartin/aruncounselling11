@@ -201,6 +201,7 @@
   /* "Emergency mental health support" button */
   /* Sponsor logos */
   /* Privacy statement */
+  /* Register for an EAP webform */
   /*
    * Light green
    * INDIVIDUALS
@@ -14306,6 +14307,46 @@ a > .ck-content code {
 }
 .ck-content .paragraph-wrapper:has(#paragraph-108) h2, .ck-content .paragraph-wrapper:has(#paragraph-108) .h2, .ck-content .paragraph-wrapper:has(#paragraph-108) h3, .ck-content .paragraph-wrapper:has(#paragraph-108) .h3, .ck-content .paragraph-wrapper:has(#paragraph-108) h4, .ck-content .paragraph-wrapper:has(#paragraph-108) .h4 {
   text-align: left;
+}
+.ck-content .paragraph-wrapper:has(#paragraph-126) .text-panel-bundle-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.ck-content .paragraph-wrapper:has(#paragraph-126) .text-panel-bundle-wrapper .text-wrapper {
+  order: 1;
+}
+.ck-content .paragraph-wrapper:has(#paragraph-126) .text-panel-bundle-wrapper .image-wrapper {
+  order: 2;
+}
+.ck-content .paragraph-wrapper:has(#paragraph-126) .checkboxes--wrapper {
+  padding: 0;
+}
+.ck-content .paragraph-wrapper:has(#paragraph-126) input.form-checkbox {
+  transform: scale(1.5);
+  transform-origin: top left;
+}
+.ck-content .paragraph-wrapper:has(#paragraph-126) .form-check-input:checked {
+  background-color: #FFFCDF;
+  border-color: #FFFCDF;
+}
+.ck-content .paragraph-wrapper:has(#paragraph-126) .form-check-input:checked[type=checkbox] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23000000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+}
+.ck-content .paragraph-wrapper:has(#paragraph-126) .description {
+  padding-left: 10px;
+}
+.ck-content .paragraph-wrapper:has(#paragraph-126) .webform-button--submit {
+  border: none;
+  background-color: #E0FBFC;
+  color: #333333;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.ck-content .paragraph-wrapper:has(#paragraph-126) .webform-button--submit:hover {
+  border: none;
+  background-color: #b2f5f8;
 }
 .ck-content .field--name-field-statistic {
   display: flex;

@@ -232,3 +232,52 @@
     text-align: left;
   }
 }
+
+
+/* Register for an EAP webform */
+.paragraph-wrapper:has(#paragraph-126) {
+  .text-panel-bundle-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .text-wrapper {order: 1;}
+    .image-wrapper {order: 2;}
+  }
+
+  .checkboxes--wrapper {
+    padding: 0;
+  }
+
+  input.form-checkbox {
+    transform: scale(1.5);
+    transform-origin: top left;
+  }
+
+  .form-check-input:checked {
+    background-color: $pastel-yellow;
+    border-color: $pastel-yellow;
+  }
+
+  .form-check-input:checked[type=checkbox] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23000000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+  }
+
+  .description {
+    padding-left: 10px;
+  }
+
+  .webform-button--submit {
+    border: none;
+    background-color: $pastel-blue;
+    color: $black;
+    padding: 10px 20px;
+    border-radius: $border-radius;
+    font-size: 1.0rem;
+    font-weight: $font-weight-bold;
+
+    &:hover {
+      border: none;
+      background-color: darken($pastel-blue, 10%);
+    }
+  }
+} 

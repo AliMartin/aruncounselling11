@@ -34,6 +34,7 @@ dependencies:
     - system
     - taxonomy
     - toolbar
+    - webform
 _core:
   default_config_hash: e_wG1u7SrGaJbY2-Szgbgl-c8T3kdirU3uTNq2c_QJQ
 id: content_editor
@@ -167,6 +168,7 @@ permissions:
   - 'view any image media revisions'
   - 'view any remote_video media revisions'
   - 'view any video media revisions'
+  - 'view any webform submission'
   - 'view article revisions'
   - 'view card revisions'
   - 'view landing_page revisions'

@@ -15626,6 +15626,48 @@ ol, ul, dl {
   text-align: left;
 }
 
+/* Register for an EAP webform */
+.paragraph-wrapper:has(#paragraph-126) .text-panel-bundle-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.paragraph-wrapper:has(#paragraph-126) .text-panel-bundle-wrapper .text-wrapper {
+  order: 1;
+}
+.paragraph-wrapper:has(#paragraph-126) .text-panel-bundle-wrapper .image-wrapper {
+  order: 2;
+}
+.paragraph-wrapper:has(#paragraph-126) .checkboxes--wrapper {
+  padding: 0;
+}
+.paragraph-wrapper:has(#paragraph-126) input.form-checkbox {
+  transform: scale(1.5);
+  transform-origin: top left;
+}
+.paragraph-wrapper:has(#paragraph-126) .form-check-input:checked {
+  background-color: #FFFCDF;
+  border-color: #FFFCDF;
+}
+.paragraph-wrapper:has(#paragraph-126) .form-check-input:checked[type=checkbox] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23000000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+}
+.paragraph-wrapper:has(#paragraph-126) .description {
+  padding-left: 10px;
+}
+.paragraph-wrapper:has(#paragraph-126) .webform-button--submit {
+  border: none;
+  background-color: #E0FBFC;
+  color: #333333;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.paragraph-wrapper:has(#paragraph-126) .webform-button--submit:hover {
+  border: none;
+  background-color: #b2f5f8;
+}
+
 .field--name-field-statistic {
   display: flex;
   flex-direction: row;

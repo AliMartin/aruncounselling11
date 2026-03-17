@@ -8,12 +8,14 @@ dependencies:
     - field.field.paragraph.text_panel_bundle.field_google_map
     - field.field.paragraph.text_panel_bundle.field_image
     - field.field.paragraph.text_panel_bundle.field_text
+    - field.field.paragraph.text_panel_bundle.field_webform
     - paragraphs.paragraphs_type.text_panel_bundle
   module:
     - file
     - link
     - simple_gmap
     - text
+    - webform
 id: paragraph.text_panel_bundle.default
 targetEntityType: paragraph
 bundle: text_panel_bundle
@@ -75,5 +77,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_webform:
+    type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: true
+      lazy: false
+    third_party_settings: {  }
+    weight: 4
     region: content
 hidden: {  }

@@ -91,6 +91,12 @@
               </div>
             {% endif %}
 
+            {% if paragraph.field_webform.value %}
+              <div class="webform-wrapper">
+                {{ content.field_webform }}
+              </div>
+            {% endif %}
+
           </div>
 
         </div>
