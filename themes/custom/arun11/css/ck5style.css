@@ -14526,13 +14526,19 @@ a > .ck-content code {
    * background-funding
    */
 }
+.ck-content .background-case-studies .elementor-shape-fill,
 .ck-content .background-funding .elementor-shape-fill,
+.ck-content .background-news .elementor-shape-fill,
 .ck-content .background-counselling .elementor-shape-fill,
 .ck-content .background-light-green .elementor-shape-fill {
   fill: #1C7678;
 }
+.ck-content .background-case-studies .page-title,
+.ck-content .background-case-studies .paragraph,
 .ck-content .background-funding .page-title,
 .ck-content .background-funding .paragraph,
+.ck-content .background-news .page-title,
+.ck-content .background-news .paragraph,
 .ck-content .background-counselling .page-title,
 .ck-content .background-counselling .paragraph,
 .ck-content .background-light-green .page-title,
@@ -14540,11 +14546,23 @@ a > .ck-content code {
   background-color: #1C7678;
   color: #FFFFF8;
 }
-.ck-content .background-funding h1, .ck-content .background-funding .h1,
+.ck-content .background-case-studies h1, .ck-content .background-case-studies .h1,
+.ck-content .background-case-studies h2,
+.ck-content .background-case-studies .h2,
+.ck-content .background-case-studies h3,
+.ck-content .background-case-studies .h3,
+.ck-content .background-funding h1,
+.ck-content .background-funding .h1,
 .ck-content .background-funding h2,
 .ck-content .background-funding .h2,
 .ck-content .background-funding h3,
 .ck-content .background-funding .h3,
+.ck-content .background-news h1,
+.ck-content .background-news .h1,
+.ck-content .background-news h2,
+.ck-content .background-news .h2,
+.ck-content .background-news h3,
+.ck-content .background-news .h3,
 .ck-content .background-counselling h1,
 .ck-content .background-counselling .h1,
 .ck-content .background-counselling h2,
@@ -14559,66 +14577,90 @@ a > .ck-content code {
 .ck-content .background-light-green .h3 {
   color: #FFFFF8;
 }
+.ck-content .background-case-studies .paragraph a,
 .ck-content .background-funding .paragraph a,
+.ck-content .background-news .paragraph a,
 .ck-content .background-counselling .paragraph a,
 .ck-content .background-light-green .paragraph a {
   color: #FFFFF8;
 }
+.ck-content .background-case-studies .paragraph a:hover,
 .ck-content .background-funding .paragraph a:hover,
+.ck-content .background-news .paragraph a:hover,
 .ck-content .background-counselling .paragraph a:hover,
 .ck-content .background-light-green .paragraph a:hover {
   color: #FF7A1A;
 }
+.ck-content .background-case-studies,
 .ck-content .background-funding,
+.ck-content .background-news,
 .ck-content .background-counselling,
 .ck-content .background-light-green {
   /* General button colours */
 }
+.ck-content .background-case-studies .field--name-field-button .field__item:nth-child(3n+1) a,
 .ck-content .background-funding .field--name-field-button .field__item:nth-child(3n+1) a,
+.ck-content .background-news .field--name-field-button .field__item:nth-child(3n+1) a,
 .ck-content .background-counselling .field--name-field-button .field__item:nth-child(3n+1) a,
 .ck-content .background-light-green .field--name-field-button .field__item:nth-child(3n+1) a {
   background-color: #198754;
   color: #FFFFF8;
 }
+.ck-content .background-case-studies .field--name-field-button .field__item:nth-child(3n+2) a,
 .ck-content .background-funding .field--name-field-button .field__item:nth-child(3n+2) a,
+.ck-content .background-news .field--name-field-button .field__item:nth-child(3n+2) a,
 .ck-content .background-counselling .field--name-field-button .field__item:nth-child(3n+2) a,
 .ck-content .background-light-green .field--name-field-button .field__item:nth-child(3n+2) a {
   background-color: #294366;
   color: #FFFFF8;
 }
+.ck-content .background-case-studies .field--name-field-button .field__item:nth-child(3n) a,
 .ck-content .background-funding .field--name-field-button .field__item:nth-child(3n) a,
+.ck-content .background-news .field--name-field-button .field__item:nth-child(3n) a,
 .ck-content .background-counselling .field--name-field-button .field__item:nth-child(3n) a,
 .ck-content .background-light-green .field--name-field-button .field__item:nth-child(3n) a {
   background-color: #FF7A1A;
   color: #FFFFF8;
 }
+.ck-content .background-case-studies .field--name-field-button .field__item:nth-child(3n+1) a:hover,
 .ck-content .background-funding .field--name-field-button .field__item:nth-child(3n+1) a:hover,
+.ck-content .background-news .field--name-field-button .field__item:nth-child(3n+1) a:hover,
 .ck-content .background-counselling .field--name-field-button .field__item:nth-child(3n+1) a:hover,
 .ck-content .background-light-green .field--name-field-button .field__item:nth-child(3n+1) a:hover {
   background-color: rgb(17.03125, 91.96875, 57.225);
 }
+.ck-content .background-case-studies .field--name-field-button .field__item:nth-child(3n+2) a:hover,
 .ck-content .background-funding .field--name-field-button .field__item:nth-child(3n+2) a:hover,
+.ck-content .background-news .field--name-field-button .field__item:nth-child(3n+2) a:hover,
 .ck-content .background-counselling .field--name-field-button .field__item:nth-child(3n+2) a:hover,
 .ck-content .background-light-green .field--name-field-button .field__item:nth-child(3n+2) a:hover {
   background-color: rgb(26.3776223776, 43.1048951049, 65.6223776224);
 }
+.ck-content .background-case-studies .field--name-field-button .field__item:nth-child(3n) a:hover,
 .ck-content .background-funding .field--name-field-button .field__item:nth-child(3n) a:hover,
+.ck-content .background-news .field--name-field-button .field__item:nth-child(3n) a:hover,
 .ck-content .background-counselling .field--name-field-button .field__item:nth-child(3n) a:hover,
 .ck-content .background-light-green .field--name-field-button .field__item:nth-child(3n) a:hover {
   background-color: rgb(230, 96.4192139738, 0);
 }
+.ck-content .background-case-studies,
 .ck-content .background-funding,
+.ck-content .background-news,
 .ck-content .background-counselling,
 .ck-content .background-light-green {
   /* Landing page button override */
 }
+.ck-content .background-case-studies.page-title-wrapper .field--name-field-button a,
 .ck-content .background-funding.page-title-wrapper .field--name-field-button a,
+.ck-content .background-news.page-title-wrapper .field--name-field-button a,
 .ck-content .background-counselling.page-title-wrapper .field--name-field-button a,
 .ck-content .background-light-green.page-title-wrapper .field--name-field-button a {
   background-color: #DFFFDE !important;
   color: #333333 !important;
 }
+.ck-content .background-case-studies.page-title-wrapper .field--name-field-button a:hover,
 .ck-content .background-funding.page-title-wrapper .field--name-field-button a:hover,
+.ck-content .background-news.page-title-wrapper .field--name-field-button a:hover,
 .ck-content .background-counselling.page-title-wrapper .field--name-field-button a:hover,
 .ck-content .background-light-green.page-title-wrapper .field--name-field-button a:hover {
   background-color: rgb(173.5454545455, 255, 171) !important;
