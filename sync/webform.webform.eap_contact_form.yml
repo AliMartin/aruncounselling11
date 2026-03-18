@@ -25,11 +25,13 @@ elements: |-
       '#title': 'First name'
       '#title_display': invisible
       '#placeholder': 'First name'
+      '#required': true
     surname:
       '#type': textfield
       '#title': Surname
       '#title_display': invisible
       '#placeholder': Surname
+      '#required': true
   flexbox_01:
     '#type': webform_flexbox
     organisation:
@@ -37,14 +39,16 @@ elements: |-
       '#title': Organisation
       '#title_display': invisible
       '#placeholder': Organisation
+      '#required': true
     number_of_employees:
-      '#type': number
+      '#type': select
       '#title': 'Number of employees'
       '#title_display': invisible
-      '#placeholder': 'Number of employees'
-      '#min': 1
-      '#max': 1000
-      '#step': 1
+      '#options':
+        1_to_10: '1 to 10'
+        11_to_50: '11 to 50'
+        more_than_50: 'More than 50'
+      '#empty_option': 'Number of employees'
   flexbox_02:
     '#type': webform_flexbox
     location:
@@ -57,6 +61,7 @@ elements: |-
       '#title': Postcode
       '#title_display': invisible
       '#placeholder': Postcode
+      '#required': true
   flexbox_03:
     '#type': webform_flexbox
     telephone:
@@ -64,11 +69,13 @@ elements: |-
       '#title': Telephone
       '#title_display': invisible
       '#placeholder': Telephone
+      '#required': true
     email:
       '#type': email
       '#title': Email
       '#title_display': invisible
       '#placeholder': Email
+      '#required': true
   consent:
     '#type': checkboxes
     '#title': Consent
@@ -76,14 +83,15 @@ elements: |-
     '#options':
       'Yes': ' -- I consent to my data being processed by Arun Counselling Centre. Visit our <a href="/privacy-and-cookies" target="_blank">privacy page</a> to learn about we use your data.'
     '#required': true
+    '#required_error': 'Please check the consent box so we can process your data.'
 css: ''
 javascript: ''
 settings:
-  ajax: false
+  ajax: true
   ajax_scroll_top: form
   ajax_progress_type: ''
-  ajax_effect: ''
-  ajax_speed: null
+  ajax_effect: fade
+  ajax_speed: 500
   page: true
   page_submit_path: ''
   page_confirm_path: ''
@@ -181,12 +189,12 @@ settings:
   draft_loaded_message: ''
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
-  confirmation_type: page
+  confirmation_type: inline
   confirmation_url: ''
   confirmation_title: ''
-  confirmation_message: ''
+  confirmation_message: '<p>Thank you for completing the form, your message has been received and passed onto the team.&nbsp;</p>'
   confirmation_attributes: {  }
-  confirmation_back: true
+  confirmation_back: false
   confirmation_back_label: ''
   confirmation_back_attributes: {  }
   confirmation_exclude_query: false
@@ -260,5 +268,43 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  email:
+    id: email
+    handler_id: email
+    label: Email
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: info@alimartin.com
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: noreply@aruncounselling.com
+      from_options: {  }
+      from_name: '* EAP contact form *'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: _default
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      langcode: ''
+      parameters: {  }
+      debug: false
 variants: {  }
