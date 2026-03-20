@@ -1,0 +1,20 @@
+uuid: 2e048677-9cdd-4138-9b03-6d1f75332a00
+langcode: en-gb
+status: false
+dependencies:
+  module:
+    - tb_megamenu
+  theme:
+    - arun11
+id: arun11_secondarynavigation_2
+theme: arun11
+region: nav_second
+weight: 0
+provider: null
+plugin: 'tb_megamenu_menu_block:secondary-navigation'
+settings:
+  id: 'tb_megamenu_menu_block:secondary-navigation'
+  label: 'Secondary navigation'
+  label_display: '0'
+  provider: tb_megamenu
+visibility: {  }

@@ -1,0 +1,79 @@
+uuid: aa335c7c-e16f-471b-a4f8-c8039d604353
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - system.menu.secondary-navigation
+  theme:
+    - arun11
+id: secondary-navigation__arun11
+menu: secondary-navigation
+theme: arun11
+block_config: |-
+  {
+      "animation": "none",
+      "duration": 400,
+      "delay": 200,
+      "breakpoint": 1200,
+      "hide-mobile-menu": "",
+      "auto-arrow": "",
+      "always-show-submenu": "",
+      "number-columns": 1
+  }
+menu_config: |-
+  {
+      "menu_link_content:9261d9ef-cbea-430b-90d6-73d84149be58": {
+          "rows_content": [],
+          "submenu_config": {
+              "width": "",
+              "class": "",
+              "group": "0"
+          },
+          "item_config": {
+              "class": "",
+              "xicon": "",
+              "caption": "",
+              "alignsub": "",
+              "group": "0",
+              "hidewcol": "0",
+              "hidesub": "0",
+              "label": ""
+          }
+      },
+      "menu_link_content:91d1f538-61fd-45c2-ad74-34120f9662c2": {
+          "rows_content": [],
+          "submenu_config": {
+              "width": "",
+              "class": "",
+              "group": "0"
+          },
+          "item_config": {
+              "class": "",
+              "xicon": "",
+              "caption": "",
+              "alignsub": "",
+              "group": "0",
+              "hidewcol": "0",
+              "hidesub": "0",
+              "label": ""
+          }
+      },
+      "menu_link_content:428b53d7-3259-4756-bfca-ad848f313c04": {
+          "rows_content": [],
+          "submenu_config": {
+              "width": "",
+              "class": "",
+              "group": "0"
+          },
+          "item_config": {
+              "class": "",
+              "xicon": "",
+              "caption": "",
+              "alignsub": "",
+              "group": "0",
+              "hidewcol": "0",
+              "hidesub": "0",
+              "label": ""
+          }
+      }
+  }

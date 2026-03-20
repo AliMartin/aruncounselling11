@@ -78,6 +78,23 @@
               </div>
             {% endif %}
 
+            {% if paragraph.field_show_paypal_button.value == '1' %}
+              <form action="https://www.paypal.com/donate" method="post" target="_top" class="paypal-donate-form">
+                <input type="hidden" name="hosted_button_id" value="TDW6DEDM8K8RJ">
+                <input
+                  type="image"
+                  src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif"
+                  name="submit"
+                  title="PayPal - The safer, easier way to pay online!"
+                  alt="Donate with PayPal button">
+                <img
+                  alt=""
+                  src="https://www.paypal.com/en_GB/i/scr/pixel.gif"
+                  width="1"
+                  height="1">
+              </form>
+            {% endif %}
+
             {% set field_attachments_rendered = content.field_attachments|render %}
             {% if field_attachments_rendered|striptags|trim is not empty %}
               <div class="attachment-wrapper">
