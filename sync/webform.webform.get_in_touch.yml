@@ -259,11 +259,11 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: 'info@alimartin.com,emma.fuller@aruncounselling.com'
+      to_mail: admin@aruncounselling.com
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
-      cc_mail: ''
+      cc_mail: emma.fuller@aruncounselling.com
       cc_options: {  }
       from_mail: noreply@aruncounselling.com
       from_options: {  }
@@ -272,7 +272,7 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: _default
+      subject: '* Arun Counselling general enquiry form *'
       body: _default
       excluded_elements: {  }
       ignore_access: false
