@@ -15406,6 +15406,37 @@ ol, ul, dl {
   height: auto;
 }
 
+/* Gallery */
+.field--name-field-gallery .field__label {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.field--name-field-gallery .field__items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+}
+.field--name-field-gallery .field__items .field--name-field-media-image {
+  margin-bottom: 0 !important;
+}
+.field--name-field-gallery .field__items .field--name-field-media-image img {
+  border: none !important;
+}
+.field--name-field-gallery .field__items .colorbox {
+  display: block;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.field--name-field-gallery .field__items .colorbox img {
+  display: block;
+  transition: transform 0.3s ease;
+}
+.field--name-field-gallery .field__items .colorbox:hover img, .field--name-field-gallery .field__items .colorbox:focus img {
+  transform: scale(1.08);
+}
+
 .paragraph-wrapper {
   margin-bottom: 60px;
 }

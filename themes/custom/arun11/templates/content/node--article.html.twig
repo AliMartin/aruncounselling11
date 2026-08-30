@@ -154,6 +154,13 @@
         {{ content.body }}
       </div>
     {% endif %}
+
+    {% if content.field_gallery is not empty %}
+      <div class="gallery">
+        {{ content.field_gallery }}
+      </div>
+    {% endif %}
+
   </div>
 
 </article>

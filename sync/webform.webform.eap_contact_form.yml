@@ -284,7 +284,7 @@ handlers:
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
-      cc_mail: emma.fuller@aruncounselling.com
+      cc_mail: ''
       cc_options: {  }
       from_mail: noreply@aruncounselling.com
       from_options: {  }

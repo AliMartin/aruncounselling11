@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.field_author_date
     - field.field.node.article.field_author_image
     - field.field.node.article.field_author_name
+    - field.field.node.article.field_gallery
     - field.field.node.article.field_image
     - field.field.node.article.field_section
     - node.type.article
@@ -51,8 +52,18 @@ content:
     label: hidden
     settings:
       link_to_entity: false
+      link_rel: canonical
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_gallery:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: gallery
+      link: false
+    third_party_settings: {  }
+    weight: 5
     region: content
   field_image:
     type: entity_reference_entity_view
@@ -61,7 +72,7 @@ content:
       view_mode: content
       link: false
     third_party_settings: {  }
-    weight: 6
+    weight: 7
     region: content
   field_section:
     type: entity_reference_label
@@ -74,7 +85,7 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 6
     region: content
 hidden:
   langcode: true

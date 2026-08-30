@@ -1,0 +1,39 @@
+uuid: 1af5caa1-9030-4ed1-8a56-ee13b636fed1
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.gallery
+    - field.field.media.image.field_media_image
+    - image.style.gallery_thumbnail
+    - image.style.max_1300x1300
+    - media.type.image
+  module:
+    - colorbox
+_core:
+  default_config_hash: 73xaTNkI5J6sfFcBmNYeuk070X3mQS_iwwWaPYyfG2M
+id: media.image.gallery
+targetEntityType: media
+bundle: image
+mode: gallery
+content:
+  field_media_image:
+    type: colorbox
+    label: visually_hidden
+    settings:
+      colorbox_image_style: max_1300x1300
+      colorbox_gallery: page
+      colorbox_gallery_custom: ''
+      colorbox_caption: auto
+      colorbox_caption_custom: ''
+      colorbox_node_style: gallery_thumbnail
+      colorbox_node_style_first: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true
